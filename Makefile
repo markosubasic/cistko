@@ -1,4 +1,4 @@
-# datathon-2026 developer commands. Requires: docker compose, uv, Node 20 + pnpm, make.
+# Čistko developer commands. Requires: docker compose, uv, Node 20 + pnpm, make.
 # On Windows run make from Git Bash (and put Node/pnpm on PATH).
 
 SHELL := /bin/bash
@@ -6,14 +6,14 @@ SHELL := /bin/bash
 
 COMPOSE      ?= docker compose
 PROD_COMPOSE ?= docker compose -f docker-compose.prod.yml
-APP          ?=
+APP          ?= cistko
 STEP         ?=
 DEPLOY_HOST  ?=
-DEPLOY_DIR   ?= /opt/datathon-2026
+DEPLOY_DIR   ?= /opt/cistko
 PROD         ?=
-APPS         := blizu otporno nabavaradar
+APPS         := cistko
 
-require-app = $(if $(filter $(APP),$(APPS)),,$(error APP must be one of: $(APPS)  (usage: make $@ APP=blizu)))
+require-app = $(if $(filter $(APP),$(APPS)),,$(error APP must be one of: $(APPS)  (usage: make $@ APP=cistko)))
 
 .PHONY: help dev down test lint build migrate ingest deploy backup-db
 
@@ -30,9 +30,7 @@ down: ## Stop the dev stack (data volume is kept)
 
 test: ## Python (no live network) and web tests
 	uv run pytest packages/core
-	uv run pytest apps/blizu/api
-	uv run pytest apps/nabavaradar/api
-	uv run pytest apps/otporno/api
+	uv run pytest apps/cistko/api
 	pnpm -r test
 
 lint: ## ruff, mypy, eslint, prettier
@@ -45,7 +43,7 @@ lint: ## ruff, mypy, eslint, prettier
 build: ## Build all web packages (type-check + bundle)
 	pnpm -r build
 
-migrate: ## Run Alembic migrations of one app:  make migrate APP=blizu   (PROD=1: in the prod container)
+migrate: ## Run Alembic migrations of one app:  make migrate APP=cistko   (PROD=1: in the prod container)
 	$(require-app)
 ifeq ($(PROD),1)
 	$(PROD_COMPOSE) run --rm $(APP)-api alembic -c /app/api/alembic.ini upgrade head
@@ -53,9 +51,9 @@ else
 	uv run --package $(APP)-api alembic -c apps/$(APP)/api/alembic.ini upgrade head
 endif
 
-ingest: ## Run an ingestion step:  make ingest APP=blizu STEP=all   (PROD=1: prod container, then restart the API)
+ingest: ## Run an ingestion step:  make ingest APP=cistko STEP=all   (PROD=1: prod container, then restart the API)
 	$(require-app)
-	@test -n "$(STEP)" || (echo "ERROR: STEP is required (usage: make ingest APP=blizu STEP=<step>)" && exit 1)
+	@test -n "$(STEP)" || (echo "ERROR: STEP is required (usage: make ingest APP=cistko STEP=<step>)" && exit 1)
 ifeq ($(PROD),1)
 	$(PROD_COMPOSE) run --rm $(APP)-api python -m $(APP)_api.cli ingest $(STEP)
 	$(PROD_COMPOSE) restart $(APP)-api
@@ -67,7 +65,7 @@ deploy: ## Update the server: ssh, git pull, compose pull/up   make deploy DEPLO
 	@test -n "$(DEPLOY_HOST)" || (echo "ERROR: set DEPLOY_HOST=user@server" && exit 1)
 	ssh $(DEPLOY_HOST) 'cd $(DEPLOY_DIR) && git pull --ff-only && $(PROD_COMPOSE) pull --ignore-buildable && GIT_SHA=$$(git rev-parse --short HEAD) $(PROD_COMPOSE) up -d --build --remove-orphans'
 
-backup-db: ## Dump the three databases to backups/<timestamp>/*.dump (pg_dump custom format)
+backup-db: ## Dump the database to backups/<timestamp>/*.dump (pg_dump custom format)
 	@mkdir -p backups/$$(date -u +%Y%m%dT%H%M%SZ)
 	@dir=backups/$$(ls -1 backups | tail -1); \
 	for d in $(APPS); do \

@@ -1,23 +1,21 @@
 [project]
-name = "datathon-2026"
+name = "cistko"
 version = "0.1.0"
-description = "Monorepo for blizu, otporno and nabavaradar (Datathon Portala otvorenih podataka 2026)"
+description = "Čistko (Datathon Portala otvorenih podataka 2026)"
 requires-python = ">=3.12,<3.13"
 readme = "README.md"
 license = { text = "EUPL-1.2" }
-dependencies = ["opendata-core", "blizu-api", "nabavaradar-api", "otporno-api"]
+dependencies = ["opendata-core", "cistko-api"]
 
 [tool.uv]
 package = false
 
 [tool.uv.workspace]
-members = ["packages/core", "apps/blizu/api", "apps/nabavaradar/api", "apps/otporno/api"]
+members = ["packages/core", "apps/cistko/api"]
 
 [tool.uv.sources]
 opendata-core = { workspace = true }
-blizu-api = { workspace = true }
-nabavaradar-api = { workspace = true }
-otporno-api = { workspace = true }
+cistko-api = { workspace = true }
 
 [dependency-groups]
 dev = [
@@ -44,7 +42,7 @@ ignore = ["S101", "E501"]
 extend-immutable-calls = ["fastapi.Depends", "fastapi.Query", "typer.Option"]
 
 [tool.ruff.lint.isort]
-known-first-party = ["opendata_core", "blizu_api", "nabavaradar_api", "otporno_api"]
+known-first-party = ["opendata_core", "cistko_api"]
 
 [tool.mypy]
 python_version = "3.12"

@@ -1,6 +1,4 @@
 # Development stack. `make dev` starts db + mailpit.
-# App services are added by the app tasks. Reserved service names (port 8000 inside the network):
-#   blizu-api, otporno-api, nabavaradar-api
 name: datathon-2026
 
 services:
@@ -10,7 +8,7 @@ services:
     environment:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
     ports:
-      - '127.0.0.1:5432:5432' # local access only
+      - '127.0.0.1:${DB_PORT:-5432}:5432' # local access only; set DB_PORT if 5432 is taken
     volumes:
       - pgdata:/var/lib/postgresql/data
     healthcheck:

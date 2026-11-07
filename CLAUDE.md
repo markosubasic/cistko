@@ -1,7 +1,8 @@
-# CLAUDE.md — datathon-2026
+# CLAUDE.md — cistko
 
-Monorepo for three open-data apps (blizu, otporno, nabavaradar) for the Croatian
-"Datathon Portala otvorenih podataka 2026". Submission deadline: 9 Nov 2026.
+Čistko (`apps/cistko`), an open-data app for the Croatian
+"Datathon Portala otvorenih podataka 2026". Submission deadline: 9 Nov 2026. It was split out of the
+shared datathon-2026 monorepo (history preserved); packages/core and packages/ui are shared code.
 
 ## WORKING RULES (apply to every task)
 

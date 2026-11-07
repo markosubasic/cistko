@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-# Build context: repository root.   docker build -f infra/python-api.Dockerfile --build-arg APP=blizu .
+# Build context: repository root.   docker build -f infra/python-api.Dockerfile --build-arg APP=cistko .
 #
 # Convention for an app API (added by the app tasks): uv workspace member apps/<APP>/api with the
 # distribution name "<APP>-api", importable package "<APP>_api" and ASGI app "<APP>_api.main:app".

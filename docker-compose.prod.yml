@@ -1,7 +1,7 @@
-# Production stack: db, three APIs, one-shot SPA publishers and Caddy.
+# Production stack: db, the API, a one-shot SPA publisher and Caddy.
 #   docker compose -f docker-compose.prod.yml --env-file .env up -d --build
 # Requires the app tasks to have added apps/<app>/api and apps/<app>/web (see infra/*.Dockerfile).
-name: datathon-2026-prod
+name: cistko-prod
 
 x-api: &api-defaults
   restart: unless-stopped
@@ -35,79 +35,28 @@ services:
       start_period: 10s
     restart: unless-stopped
 
-  blizu-api:
+  cistko-api:
     <<: *api-defaults
     build:
       context: .
       dockerfile: infra/python-api.Dockerfile
-      args: { APP: blizu }
-    image: datathon-2026-blizu-api:prod
+      args: { APP: cistko }
+    image: datathon-2026-cistko-api:prod
     environment:
       <<: *api-env
-      APP_NAME: blizu
-      DATABASE_URL: postgresql+psycopg://postgres:${POSTGRES_PASSWORD}@db:5432/blizu
-      PUBLIC_BASE_URL: https://${BLIZU_HOST:?set BLIZU_HOST in .env}
-      CORS_ORIGINS: https://${BLIZU_HOST}
-      RATE_LIMIT: ${BLIZU_RATE_LIMIT:-300/minute}
-      SEMANTIC_SEARCH: ${BLIZU_SEMANTIC_SEARCH:-false}
-      OSM_FEATURE_SOURCE: ${OSM_FEATURE_SOURCE:-auto}
+      APP_NAME: cistko
+      DATABASE_URL: postgresql+psycopg://postgres:${POSTGRES_PASSWORD}@db:5432/cistko
+      PUBLIC_BASE_URL: https://${CISTKO_HOST:?set CISTKO_HOST in .env}
+      CORS_ORIGINS: https://${CISTKO_HOST}
+      RATE_LIMIT: ${CISTKO_RATE_LIMIT:-300/minute}
     volumes:
-      - blizu-data:/data
+      - cistko-data:/data
 
-  otporno-api:
-    <<: *api-defaults
-    build:
-      context: .
-      dockerfile: infra/python-api.Dockerfile
-      args: { APP: otporno }
-    image: datathon-2026-otporno-api:prod
-    environment:
-      <<: *api-env
-      APP_NAME: otporno
-      DATABASE_URL: postgresql+psycopg://postgres:${POSTGRES_PASSWORD}@db:5432/otporno
-      PUBLIC_BASE_URL: https://${OTPORNO_HOST:?set OTPORNO_HOST in .env}
-      CORS_ORIGINS: https://${OTPORNO_HOST}
-      RATE_LIMIT: ${OTPORNO_RATE_LIMIT:-300/minute}
-    volumes:
-      - otporno-data:/data
-
-  nabavaradar-api:
-    <<: *api-defaults
-    build:
-      context: .
-      dockerfile: infra/python-api.Dockerfile
-      args: { APP: nabavaradar }
-    image: datathon-2026-nabavaradar-api:prod
-    environment:
-      <<: *api-env
-      APP_NAME: nabavaradar
-      DATABASE_URL: postgresql+psycopg://postgres:${POSTGRES_PASSWORD}@db:5432/nabavaradar
-      PUBLIC_BASE_URL: https://${NABAVA_HOST:?set NABAVA_HOST in .env}
-      SUDREG_CLIENT_ID: ${SUDREG_CLIENT_ID:-}
-      SUDREG_CLIENT_SECRET: ${SUDREG_CLIENT_SECRET:-}
-      SUDREG_BASE_URL: ${SUDREG_BASE_URL:-https://sudreg-data.gov.hr/api/javni}
-      SUDREG_TOKEN_URL: ${SUDREG_TOKEN_URL:-https://sudreg-data.gov.hr/api/oauth/token}
-      SUBSCRIPTION_SECRET: ${SUBSCRIPTION_SECRET:?set SUBSCRIPTION_SECRET in .env}
-    volumes:
-      - nabavaradar-data:/data
-
-  # One-shot publishers: copy the built SPA into the shared "srv" volume, then exit.
-  blizu-web:
-    build: { context: ., dockerfile: infra/web.Dockerfile, args: { APP: blizu } }
-    image: datathon-2026-blizu-web:prod
+  cistko-web:
+    build: { context: ., dockerfile: infra/web.Dockerfile, args: { APP: cistko } }
+    image: datathon-2026-cistko-web:prod
     volumes: ['srv:/srv']
     restart: 'no'
-  otporno-web:
-    build: { context: ., dockerfile: infra/web.Dockerfile, args: { APP: otporno } }
-    image: datathon-2026-otporno-web:prod
-    volumes: ['srv:/srv']
-    restart: 'no'
-  nabavaradar-web:
-    build: { context: ., dockerfile: infra/web.Dockerfile, args: { APP: nabavaradar } }
-    image: datathon-2026-nabavaradar-web:prod
-    volumes: ['srv:/srv']
-    restart: 'no'
-
   caddy:
     image: caddy:2
     ports:
@@ -115,28 +64,20 @@ services:
       - '443:443'
       - '443:443/udp'
     environment:
-      BLIZU_HOST: ${BLIZU_HOST:?set BLIZU_HOST in .env}
-      OTPORNO_HOST: ${OTPORNO_HOST:?set OTPORNO_HOST in .env}
-      NABAVA_HOST: ${NABAVA_HOST:?set NABAVA_HOST in .env}
+      CISTKO_HOST: ${CISTKO_HOST:?set CISTKO_HOST in .env}
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
       - srv:/srv:ro
       - caddy_data:/data
       - caddy_config:/config
     depends_on:
-      blizu-web: { condition: service_completed_successfully }
-      otporno-web: { condition: service_completed_successfully }
-      nabavaradar-web: { condition: service_completed_successfully }
-      blizu-api: { condition: service_started }
-      otporno-api: { condition: service_started }
-      nabavaradar-api: { condition: service_started }
+      cistko-web: { condition: service_completed_successfully }
+      cistko-api: { condition: service_started }
     restart: unless-stopped
 
 volumes:
   pgdata:
-  blizu-data:
-  otporno-data:
-  nabavaradar-data:
+  cistko-data:
   srv:
   caddy_data:
   caddy_config:

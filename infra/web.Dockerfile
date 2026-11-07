@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-# Build context: repository root.   docker build -f infra/web.Dockerfile --build-arg APP=blizu .
+# Build context: repository root.   docker build -f infra/web.Dockerfile --build-arg APP=cistko .
 #
 # Convention: apps/<APP>/web is a pnpm workspace package named "<APP>-web" with a `build` script
 # producing apps/<APP>/web/dist. The final image only holds the static files; docker-compose.prod.yml

@@ -1,8 +1,8 @@
 {
-  "name": "datathon-2026",
+  "name": "cistko",
   "private": true,
   "version": "0.1.0",
-  "description": "Monorepo for blizu, otporno and nabavaradar (Datathon Portala otvorenih podataka 2026)",
+  "description": "Čistko (Datathon Portala otvorenih podataka 2026)",
   "license": "EUPL-1.2",
   "packageManager": "pnpm@9.15.9",
   "engines": {
