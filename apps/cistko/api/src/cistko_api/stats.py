@@ -331,6 +331,14 @@ def _facility_row(r: Any) -> dict[str, Any]:
     }
 
 
+def _photos_first(sites: list[dict[str, Any]], photos: int, total: int) -> list[dict[str, Any]]:
+    """Up to ``photos`` sites with a photo (nearest first), then the nearest remaining ones."""
+    with_photo = [s for s in sites if s["photos"]][:photos]
+    chosen = {s["id"] for s in with_photo}
+    rest = [s for s in sites if s["id"] not in chosen][: max(0, total - len(with_photo))]
+    return with_photo + rest
+
+
 def nearby(session: Session, lat: float, lon: float, radius_m: int) -> dict[str, Any]:
     """Dump sites within ``radius_m`` of the point, nearest facilities and the municipality."""
     point = "ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)"
@@ -362,7 +370,9 @@ def nearby(session: Session, lat: float, lon: float, radius_m: int) -> dict[str,
             "sep_2022": _r(mun["sep_2022"]),
         },
         "counts": counts,
-        "sites": sites[:60],
+        # the 30 nearest sites that have a photo, then the nearest others (60 sites at most)
+        "sites": _photos_first(sites, 30, 60),
+        "with_photo": sum(1 for s in sites if s["photos"]),
         "points": {
             "type": "FeatureCollection",
             "features": [

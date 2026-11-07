@@ -108,6 +108,8 @@ export interface Nearby {
   municipality: MunicipalityHit | null;
   counts: StatusCounts;
   sites: Dump[];
+  /** How many sites within the radius have at least one photo. */
+  with_photo: number;
   /** Every site within the radius (compact), for the map. */
   points: DumpCollection;
   recycling_yards: Facility[];

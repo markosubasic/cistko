@@ -26,6 +26,7 @@ export function NearbyPage() {
   const title = params.get('q');
   const [radius, setRadius] = useState(1500);
   const [show, setShow] = useState(12);
+  const [onlyPhotos, setOnlyPhotos] = useState(false);
 
   const query = useQuery({
     queryKey: ['nearby', lat, lon, radius],
@@ -73,6 +74,7 @@ export function NearbyPage() {
   const d = query.data;
   const m = d.municipality;
   const order: DumpStatus[] = ['on_site', 'reported', 'removed'];
+  const listed = onlyPhotos ? d.sites.filter((s) => s.photos.length > 0) : d.sites;
 
   return (
     <div className="ck-wrap mt-8 grid gap-8">
@@ -203,17 +205,34 @@ export function NearbyPage() {
 
       {d.sites.length > 0 ? (
         <section aria-labelledby="list-h">
-          <h2 id="list-h" className="ck-h2">
-            Prijavljene lokacije, od najbliže
-          </h2>
+          <div className="flex flex-wrap items-end justify-between gap-3">
+            <div>
+              <h2 id="list-h" className="ck-h2">
+                Prijavljene lokacije
+              </h2>
+              <p className="ck-muted mt-1 text-sm">
+                Prvo najbliže s fotografijom ({int(d.with_photo)} od {int(d.counts.total)} u krugu
+                ima fotografiju), zatim ostale po udaljenosti.
+              </p>
+            </div>
+            <label className="flex min-h-[44px] cursor-pointer items-center gap-2 text-sm font-semibold">
+              <input
+                type="checkbox"
+                checked={onlyPhotos}
+                onChange={(e) => setOnlyPhotos(e.target.checked)}
+                className="h-4 w-4 accent-[#0F2E2A]"
+              />
+              Samo s fotografijom
+            </label>
+          </div>
           <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {d.sites.slice(0, show).map((s) => (
+            {listed.slice(0, show).map((s) => (
               <div key={s.id} id={`dump-${s.id}`} className="ck-rise">
                 <DumpCard d={s} compact />
               </div>
             ))}
           </div>
-          {d.sites.length > show ? (
+          {listed.length > show ? (
             <button
               type="button"
               className="ck-btn ck-btn--ghost mx-auto mt-6 flex"
@@ -224,7 +243,7 @@ export function NearbyPage() {
           ) : null}
           {d.counts.total > d.sites.length ? (
             <p className="ck-muted mt-3 text-center text-sm">
-              Prikazano je {d.sites.length} najbližih od {int(d.counts.total)} lokacija.
+              Popis prikazuje {d.sites.length} od {int(d.counts.total)} lokacija; sve su na karti.
             </p>
           ) : null}
         </section>

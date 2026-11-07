@@ -236,7 +236,7 @@ export function HomePage() {
                   </span>
                 </Link>
                 <Link
-                  to="/adresa?lat=45.80610&lon=15.97870&q=Trg%20kralja%20Tomislava%2C%20Zagreb"
+                  to="/adresa?lat=44.86431&lon=13.84397&q=Pula"
                   className="ck-card ck-card-pad group grid gap-2 no-underline"
                 >
                   <PinIcon className="text-[#047857]" />
@@ -245,7 +245,7 @@ export function HomePage() {
                     Prijave u krugu adrese, najbliže reciklažno dvorište i kako stoji tvoja općina.
                   </span>
                   <span className="mt-1 inline-flex items-center gap-1 font-semibold text-[#047857]">
-                    Primjer: Zagreb <ArrowIcon className="transition group-hover:translate-x-1" />
+                    Primjer: Pula <ArrowIcon className="transition group-hover:translate-x-1" />
                   </span>
                 </Link>
               </div>
