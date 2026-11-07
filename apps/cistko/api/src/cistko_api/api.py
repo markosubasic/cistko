@@ -132,15 +132,21 @@ def make_router(get_session: Callable[..., Any], settings: CistkoSettings) -> AP
     @router.get("/dumps")
     def dumps(
         status: Status | None = None,
+        mb: Annotated[str | None, Query(pattern=r"^\d{3,8}$")] = None,
         session: Session = Depends(get_session),  # noqa: B008
     ) -> dict[str, Any]:
-        """All dump sites as compact GeoJSON points (id, status, photo flag) for a clustered map."""
+        """Dump sites as compact GeoJSON points (id, status, photo flag, mb) for the maps."""
         data = cache.get("dumps", lambda: stats.dumps_geojson(session))
-        if status is None:
+        if status is None and mb is None:
             return data
         return {
             "type": "FeatureCollection",
-            "features": [f for f in data["features"] if f["properties"]["status"] == status],
+            "features": [
+                f
+                for f in data["features"]
+                if (status is None or f["properties"]["status"] == status)
+                and (mb is None or f["properties"]["mb"] == mb)
+            ],
         }
 
     @router.get("/dumps/{site_id}")

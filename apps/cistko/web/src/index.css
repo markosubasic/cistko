@@ -1,0 +1,453 @@
+@import '@dt/ui/styles.css';
+@tailwind base;
+@tailwind components;
+
+/*
+ * Čistko look: deep forest ink (#0F2E2A) for the header and hero, fresh mint accent, warm off-white page,
+ * white cards with soft shadows, IBM Plex (shared). Status colours: red = waste on site, amber = reported by
+ * citizens, green = removed. Separation rate: red (little) -> green (a lot), see lib/format.ts.
+ * White text on --brand-600/700 is >= 7:1.
+ */
+:root {
+  --brand-600: 15 46 42; /* #0F2E2A */
+  --brand-700: 10 33 30;
+  --accent-600: 4 120 87; /* #047857 */
+
+  --ink: #0f2e2a;
+  --ink-2: #16413b;
+  --mint: #34d399;
+  --mint-soft: #d1fae5;
+  --page: #f6f5f1;
+  --card: #ffffff;
+  --line: #e4e2da;
+  --muted: #5b6662;
+  --text: #13201d;
+  --on: #e5484d;
+  --rep: #f5a524;
+  --rem: #2bb673;
+  --radius: 16px;
+  --shadow: 0 1px 2px rgb(15 46 42 / 0.06), 0 8px 24px -12px rgb(15 46 42 / 0.18);
+}
+
+html,
+body {
+  background: var(--page);
+  color: var(--text);
+}
+
+body {
+  font-feature-settings: 'tnum' 1;
+}
+
+.ck-num {
+  font-family: var(--font-sans);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+/* ---------- header ---------- */
+.ck-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: rgb(15 46 42 / 0.96);
+  backdrop-filter: saturate(140%) blur(8px);
+  color: #fff;
+  border-bottom: 1px solid rgb(255 255 255 / 0.08);
+}
+.ck-header a {
+  color: #fff;
+}
+.ck-nav {
+  scrollbar-width: none;
+}
+.ck-nav::-webkit-scrollbar {
+  display: none;
+}
+.ck-nav a {
+  white-space: nowrap;
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  font-weight: 500;
+  color: rgb(255 255 255 / 0.82);
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.ck-nav a:hover {
+  background: rgb(255 255 255 / 0.08);
+  color: #fff;
+}
+.ck-nav a[aria-current='page'] {
+  background: var(--mint);
+  color: var(--ink);
+}
+@media (max-width: 640px) {
+  .ck-nav a {
+    padding: 0.35rem 0.65rem;
+    font-size: 0.875rem;
+  }
+}
+.ck-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+
+/* ---------- layout ---------- */
+.ck-wrap {
+  max-width: 76rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 640px) {
+  .ck-wrap {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+.ck-glass {
+  background: rgb(255 255 255 / 0.05);
+  border: 1px solid rgb(255 255 255 / 0.12);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+/* ---------- hero ---------- */
+.ck-hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(1200px 400px at 85% -10%, rgb(52 211 153 / 0.28), transparent 60%),
+    radial-gradient(800px 300px at 0% 110%, rgb(245 165 36 / 0.16), transparent 60%),
+    linear-gradient(180deg, #0f2e2a, #12352f);
+  color: #fff;
+}
+.ck-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgb(255 255 255 / 0.07) 1px, transparent 1px);
+  background-size: 22px 22px;
+  mask-image: linear-gradient(180deg, transparent, #000 30%, #000 70%, transparent);
+  pointer-events: none;
+}
+.ck-hero h1 {
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.04;
+}
+.ck-hero .ck-lead {
+  color: rgb(255 255 255 / 0.78);
+}
+.ck-mint {
+  color: var(--mint);
+}
+
+/* ---------- surfaces ---------- */
+.ck-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.ck-card-pad {
+  padding: 1.25rem;
+}
+@media (min-width: 640px) {
+  .ck-card-pad {
+    padding: 1.5rem;
+  }
+}
+.ck-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #047857;
+}
+.ck-h2 {
+  font-size: 1.375rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.ck-muted {
+  color: var(--muted);
+}
+
+/* ---------- stat tiles ---------- */
+.ck-stat {
+  display: grid;
+  gap: 0.25rem;
+}
+.ck-stat .ck-stat-value {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+.ck-stat .ck-stat-label {
+  font-size: 0.875rem;
+  color: rgb(255 255 255 / 0.72);
+}
+.ck-card .ck-stat .ck-stat-label {
+  color: var(--muted);
+}
+
+/* ---------- buttons, chips ---------- */
+.ck-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  background: var(--ink);
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition:
+    transform 0.12s,
+    background 0.15s;
+}
+.ck-btn:hover {
+  background: var(--ink-2);
+}
+.ck-btn:active {
+  transform: translateY(1px);
+}
+.ck-btn--mint {
+  background: var(--mint);
+  color: var(--ink);
+}
+.ck-btn--mint:hover {
+  background: #6ee7b7;
+}
+.ck-btn--ghost {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--line);
+}
+.ck-btn--ghost:hover {
+  background: #fff;
+}
+.ck-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.ck-dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 999px;
+  display: inline-block;
+  flex: none;
+}
+.ck-seg {
+  display: inline-flex;
+  padding: 0.25rem;
+  border-radius: 999px;
+  background: #ece9e1;
+  gap: 0.25rem;
+}
+.ck-seg button {
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+.ck-seg button[aria-pressed='true'] {
+  background: #fff;
+  color: var(--ink);
+  box-shadow: var(--shadow);
+}
+
+/* ---------- inputs ---------- */
+.ck-input {
+  width: 100%;
+  min-height: 52px;
+  padding: 0.75rem 1rem 0.75rem 2.75rem;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--text);
+  font-size: 1rem;
+  box-shadow: var(--shadow);
+}
+.ck-input:focus {
+  outline: 3px solid rgb(52 211 153 / 0.55);
+  outline-offset: 1px;
+}
+.ck-hero .ck-input {
+  border-color: transparent;
+}
+.ck-suggest {
+  position: absolute;
+  z-index: 30;
+  left: 0;
+  right: 0;
+  margin-top: 0.4rem;
+  background: #fff;
+  color: var(--text);
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  box-shadow: 0 16px 40px -12px rgb(15 46 42 / 0.35);
+  overflow: hidden;
+}
+.ck-suggest li[aria-selected='true'],
+.ck-suggest li:hover {
+  background: var(--mint-soft);
+}
+
+/* ---------- map ---------- */
+.ck-map {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #e8efe9;
+}
+.ck-map .maplibregl-map {
+  height: 100%;
+}
+.ck-legend {
+  position: absolute;
+  left: 0.75rem;
+  bottom: 0.75rem;
+  z-index: 2;
+  background: rgb(255 255 255 / 0.94);
+  border-radius: 12px;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.75rem;
+  box-shadow: var(--shadow);
+  max-width: calc(100% - 1.5rem);
+}
+.maplibregl-popup-content {
+  border-radius: 12px !important;
+  padding: 0.75rem 0.9rem !important;
+  box-shadow: 0 12px 32px -12px rgb(15 46 42 / 0.4) !important;
+  font-family: var(--font-sans);
+}
+
+/* ---------- bars ---------- */
+.ck-bar {
+  height: 0.75rem;
+  border-radius: 999px;
+  background: #ece9e1;
+  position: relative;
+  overflow: visible;
+}
+.ck-bar > span {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+}
+.ck-tick {
+  position: absolute;
+  top: -0.35rem;
+  bottom: -0.35rem;
+  width: 2px;
+  background: var(--ink);
+  border-radius: 2px;
+}
+
+/* ---------- photos ---------- */
+.ck-photo {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #e2e0d8;
+  aspect-ratio: 4 / 3;
+}
+.ck-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+.ck-photo:hover img {
+  transform: scale(1.04);
+}
+
+/* ---------- table ---------- */
+.ck-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.9375rem;
+}
+.ck-table th {
+  position: sticky;
+  top: 0;
+  background: #faf9f6;
+  text-align: left;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid var(--line);
+}
+.ck-table td {
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid #efede6;
+}
+.ck-table tbody tr:hover {
+  background: #fbfaf7;
+}
+
+/* ---------- motion ---------- */
+@keyframes ck-rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.ck-rise {
+  animation: ck-rise 0.5s ease-out both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ck-rise,
+  .ck-photo img {
+    animation: none;
+    transition: none;
+  }
+}
+
+/* ---------- focus ---------- */
+:focus-visible {
+  outline: 3px solid #10b981;
+  outline-offset: 2px;
+}
+
+@media print {
+  .ck-header,
+  .ck-noprint {
+    display: none !important;
+  }
+}
+
+/* Utilities last, so Tailwind classes in markup override the component classes above. */
+@tailwind utilities;

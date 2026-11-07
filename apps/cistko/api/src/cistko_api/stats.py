@@ -245,7 +245,8 @@ def dumps_geojson(session: Session) -> dict[str, Any]:
     """Every dump site as a compact point (id, status, photo flag)."""
     rows = session.execute(
         text(
-            "select id, status, jsonb_array_length(photos) > 0 p, ST_X(geom) x, ST_Y(geom) y from dump_site"
+            "select id, status, jsonb_array_length(photos) > 0 p, ST_X(geom) x, ST_Y(geom) y, mb "
+            "from dump_site"
         )
     ).all()
     return {
@@ -255,7 +256,7 @@ def dumps_geojson(session: Session) -> dict[str, Any]:
                 "type": "Feature",
                 "id": r[0],
                 "geometry": {"type": "Point", "coordinates": [round(r[3], 5), round(r[4], 5)]},
-                "properties": {"id": r[0], "status": r[1], "photo": bool(r[2])},
+                "properties": {"id": r[0], "status": r[1], "photo": bool(r[2]), "mb": r[5]},
             }
             for r in rows
         ],
@@ -362,6 +363,22 @@ def nearby(session: Session, lat: float, lon: float, radius_m: int) -> dict[str,
         },
         "counts": counts,
         "sites": sites[:60],
+        "points": {
+            "type": "FeatureCollection",
+            "features": [
+                {
+                    "type": "Feature",
+                    "geometry": {"type": "Point", "coordinates": [s["lon"], s["lat"]]},
+                    "properties": {
+                        "id": s["id"],
+                        "status": s["status"],
+                        "photo": bool(s["photos"]),
+                        "mb": s["mb"],
+                    },
+                }
+                for s in sites
+            ],
+        },
         "recycling_yards": _facilities_near(session, lat, lon, "recycling_yard", 3),
         "nearest": {
             kind: (_facilities_near(session, lat, lon, kind, 1) or [None])[0]

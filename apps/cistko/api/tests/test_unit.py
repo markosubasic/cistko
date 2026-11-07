@@ -62,11 +62,12 @@ def test_parse_dump_on_a_recorded_record(dumps: list[dict[str, Any]]) -> None:
     row = parse_dump(record)
     assert row is not None
     assert row["status"] == "on_site"
-    assert row["qty_kg"] == 2000.0 and row["volume_m3"] == 20.0 and row["area_m2"] == 80.0
+    assert row["qty_kg"] == 2000.0
+    assert row["volume_m3"] == 20.0
+    assert row["area_m2"] == 80.0
     assert row["category"] in WASTE_CATEGORIES
-    assert len(row["photos"]) == 2 and all(
-        p.startswith("https://eloo.haop.hr/") for p in row["photos"]
-    )
+    assert len(row["photos"]) == 2
+    assert all(p.startswith("https://eloo.haop.hr/") for p in row["photos"])
 
 
 def test_categories_of_recorded_waste_types(dumps: list[dict[str, Any]]) -> None:
