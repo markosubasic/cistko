@@ -10,7 +10,7 @@
 
 (spa_security) {
 	header {
-		Content-Security-Policy "default-src 'self'; img-src 'self' data: https://*.openfreemap.org https://tile.openstreetmap.org; connect-src 'self' https://tiles.openfreemap.org https://tile.openstreetmap.org; style-src 'self' 'unsafe-inline'; worker-src 'self'; frame-ancestors 'none'"
+		Content-Security-Policy "default-src 'self'; img-src 'self' data: https://*.openfreemap.org https://tile.openstreetmap.org https://eloo.haop.hr; connect-src 'self' https://tiles.openfreemap.org https://tile.openstreetmap.org; style-src 'self' 'unsafe-inline'; worker-src 'self'; frame-ancestors 'none'"
 		X-Content-Type-Options "nosniff"
 		Referrer-Policy "strict-origin-when-cross-origin"
 		Permissions-Policy "geolocation=(self)"
