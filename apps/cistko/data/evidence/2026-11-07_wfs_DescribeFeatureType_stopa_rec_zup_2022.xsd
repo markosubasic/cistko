@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml" xmlns:otpad="http://otpad" elementFormDefault="qualified" targetNamespace="http://otpad">
+  <xsd:import namespace="http://www.opengis.net/gml" schemaLocation="https://servisi.azo.hr/schemas/gml/2.1.2/feature.xsd"/>
+  <xsd:complexType name="stopa_rec_zup_2022Type">
+    <xsd:complexContent>
+      <xsd:extension base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="ogr_fid" nillable="false" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="the_geom" nillable="true" type="gml:MultiPolygonPropertyType"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="zu_rb" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="zu_ime" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="zu_sj" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="shape_leng" nillable="true" type="xsd:double"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="shape_area" nillable="true" type="xsd:double"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="stopa1" nillable="true" type="xsd:double"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="stopa2" nillable="true" type="xsd:double"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="labela" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="stopa_rec_zup_2022" substitutionGroup="gml:_Feature" type="otpad:stopa_rec_zup_2022Type"/>
+</xsd:schema>
