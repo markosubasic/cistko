@@ -6,7 +6,8 @@
 # Until the app exists the image still builds with opendata_core only (and fails clearly at start).
 
 FROM python:3.12-slim AS builder
-COPY --from=ghcr.io/astral-sh/uv:0.13.5 /uv /usr/local/bin/uv
+# uv from PyPI (no dependency on the ghcr.io registry, which some Docker setups cannot pull from)
+RUN pip install --no-cache-dir uv==0.13.5
 ENV UV_LINK_MODE=copy UV_COMPILE_BYTECODE=1 UV_PYTHON_DOWNLOADS=never
 WORKDIR /app
 
