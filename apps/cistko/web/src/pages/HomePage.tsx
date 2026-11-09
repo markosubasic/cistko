@@ -80,7 +80,7 @@ export function HomePage() {
                 <strong>
                   <CountUp value={o.dumps.total} format={(n) => int(Math.round(n))} />
                 </strong>{' '}
-                lokacija. Uklonjeno je{' '}
+                lokacija. Kao uklonjeno označeno je{' '}
                 <strong>
                   <CountUp value={o.dumps.removed} format={(n) => int(Math.round(n))} />
                 </strong>
@@ -108,7 +108,7 @@ export function HomePage() {
             </div>
             <div>
               <MunicipalitySearch />
-              <p className="ck-muted mt-1.5 text-sm">Odvajanje, poredak i očišćeno.</p>
+              <p className="ck-muted mt-1.5 text-sm">Odvajanje, poredak i stanje prijava.</p>
             </div>
           </div>
         </div>

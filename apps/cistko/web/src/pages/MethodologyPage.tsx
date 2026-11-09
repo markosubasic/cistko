@@ -84,8 +84,11 @@ export function MethodologyPage() {
           </li>
           <li>
             <strong>Status lokacije</strong> je onaj iz evidencije: „Otpad na lokaciji”, „Prijavljen
-            otpad na lokaciji od strane javnosti” ili „Uklonjen otpad”. Lokacija je pridružena
-            općini u čijim se granicama nalazi.
+            otpad na lokaciji od strane javnosti” ili „Uklonjen otpad”. Čistko ga ne provjerava na
+            terenu: „uklonjeno” znači da je lokacija tako označena u evidenciji. Evidencija nema
+            datum uklanjanja, a usporedba sa živom evidencijom (9. 11. 2026.) pokazuje da su se od
+            objave snimke statusi mijenjali, npr. oko 219 lokacija s otpadom u međuvremenu je
+            označeno kao uklonjeno. Lokacija je pridružena općini u čijim se granicama nalazi.
           </li>
           <li>
             <strong>Vrsta otpada</strong> je u evidenciji slobodan tekst; Čistko ga ključnim

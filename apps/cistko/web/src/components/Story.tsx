@@ -93,9 +93,10 @@ function steps(o: Overview): Step[] {
       big: pct(top.removed_share),
       body: (
         <>
-          zagrebačkih lokacija je uklonjeno ({int(top.removed)}). <Swatch s="removed" /> zeleno je
-          očišćeno, <Swatch s="on_site" /> crveno još stoji, <Swatch s="reported" /> žuto su
-          prijavili građani.
+          zagrebačkih lokacija evidencija vodi kao uklonjeno ({int(top.removed)}).{' '}
+          <Swatch s="removed" /> zeleno: označeno kao uklonjeno, <Swatch s="on_site" /> crveno:
+          otpad na lokaciji, <Swatch s="reported" /> žuto: prijavili građani. Status upisuje onaj
+          tko vodi evidenciju; na terenu ga ne provjeravamo.
         </>
       ),
       camera: 'top',
@@ -108,7 +109,7 @@ function steps(o: Overview): Step[] {
         <>
           od {int(rest.total)} lokacija izvan Zagreba prijavili su građani, čak{' '}
           {pct((100 * rest.reported) / rest.total)}. U Zagrebu taj je udio{' '}
-          {pct((100 * top.reported) / top.total)}. Izvan Zagreba uklonjeno je samo{' '}
+          {pct((100 * top.reported) / top.total)}. Izvan Zagreba kao uklonjeno označeno je samo{' '}
           {pct(rest.removed_share)} lokacija.
         </>
       ),
