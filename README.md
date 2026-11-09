@@ -10,7 +10,7 @@ Izvorni kôd je pod licencom [EUPL-1.2](LICENSE).
 
 |                                    |                                                                                  |
 | ---------------------------------- | -------------------------------------------------------------------------------- |
-| Video prezentacija                 | _poveznica se dodaje prije predaje_                                              |
+| Video prezentacija                 | https://youtu.be/kMUXjxcc7Rk                                                     |
 | Radni prototip                     | https://cistko.64-226-85-138.sslip.io                                            |
 | Tehnička i projektna dokumentacija | [apps/cistko/docs/README.md](apps/cistko/docs/README.md)                         |
 | Odluke o podacima                  | [docs/adr/0010-cistko-data-decisions.md](docs/adr/0010-cistko-data-decisions.md) |
