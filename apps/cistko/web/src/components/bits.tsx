@@ -28,6 +28,7 @@ export function CompareBars({
             <span
               style={{
                 width: `${Math.max(1, r.value ?? 0)}%`,
+                transitionDelay: `${i * 45}ms`,
                 background: r.strong ? rateColor(r.value) : '#b1b4b6',
               }}
             />

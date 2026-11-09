@@ -392,5 +392,98 @@ h1 {
   }
 }
 
+/* ---------- motion (all of it switched off for prefers-reduced-motion) ---------- */
+.ck-bar > span {
+  transition: width 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.ck-bar--thin {
+  height: 0.3rem;
+}
+.ck-reveal {
+  transition:
+    opacity 700ms ease,
+    transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.ck-reveal:not(.is-in) {
+  opacity: 0;
+  transform: translateY(18px);
+}
+.ck-reveal:not(.is-in) .ck-bar > span {
+  width: 0 !important;
+}
+.ck-fade {
+  opacity: 0;
+  transition: opacity 600ms ease;
+}
+.ck-fade.is-loaded {
+  opacity: 1;
+}
+.ck-zoom {
+  display: block;
+  overflow: hidden;
+}
+.ck-zoom img {
+  transition:
+    transform 500ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 600ms ease;
+}
+.ck-zoom:hover img,
+.ck-zoom:focus-visible img {
+  transform: scale(1.06);
+}
+.ck-scribble {
+  position: relative;
+  white-space: nowrap;
+}
+.ck-scribble svg {
+  position: absolute;
+  left: -2%;
+  bottom: -0.12em;
+  width: 104%;
+  height: 0.32em;
+  overflow: visible;
+}
+.ck-scribble path {
+  fill: none;
+  stroke: #d4351c;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-dasharray: 230;
+  stroke-dashoffset: 230;
+  animation: ck-draw 900ms 350ms cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+@keyframes ck-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.ck-nav a {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0 2px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 250ms ease;
+}
+.ck-nav a:hover {
+  text-decoration: none;
+  background-size: 100% 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .ck-scribble path {
+    stroke-dashoffset: 0;
+  }
+  .ck-reveal:not(.is-in),
+  .ck-fade {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 /* Utilities last, so Tailwind classes in markup override the component classes above. */
 @tailwind utilities;

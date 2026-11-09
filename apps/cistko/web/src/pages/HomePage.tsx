@@ -2,6 +2,7 @@ import { ErrorState, LoadingSkeleton } from '@dt/ui';
 import { useQuery } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
 import { CompareBars } from '../components/bits';
+import { CountUp, FadeImg, Reveal, Scribble } from '../components/motion';
 import { RateMap } from '../components/RateMap';
 import { AddressSearch, MunicipalitySearch } from '../components/Searches';
 import { api } from '../lib/api';
@@ -61,19 +62,27 @@ export function HomePage() {
   const items = photos.data?.items ?? [];
   const lead = items[0];
   const more = items.slice(1, 5);
+  const maxCat = Math.max(1, ...(o?.dumps.categories.map((c) => c.count) ?? [1]));
 
   return (
     <div className="ck-wrap grid gap-14 pt-8">
       <section className="grid gap-8 border-b border-[#111] pb-10 lg:grid-cols-[1fr_1.05fr]">
         <div className="grid content-start gap-6">
-          <h1 className="text-[2.4rem] sm:text-[3.5rem]">Gdje je smeće i tko ga čisti?</h1>
+          <h1 className="text-[2.4rem] sm:text-[3.5rem]">
+            Gdje je <Scribble>smeće</Scribble> i tko ga čisti?
+          </h1>
           {o ? (
             <div className="ck-story grid gap-4">
               <p className="ck-lead">
                 U službenoj evidenciji odbačenog otpada upisano je{' '}
-                <strong className="ck-num">{int(o.dumps.total)}</strong> lokacija. Uklonjeno je{' '}
-                <strong className="ck-num">{int(o.dumps.removed)}</strong>, odnosno{' '}
-                {pct(o.dumps.removed_share)}.
+                <strong>
+                  <CountUp value={o.dumps.total} format={(n) => int(Math.round(n))} />
+                </strong>{' '}
+                lokacija. Uklonjeno je{' '}
+                <strong>
+                  <CountUp value={o.dumps.removed} format={(n) => int(Math.round(n))} />
+                </strong>
+                , odnosno {pct(o.dumps.removed_share)}.
               </p>
               <p>
                 Tipična općina pritom odvaja tek {pct(o.separation.median_2022)} komunalnog otpada
@@ -103,7 +112,10 @@ export function HomePage() {
         </div>
         {lead ? (
           <figure className="ck-lead-photo">
-            <img src={photoUrl(lead.photos[0]!)} alt={lead.description ?? lead.category_label} />
+            <FadeImg
+              src={photoUrl(lead.photos[0]!)}
+              alt={lead.description ?? lead.category_label}
+            />
             <figcaption className="ck-caption">
               <Caption d={lead} /> Fotografija iz Evidencije lokacija odbačenog otpada.
             </figcaption>
@@ -123,11 +135,17 @@ export function HomePage() {
           <div className="ck-strip mt-4">
             {more.map((d) => (
               <figure key={d.id}>
-                <img
-                  src={photoUrl(d.photos[0]!)}
-                  alt={d.description ?? d.category_label}
-                  loading="lazy"
-                />
+                <Link
+                  to={d.mb ? `/opcina/${d.mb}` : '/karta'}
+                  className="ck-zoom"
+                  aria-label={`${d.municipality}: kartica općine`}
+                >
+                  <FadeImg
+                    src={photoUrl(d.photos[0]!)}
+                    alt={d.description ?? d.category_label}
+                    loading="lazy"
+                  />
+                </Link>
                 <figcaption className="ck-caption">
                   <Caption d={d} />
                 </figcaption>
@@ -169,7 +187,7 @@ export function HomePage() {
 
       {o ? (
         <section className="grid gap-12 lg:grid-cols-2">
-          <div>
+          <Reveal>
             <h2 className="ck-h2">Nijedna županija ne reciklira 55 %</h2>
             <p className="ck-muted mb-5 mt-1">
               Stopa recikliranja komunalnog otpada po županijama, 2022. Okomita crta je cilj EU za
@@ -183,15 +201,26 @@ export function HomePage() {
               }))}
               target={{ value: 55, label: 'Cilj EU za 2025.: 55 %' }}
             />
-          </div>
-          <div>
+          </Reveal>
+          <Reveal>
             <h2 className="ck-h2">Što se najčešće odbacuje</h2>
             <table className="ck-table mt-4">
               <tbody>
-                {o.dumps.categories.map((c) => (
+                {o.dumps.categories.map((c, i) => (
                   <tr key={c.category}>
-                    <td>{c.label}</td>
-                    <td className="ck-num text-right font-semibold">{int(c.count)}</td>
+                    <td>
+                      {c.label}
+                      <span className="ck-bar ck-bar--thin mt-1.5 block">
+                        <span
+                          style={{
+                            width: `${Math.max(0.5, (100 * c.count) / maxCat)}%`,
+                            background: '#111',
+                            transitionDelay: `${i * 60}ms`,
+                          }}
+                        />
+                      </span>
+                    </td>
+                    <td className="ck-num text-right align-top font-semibold">{int(c.count)}</td>
                   </tr>
                 ))}
               </tbody>
@@ -202,7 +231,7 @@ export function HomePage() {
               {o.dumps.top_municipality.name}. Neke jedinice sustavno upisuju lokacije, a većina ne,
               pa broj lokacija pokazuje koliko se prijavljuje, a ne koliko je stvarno smeća.
             </p>
-          </div>
+          </Reveal>
         </section>
       ) : null}
     </div>
