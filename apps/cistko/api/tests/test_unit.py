@@ -111,3 +111,25 @@ def test_display_name() -> None:
     assert display_name("GRAD ZAGREB") == "Grad Zagreb"
     assert display_name("SVETI IVAN ZELINA") == "Sveti Ivan Zelina"
     assert display_name("ANDRIJAŠEVCI") == "Andrijaševci"
+
+
+def test_photo_urls_map_to_uuids_and_back(dumps: list[dict[str, Any]]) -> None:
+    from cistko_api.photos import source_url, uuid_from_url
+
+    urls = [d[k] for d in dumps for k in ("slika_1", "slika_2") if d.get(k)]
+    assert urls
+    for url in urls:
+        uuid = uuid_from_url(url)
+        assert uuid is not None, url
+        assert source_url(uuid) == url
+    assert uuid_from_url("https://example.org/public/api/cms/image/x.jpg") is None
+    assert uuid_from_url("https://eloo.haop.hr/public/api/cms/image/../../etc/passwd.jpg") is None
+
+
+def test_source_url_rejects_non_uuid() -> None:
+    import pytest
+
+    from cistko_api.photos import source_url
+
+    with pytest.raises(ValueError, match="photo id"):
+        source_url("../secret")

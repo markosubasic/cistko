@@ -1,1 +1,298 @@
-{"mb":"00019","name":"Andrijaševci","kind":"Općina","county":"Vukovarsko-srijemska","area_km2":39.6,"center":[18.72474,45.22297],"bbox":[18.687,45.18295,18.77305,45.26306],"separation":{"rate_2022":14.1,"rate_2019":5.4,"change_pp":8.7,"rank_hr":320,"of_hr":556,"rank_county":15,"of_county":31,"national_median_2022":16.7,"county_median_2022":12.2,"waste_2019_t":615.0,"mixed_2019_t":581.7,"separated_2019_t":33.3},"county_recycling_2022":27.5,"eu_recycling_targets":{"2025":55,"2030":60,"2035":65},"dumps":{"on_site":11,"reported":0,"removed":1,"total":12,"removed_share":8.3,"qty_kg":3260480.0,"volume_m3":13826.0,"area_m2":9151.0,"categories":[{"category":"gradevni","label":"Građevni otpad","count":9},{"category":"ostalo","label":"Ostalo","count":1},{"category":"opasni","label":"Opasni otpad (azbest, kemikalije, ulja)","count":1},{"category":"mijesani","label":"Miješani komunalni otpad","count":1}],"with_photos":[{"id":12598,"name":"BLACE","description":"BIVŠE PROGNANIČKO NASELJE BLACE K.Č.BR. 843/156","settlement":"Rokovci","municipality":"Andrijaševci","mb":"00019","waste_type":"Građevni otpad – ne sadrži opasne tvari, npr. šuta","category":"gradevni","category_label":"Građevni otpad","qty_kg":1000.0,"volume_m3":885.86,"area_m2":442.93,"status":"on_site","status_label":"Otpad na lokaciji","photos":["https://eloo.haop.hr/public/api/cms/image/33627ed0-2052-4e59-992f-1bb397ce13d4.jpg"],"lon":18.751556,"lat":45.233106},{"id":12597,"name":"BLACE","description":"BIVŠE PROGNANIČKO NASELJE BLACE K.Č.BR. 843/153","settlement":"Rokovci","municipality":"Andrijaševci","mb":"00019","waste_type":"Građevni otpad – ne sadrži opasne tvari, npr. šuta","category":"gradevni","category_label":"Građevni otpad","qty_kg":1000.0,"volume_m3":885.86,"area_m2":442.93,"status":"on_site","status_label":"Otpad na lokaciji","photos":["https://eloo.haop.hr/public/api/cms/image/fac92723-e4d6-4015-ace1-b5b07132a30b.jpg"],"lon":18.751859,"lat":45.233251},{"id":12596,"name":"BLACE","description":"BIVŠE PROGNANIČKO NASELJE BLACE K.Č.BR. 843/154","settlement":"Rokovci","municipality":"Andrijaševci","mb":"00019","waste_type":"Građevni otpad – ne sadrži opasne tvari, npr. šuta","category":"gradevni","category_label":"Građevni otpad","qty_kg":1000.0,"volume_m3":885.86,"area_m2":442.93,"status":"on_site","status_label":"Otpad na lokaciji","photos":["https://eloo.haop.hr/public/api/cms/image/e7472a50-d244-46b7-a143-7a9453dcef64.jpg"],"lon":18.75198,"lat":45.233259},{"id":12595,"name":"BLACE","description":"BIVŠE PROGNANIČKO NASELJE BLACE \r\nK.Č.BR. 843/142","settlement":"Rokovci","municipality":"Andrijaševci","mb":"00019","waste_type":"Građevni otpad – ne sadrži opasne tvari, npr. šuta","category":"gradevni","category_label":"Građevni otpad","qty_kg":1000.0,"volume_m3":885.86,"area_m2":442.93,"status":"on_site","status_label":"Otpad na lokaciji","photos":["https://eloo.haop.hr/public/api/cms/image/7497bfc0-a9d2-480d-b692-3cce9e93200b.jpg"],"lon":18.751581,"lat":45.23345},{"id":12594,"name":"BALCE","description":"BIVŠE PROGNANIČKO NASELJE BLACE \r\nK.Č.BR. 843/133","settlement":"Rokovci","municipality":"Andrijaševci","mb":"00019","waste_type":"Građevni otpad – ne sadrži opasne tvari, npr. šuta","category":"gradevni","category_label":"Građevni otpad","qty_kg":1000.0,"volume_m3":885.86,"area_m2":442.93,"status":"on_site","status_label":"Otpad na lokaciji","photos":["https://eloo.haop.hr/public/api/cms/image/664d4a15-f0c1-42ba-84af-cfb48eb7dc85.jpg"],"lon":18.75078,"lat":45.234668},{"id":12593,"name":"BLACE","description":"BIVŠE PROGNANIČKO NASELJE BLACE \r\nK.Č.BR. 843/132","settlement":"Rokovci","municipality":"Andrijaševci","mb":"00019","waste_type":"Građevni otpad – ne sadrži opasne tvari, npr. šuta","category":"gradevni","category_label":"Građevni otpad","qty_kg":1000.0,"volume_m3":885.86,"area_m2":442.93,"status":"on_site","status_label":"Otpad na lokaciji","photos":["https://eloo.haop.hr/public/api/cms/image/c99ecf36-b55c-4678-964f-672a9beb6abc.jpg"],"lon":18.751165,"lat":45.234758},{"id":12592,"name":"BLACE","description":"BIVŠE PROGNANIČKO NASELJE BLACE \r\nK.Č.BR. 843/131","settlement":"Rokovci","municipality":"Andrijaševci","mb":"00019","waste_type":"Građevni otpad – ne sadrži opasne tvari, npr. šuta","category":"gradevni","category_label":"Građevni otpad","qty_kg":1000.0,"volume_m3":885.86,"area_m2":442.93,"status":"on_site","status_label":"Otpad na lokaciji","photos":["https://eloo.haop.hr/public/api/cms/image/d0eb5d41-540d-4faf-8565-e18ad3518eda.jpg"],"lon":18.751298,"lat":45.234786},{"id":12591,"name":"BLACE","description":"BIVŠE PROGNANIČKO NASELJE BLACE\r\nK.Č. BR. 843/130","settlement":"Rokovci","municipality":"Andrijaševci","mb":"00019","waste_type":"Građevni otpad – ne sadrži opasne tvari, npr. šuta","category":"gradevni","category_label":"Građevni otpad","qty_kg":1000.0,"volume_m3":885.86,"area_m2":442.93,"status":"on_site","status_label":"Otpad na lokaciji","photos":["https://eloo.haop.hr/public/api/cms/image/3ed96fad-2b4c-4511-893c-d4e1511f093e.jpg"],"lon":18.75145,"lat":45.234838},{"id":12342,"name":"ROKOVCI","description":"BIVŠE PROGNANIČKO NASELJE BLACE","settlement":"Rokovci","municipality":"Andrijaševci","mb":"00019","waste_type":"Građevni otpad – onečišćen opasnim tvarima (npr. koji sadrži azbest ili ostatke boja i sl.)","category":"opasni","category_label":"Opasni otpad (azbest, kemikalije, ulja)","qty_kg":850425.0,"volume_m3":1086.0,"area_m2":3543.0,"status":"on_site","status_label":"Otpad na lokaciji","photos":["https://eloo.haop.hr/public/api/cms/image/70362421-387f-4ffb-948a-a360178c2b81.jpg"],"lon":18.753269,"lat":45.235397}]},"facilities":[],"recycling_yards_nearest":[{"id":94,"kind":"recycling_yard","kind_label":"Reciklažno dvorište","year":2018,"name":"Reciklažno dvorište Vinkovci","operator":"Nevkoš d.o.o.","address":"Kumanova bb, VINKOVCI","status":null,"url":null,"info":{"oznaka":"REC-1-G-1","zupanija":"Vukovarsko-srijemska","obuhvacena":"Cerna, Šiškovci, Jarmina, Tordinci, Antin, Antinska, Mlaka, Korođ, Novi Mikanovci, Stari Mikanovci, Vođinci"},"lon":18.819412,"lat":45.274208,"distance_m":9363},{"id":70,"kind":"recycling_yard","kind_label":"Reciklažno dvorište","year":2018,"name":"Reciklažno dvorište Privlaka","operator":"Strunje-Trade d.o.o.","address":"Bana Josipa Šokčevića 153, Privlaka, PRIVLAKA","status":null,"url":null,"info":{"oznaka":"REC-82-G-1","zupanija":"Vukovarsko-srijemska","obuhvacena":"Privlaka"},"lon":18.850676,"lat":45.186301,"distance_m":10701},{"id":102,"kind":"recycling_yard","kind_label":"Reciklažno dvorište","year":2018,"name":"Reciklažno dvorište Županja","operator":"ČISTOĆA ŽUPANJA","address":"M. Pozajića 120a, Županja, ŽUPANJA","status":null,"url":null,"info":{"oznaka":"REC-103-G-1","zupanija":"Vukovarsko-srijemska","obuhvacena":"područje grada Županje"},"lon":18.683804,"lat":45.063281,"distance_m":18036}],"neighbours":[{"mb":"01597","name":"Ivankovo","sep_2022":21.9},{"mb":"04871","name":"Vinkovci","sep_2022":14.7},{"mb":"00442","name":"Cerna","sep_2022":7.1},{"mb":"05835","name":"Privlaka","sep_2022":6.3}]}
+{
+  "mb": "00019",
+  "name": "Andrijaševci",
+  "kind": "Općina",
+  "county": "Vukovarsko-srijemska",
+  "area_km2": 39.6,
+  "center": [18.72474, 45.22297],
+  "bbox": [18.687, 45.18295, 18.77305, 45.26306],
+  "separation": {
+    "rate_2022": 14.1,
+    "rate_2019": 5.4,
+    "change_pp": 8.7,
+    "rank_hr": 320,
+    "of_hr": 556,
+    "rank_county": 15,
+    "of_county": 31,
+    "national_median_2022": 16.7,
+    "county_median_2022": 12.2,
+    "waste_2019_t": 615.0,
+    "mixed_2019_t": 581.7,
+    "separated_2019_t": 33.3
+  },
+  "county_recycling_2022": 27.5,
+  "eu_recycling_targets": { "2025": 55, "2030": 60, "2035": 65 },
+  "dumps": {
+    "on_site": 11,
+    "reported": 0,
+    "removed": 1,
+    "total": 12,
+    "removed_share": 8.3,
+    "qty_kg": 3260480.0,
+    "volume_m3": 13826.0,
+    "area_m2": 9151.0,
+    "categories": [
+      { "category": "gradevni", "label": "Građevni otpad", "count": 9 },
+      { "category": "ostalo", "label": "Ostalo", "count": 1 },
+      { "category": "opasni", "label": "Opasni otpad (azbest, kemikalije, ulja)", "count": 1 },
+      { "category": "mijesani", "label": "Miješani komunalni otpad", "count": 1 }
+    ],
+    "with_photos": [
+      {
+        "id": 12598,
+        "name": "BLACE",
+        "description": "BIVŠE PROGNANIČKO NASELJE BLACE K.Č.BR. 843/156",
+        "settlement": "Rokovci",
+        "municipality": "Andrijaševci",
+        "mb": "00019",
+        "waste_type": "Građevni otpad – ne sadrži opasne tvari, npr. šuta",
+        "category": "gradevni",
+        "category_label": "Građevni otpad",
+        "qty_kg": 1000.0,
+        "volume_m3": 885.86,
+        "area_m2": 442.93,
+        "status": "on_site",
+        "status_label": "Otpad na lokaciji",
+        "photos": [
+          "https://eloo.haop.hr/public/api/cms/image/33627ed0-2052-4e59-992f-1bb397ce13d4.jpg"
+        ],
+        "lon": 18.751556,
+        "lat": 45.233106
+      },
+      {
+        "id": 12597,
+        "name": "BLACE",
+        "description": "BIVŠE PROGNANIČKO NASELJE BLACE K.Č.BR. 843/153",
+        "settlement": "Rokovci",
+        "municipality": "Andrijaševci",
+        "mb": "00019",
+        "waste_type": "Građevni otpad – ne sadrži opasne tvari, npr. šuta",
+        "category": "gradevni",
+        "category_label": "Građevni otpad",
+        "qty_kg": 1000.0,
+        "volume_m3": 885.86,
+        "area_m2": 442.93,
+        "status": "on_site",
+        "status_label": "Otpad na lokaciji",
+        "photos": [
+          "https://eloo.haop.hr/public/api/cms/image/fac92723-e4d6-4015-ace1-b5b07132a30b.jpg"
+        ],
+        "lon": 18.751859,
+        "lat": 45.233251
+      },
+      {
+        "id": 12596,
+        "name": "BLACE",
+        "description": "BIVŠE PROGNANIČKO NASELJE BLACE K.Č.BR. 843/154",
+        "settlement": "Rokovci",
+        "municipality": "Andrijaševci",
+        "mb": "00019",
+        "waste_type": "Građevni otpad – ne sadrži opasne tvari, npr. šuta",
+        "category": "gradevni",
+        "category_label": "Građevni otpad",
+        "qty_kg": 1000.0,
+        "volume_m3": 885.86,
+        "area_m2": 442.93,
+        "status": "on_site",
+        "status_label": "Otpad na lokaciji",
+        "photos": [
+          "https://eloo.haop.hr/public/api/cms/image/e7472a50-d244-46b7-a143-7a9453dcef64.jpg"
+        ],
+        "lon": 18.75198,
+        "lat": 45.233259
+      },
+      {
+        "id": 12595,
+        "name": "BLACE",
+        "description": "BIVŠE PROGNANIČKO NASELJE BLACE \r\nK.Č.BR. 843/142",
+        "settlement": "Rokovci",
+        "municipality": "Andrijaševci",
+        "mb": "00019",
+        "waste_type": "Građevni otpad – ne sadrži opasne tvari, npr. šuta",
+        "category": "gradevni",
+        "category_label": "Građevni otpad",
+        "qty_kg": 1000.0,
+        "volume_m3": 885.86,
+        "area_m2": 442.93,
+        "status": "on_site",
+        "status_label": "Otpad na lokaciji",
+        "photos": [
+          "https://eloo.haop.hr/public/api/cms/image/7497bfc0-a9d2-480d-b692-3cce9e93200b.jpg"
+        ],
+        "lon": 18.751581,
+        "lat": 45.23345
+      },
+      {
+        "id": 12594,
+        "name": "BALCE",
+        "description": "BIVŠE PROGNANIČKO NASELJE BLACE \r\nK.Č.BR. 843/133",
+        "settlement": "Rokovci",
+        "municipality": "Andrijaševci",
+        "mb": "00019",
+        "waste_type": "Građevni otpad – ne sadrži opasne tvari, npr. šuta",
+        "category": "gradevni",
+        "category_label": "Građevni otpad",
+        "qty_kg": 1000.0,
+        "volume_m3": 885.86,
+        "area_m2": 442.93,
+        "status": "on_site",
+        "status_label": "Otpad na lokaciji",
+        "photos": [
+          "https://eloo.haop.hr/public/api/cms/image/664d4a15-f0c1-42ba-84af-cfb48eb7dc85.jpg"
+        ],
+        "lon": 18.75078,
+        "lat": 45.234668
+      },
+      {
+        "id": 12593,
+        "name": "BLACE",
+        "description": "BIVŠE PROGNANIČKO NASELJE BLACE \r\nK.Č.BR. 843/132",
+        "settlement": "Rokovci",
+        "municipality": "Andrijaševci",
+        "mb": "00019",
+        "waste_type": "Građevni otpad – ne sadrži opasne tvari, npr. šuta",
+        "category": "gradevni",
+        "category_label": "Građevni otpad",
+        "qty_kg": 1000.0,
+        "volume_m3": 885.86,
+        "area_m2": 442.93,
+        "status": "on_site",
+        "status_label": "Otpad na lokaciji",
+        "photos": [
+          "https://eloo.haop.hr/public/api/cms/image/c99ecf36-b55c-4678-964f-672a9beb6abc.jpg"
+        ],
+        "lon": 18.751165,
+        "lat": 45.234758
+      },
+      {
+        "id": 12592,
+        "name": "BLACE",
+        "description": "BIVŠE PROGNANIČKO NASELJE BLACE \r\nK.Č.BR. 843/131",
+        "settlement": "Rokovci",
+        "municipality": "Andrijaševci",
+        "mb": "00019",
+        "waste_type": "Građevni otpad – ne sadrži opasne tvari, npr. šuta",
+        "category": "gradevni",
+        "category_label": "Građevni otpad",
+        "qty_kg": 1000.0,
+        "volume_m3": 885.86,
+        "area_m2": 442.93,
+        "status": "on_site",
+        "status_label": "Otpad na lokaciji",
+        "photos": [
+          "https://eloo.haop.hr/public/api/cms/image/d0eb5d41-540d-4faf-8565-e18ad3518eda.jpg"
+        ],
+        "lon": 18.751298,
+        "lat": 45.234786
+      },
+      {
+        "id": 12591,
+        "name": "BLACE",
+        "description": "BIVŠE PROGNANIČKO NASELJE BLACE\r\nK.Č. BR. 843/130",
+        "settlement": "Rokovci",
+        "municipality": "Andrijaševci",
+        "mb": "00019",
+        "waste_type": "Građevni otpad – ne sadrži opasne tvari, npr. šuta",
+        "category": "gradevni",
+        "category_label": "Građevni otpad",
+        "qty_kg": 1000.0,
+        "volume_m3": 885.86,
+        "area_m2": 442.93,
+        "status": "on_site",
+        "status_label": "Otpad na lokaciji",
+        "photos": [
+          "https://eloo.haop.hr/public/api/cms/image/3ed96fad-2b4c-4511-893c-d4e1511f093e.jpg"
+        ],
+        "lon": 18.75145,
+        "lat": 45.234838
+      },
+      {
+        "id": 12342,
+        "name": "ROKOVCI",
+        "description": "BIVŠE PROGNANIČKO NASELJE BLACE",
+        "settlement": "Rokovci",
+        "municipality": "Andrijaševci",
+        "mb": "00019",
+        "waste_type": "Građevni otpad – onečišćen opasnim tvarima (npr. koji sadrži azbest ili ostatke boja i sl.)",
+        "category": "opasni",
+        "category_label": "Opasni otpad (azbest, kemikalije, ulja)",
+        "qty_kg": 850425.0,
+        "volume_m3": 1086.0,
+        "area_m2": 3543.0,
+        "status": "on_site",
+        "status_label": "Otpad na lokaciji",
+        "photos": [
+          "https://eloo.haop.hr/public/api/cms/image/70362421-387f-4ffb-948a-a360178c2b81.jpg"
+        ],
+        "lon": 18.753269,
+        "lat": 45.235397
+      }
+    ]
+  },
+  "facilities": [],
+  "recycling_yards_nearest": [
+    {
+      "id": 94,
+      "kind": "recycling_yard",
+      "kind_label": "Reciklažno dvorište",
+      "year": 2018,
+      "name": "Reciklažno dvorište Vinkovci",
+      "operator": "Nevkoš d.o.o.",
+      "address": "Kumanova bb, VINKOVCI",
+      "status": null,
+      "url": null,
+      "info": {
+        "oznaka": "REC-1-G-1",
+        "zupanija": "Vukovarsko-srijemska",
+        "obuhvacena": "Cerna, Šiškovci, Jarmina, Tordinci, Antin, Antinska, Mlaka, Korođ, Novi Mikanovci, Stari Mikanovci, Vođinci"
+      },
+      "lon": 18.819412,
+      "lat": 45.274208,
+      "distance_m": 9363
+    },
+    {
+      "id": 70,
+      "kind": "recycling_yard",
+      "kind_label": "Reciklažno dvorište",
+      "year": 2018,
+      "name": "Reciklažno dvorište Privlaka",
+      "operator": "Strunje-Trade d.o.o.",
+      "address": "Bana Josipa Šokčevića 153, Privlaka, PRIVLAKA",
+      "status": null,
+      "url": null,
+      "info": {
+        "oznaka": "REC-82-G-1",
+        "zupanija": "Vukovarsko-srijemska",
+        "obuhvacena": "Privlaka"
+      },
+      "lon": 18.850676,
+      "lat": 45.186301,
+      "distance_m": 10701
+    },
+    {
+      "id": 102,
+      "kind": "recycling_yard",
+      "kind_label": "Reciklažno dvorište",
+      "year": 2018,
+      "name": "Reciklažno dvorište Županja",
+      "operator": "ČISTOĆA ŽUPANJA",
+      "address": "M. Pozajića 120a, Županja, ŽUPANJA",
+      "status": null,
+      "url": null,
+      "info": {
+        "oznaka": "REC-103-G-1",
+        "zupanija": "Vukovarsko-srijemska",
+        "obuhvacena": "područje grada Županje"
+      },
+      "lon": 18.683804,
+      "lat": 45.063281,
+      "distance_m": 18036
+    }
+  ],
+  "neighbours": [
+    { "mb": "01597", "name": "Ivankovo", "sep_2022": 21.9 },
+    { "mb": "04871", "name": "Vinkovci", "sep_2022": 14.7 },
+    { "mb": "00442", "name": "Cerna", "sep_2022": 7.1 },
+    { "mb": "05835", "name": "Privlaka", "sep_2022": 6.3 }
+  ]
+}

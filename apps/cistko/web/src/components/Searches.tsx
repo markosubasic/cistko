@@ -25,7 +25,7 @@ export function AddressSearch({
       renderItem={(item) => (
         <>
           <span className="block font-medium">{item.title}</span>
-          <span className="block truncate text-sm text-[#5b6662]">{item.label}</span>
+          <span className="block truncate text-sm text-[#5f5f5f]">{item.label}</span>
         </>
       )}
       onSelect={(item) =>
@@ -35,7 +35,7 @@ export function AddressSearch({
       }
       emptyText="Nismo našli tu adresu. Pokušaj s ulicom, kućnim brojem i mjestom."
       footer={() => (
-        <p className="border-t border-[#efede6] px-4 py-2 text-xs text-[#5b6662]">
+        <p className="border-t border-[#d6d6d6] px-4 py-2 text-xs text-[#5f5f5f]">
           Pretraga adresa: © OpenStreetMap (Nominatim)
         </p>
       )}
@@ -59,7 +59,7 @@ export function MunicipalitySearch({ hideLabel }: { hideLabel?: boolean }) {
         <span className="flex items-center justify-between gap-3">
           <span>
             <span className="block font-medium">{fullName(item.kind, item.name)}</span>
-            <span className="block text-sm text-[#5b6662]">{countyLabel(item.county)}</span>
+            <span className="block text-sm text-[#5f5f5f]">{countyLabel(item.county)}</span>
           </span>
           <span className="ck-num text-sm font-semibold">{pct(item.sep_2022)}</span>
         </span>

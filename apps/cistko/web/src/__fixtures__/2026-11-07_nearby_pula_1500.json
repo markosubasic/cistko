@@ -1,1 +1,1821 @@
-{"location": {"lat": 44.86431, "lon": 13.84397}, "radius_m": 1500, "municipality": {"mb": "03590", "name": "Pula", "kind": "Grad", "county": "Istarska", "sep_2022": 28.8}, "counts": {"on_site": 4, "reported": 2, "removed": 55, "total": 61}, "sites": [{"id": 717, "name": "Rovinjska 1", "description": "Namještaj blizu kontejnera", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Drvenarija", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 200.0, "volume_m3": 1.0, "area_m2": 3.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/98840905-cf0d-4a60-a44a-f6aaab228a7f.jpg"], "lon": 13.843969, "lat": 44.864309, "distance_m": 0}, {"id": 607, "name": "Rizzijeva 14, Pula", "description": "Kauč i karton na nogostupu", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Papir i drvenarija", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 50.0, "volume_m3": 1.0, "area_m2": 2.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/a9ac939a-7c47-4b87-8f69-e8015b988677.jpg"], "lon": 13.844364, "lat": 44.86496, "distance_m": 79}, {"id": 606, "name": "Gajeva 8, Pula", "description": "Uz kontenjere razni otpad", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Mjesani", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 20.0, "volume_m3": 1.0, "area_m2": 2.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/053cb398-d175-4593-8164-cb235a6f0514.jpg"], "lon": 13.844903, "lat": 44.864661, "distance_m": 83}, {"id": 619, "name": "Cara Emina 2", "description": "Cara Emina 2", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Komunalni otpad", "category": "mijesani", "category_label": "Miješani komunalni otpad", "qty_kg": 100.0, "volume_m3": 1.0, "area_m2": 1.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/b5598e21-a4f8-4e10-bf06-96542f85fbdc.jpg", "https://eloo.haop.hr/public/api/cms/image/5466e624-7f33-429b-9ad3-351b1371781a.jpg", "https://eloo.haop.hr/public/api/cms/image/161b738a-489e-4677-8f98-a32449cd71fc.jpg"], "lon": 13.845153, "lat": 44.864729, "distance_m": 104}, {"id": 589, "name": "Gajeva bb Rojc", "description": "Ulaz u Rojc", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Komunalni otpad", "category": "mijesani", "category_label": "Miješani komunalni otpad", "qty_kg": 50.0, "volume_m3": 1.0, "area_m2": 1.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/e44b1187-8381-4a08-a976-ea5f01118d09.jpg"], "lon": 13.843639, "lat": 44.863114, "distance_m": 135}, {"id": 692, "name": "Mornarički trg 4", "description": "Krupni otpad blizu kontejnera", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Drvenarija i bjela tehnika", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 300.0, "volume_m3": 2.0, "area_m2": 2.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/e7b91a69-b3f0-4009-b5ad-20815e1e345c.jpg"], "lon": 13.841715, "lat": 44.864793, "distance_m": 186}, {"id": 618, "name": "Vergerijeva 5", "description": "Vergerijeva 5", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Krupni otpad", "category": "glomazni", "category_label": "Glomazni otpad", "qty_kg": 50.0, "volume_m3": 1.0, "area_m2": 1.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/4d9344b9-278d-4af3-ba01-b201cb4a1b6c.jpg", "https://eloo.haop.hr/public/api/cms/image/7b760f5d-288b-4424-86ff-686cf48156d3.jpg", "https://eloo.haop.hr/public/api/cms/image/974adc91-1882-4617-b23a-ceac10cceb83.jpg"], "lon": 13.846467, "lat": 44.865925, "distance_m": 267}, {"id": 685, "name": "Mate Balote 4", "description": "Uz raskršće", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Jogi madrac", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 20.0, "volume_m3": 1.0, "area_m2": 1.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/55218e24-98d7-407d-b3c5-944dbacaf42e.jpg"], "lon": 13.846368, "lat": 44.862551, "distance_m": 272}, {"id": 689, "name": "Keršovanijeva 7", "description": "Krupni otpad blizu kontejnera", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Drvenarija", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 100.0, "volume_m3": 1.0, "area_m2": 2.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/90e14e71-c392-41a7-b452-826384210eeb.jpg"], "lon": 13.842571, "lat": 44.861964, "distance_m": 283}, {"id": 600, "name": "Lj.Posavskog 9", "description": "Drvena građa blizu kanti za otpad", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Drvenarija", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 100.0, "volume_m3": 2.0, "area_m2": 2.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/a3f42056-1e61-4f22-a81d-4e6d831cfa55.jpg"], "lon": 13.841922, "lat": 44.861701, "distance_m": 332}, {"id": 599, "name": "Keršovanijeva 29, Pula", "description": "Drvenarija uz kontenjere", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Drveni", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 50.0, "volume_m3": 2.0, "area_m2": 2.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/72913115-e9a5-4ab5-bdab-f70d72697665.jpg"], "lon": 13.841467, "lat": 44.861562, "distance_m": 364}, {"id": 3984, "name": "Olge ban 11", "description": "Na javnoj zelenoj povrsini razni otpad", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Mješani", "category": "mijesani", "category_label": "Miješani komunalni otpad", "qty_kg": 200.0, "volume_m3": 2.0, "area_m2": 4.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/c1eef974-f79d-4868-8470-f482bb89fc99.jpg", "https://eloo.haop.hr/public/api/cms/image/cb05d59b-5a41-4182-bfd7-3115c58e75a5.jpg"], "lon": 13.842936, "lat": 44.860159, "distance_m": 468}, {"id": 10961, "name": "Kašićeva ulica", "description": "Odbačen glomazni otpad", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Drveni dijelovi od komode, daske, kovčeg, i drugo", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 90.0, "volume_m3": 3.0, "area_m2": 5.0, "status": "on_site", "status_label": "Otpad na lokaciji", "photos": ["https://eloo.haop.hr/public/api/cms/image/dd3e3a6f-0f91-4e0b-8a01-c98d6f1bde70.jpg", "https://eloo.haop.hr/public/api/cms/image/631af862-9686-4c7f-9f48-e456752a2a69.jpg"], "lon": 13.846065, "lat": 44.860237, "distance_m": 482}, {"id": 598, "name": "Koparska 46,48", "description": "Drvenarija i šuta uz kante za otpad", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Građevinski, drveni", "category": "gradevni", "category_label": "Građevni otpad", "qty_kg": 200.0, "volume_m3": 3.0, "area_m2": 3.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/c8d82731-bcc7-41a2-84ab-3eb2f672a614.jpg"], "lon": 13.849994, "lat": 44.863122, "distance_m": 494}, {"id": 657, "name": "D.Vitezića 22", "description": "Cigle i drvenarija blizu kante za otpad", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Građevinski i drvenarija", "category": "gradevni", "category_label": "Građevni otpad", "qty_kg": 100.0, "volume_m3": 1.0, "area_m2": 2.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/1b82f1b3-4694-4181-be60-d686944f41fc.jpg"], "lon": 13.850591, "lat": 44.866147, "distance_m": 562}, {"id": 625, "name": "Negrijeva 4", "description": "Madraci i drvenarija uz kontenjere", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Drveni", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 30.0, "volume_m3": 1.0, "area_m2": 2.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/1faea3d7-87b6-4bf6-afea-8af92c890445.jpg"], "lon": 13.838035, "lat": 44.86116, "distance_m": 585}, {"id": 626, "name": "Prekomorskih brigada", "description": "Uz kruzni tok za pjescanu uvalu ostavljene vrece pune smeca", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Razno", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 200.0, "volume_m3": 2.0, "area_m2": 6.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/b6d14fbf-9afe-44b1-83c1-dfef82b25dd5.jpg"], "lon": 13.838047, "lat": 44.861142, "distance_m": 586}, {"id": 597, "name": "Viteziceva 52, Pula", "description": "Šuta i dr. Uz kontenjere", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Građevinski", "category": "gradevni", "category_label": "Građevni otpad", "qty_kg": 50.0, "volume_m3": 2.0, "area_m2": 2.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/b0288085-f1eb-4825-af14-259209907efb.jpg"], "lon": 13.849949, "lat": 44.860909, "distance_m": 605}, {"id": 617, "name": "Krležina 25", "description": "Pored kontenjera televizor i namjestaj", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Drvenarija i plastika", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 50.0, "volume_m3": 1.0, "area_m2": 2.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/62a5d28b-2e5e-449d-aabc-76e202ead8d2.jpg"], "lon": 13.845359, "lat": 44.8587, "distance_m": 633}, {"id": 542, "name": "Kalpurnija Pizona 1 i 3", "description": "Dobar dan,\nU ulici Kalpurnija Pizona (br. 1 i br.3), pored kanti za smeće, nepoznate osobe su u noći 6.09.2020.g., iskrcale veliki madrac koji je tamo već desetak dana.\nMolimo za pomoć pri odvozu istog.\nHvala i srdačan pozdrav,\nStanari zgrade br. 1 i br. 3", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "lomazni otpad", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 15.0, "volume_m3": 1.0, "area_m2": 4.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/cc838b4a-b9d6-4eea-ac99-0ca73dbffe92.jpg", "https://eloo.haop.hr/public/api/cms/image/bec08919-0e2e-4264-b516-3a86282fa37e.jpg", "https://eloo.haop.hr/public/api/cms/image/63483adf-cc13-47e7-9d8d-61b3072826dc.jpg"], "lon": 13.841121, "lat": 44.858953, "distance_m": 636}, {"id": 616, "name": "Marijanijeva 1", "description": "Namjestaj pored kontenjera", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Drveni", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 100.0, "volume_m3": 1.0, "area_m2": 2.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/829e7b1f-c538-4e48-8aed-f62907410958.jpg"], "lon": 13.845387, "lat": 44.858654, "distance_m": 638}, {"id": 5972, "name": "Ostavljeno vozilo bez R.O.", "description": "Na Verudi, na adresi Kalpurnija Pizona 1, već mjesec dana na javnoj površini parkiran je neregistrirani kombi. Fotografija u prilogu.", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "neregistrirani kombi", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 1800.0, "volume_m3": 15.0, "area_m2": 9.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/81f942e7-d286-4d0c-a04b-9bba595afe69.jpg", "https://eloo.haop.hr/public/api/cms/image/5f758cdb-0955-44cf-b067-a60d5647a970.jpg"], "lon": 13.841149, "lat": 44.858862, "distance_m": 645}, {"id": 487, "name": "Ulica Kalpurnija Pizona u Puli (broj 1 i 3)", "description": "U ulici Kalpurnija Pizona u Puli (broj 1 i 3) na trotoaru je parkirano napušteno vozilo (kombi) bez registracijskih tablica. Također, na istoj lokaciji uz kontejnere, stoji odložen odbačeni namještaj te zeleni otpad. Vozilo i otpad su već duže vrijeme na toj lokaciji. Unaprijed  hvala i Lp.", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "otpadna vozila, komunalni otpad", "category": "vozila", "category_label": "Vozila, dijelovi i gume", "qty_kg": 1900.0, "volume_m3": 16.0, "area_m2": 9.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/933ceeb6-e450-4ea7-bd9d-7430a878283d.jpg", "https://eloo.haop.hr/public/api/cms/image/ebebbfee-554e-43fb-ac6a-5aab04ed40b9.jpg", "https://eloo.haop.hr/public/api/cms/image/972d63ae-5fd2-40af-8a3f-d97c1806fd8e.jpg", "https://eloo.haop.hr/public/api/cms/image/57a4896b-4e0b-449e-b45f-797565ed235c.jpg"], "lon": 13.841163, "lat": 44.858852, "distance_m": 646}, {"id": 6198, "name": "Odbačeni otpad", "description": "Adresa: Ulica Kalpurnija Pizona 1 i 3\n\nKombi bez tablica na javnoj površini, već prijavljen prije 20ak dana (ali i dalje stoji), \nte krupni otpad, mašina i dr., od jutros.\n\nHvala.", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Kombi bez tablica na javnoj površini, te krupni otpad, mašina i dr.", "category": "glomazni", "category_label": "Glomazni otpad", "qty_kg": 1800.0, "volume_m3": 15.0, "area_m2": 8.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/af6afb5a-9d8d-4d9e-99f7-2bb114438878.jpg", "https://eloo.haop.hr/public/api/cms/image/80d1f49f-ab54-45f7-91d7-8729393066a1.jpg"], "lon": 13.841157, "lat": 44.858852, "distance_m": 646}, {"id": 778, "name": "Kalpurnija Pizona 1 i 3", "description": "Pula, na adresi Kalpurnija Pizona 1 i 3\nveć više od mjesec dana stoji hrpa (cca 3-4 m3) odloženog, što zelenog otpada, što namještaja i dr.\nLjubazno molimo da se isti odveze sa javne površine. \nHvala i srdačan pozdrav", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "glomazni otpad", "category": "glomazni", "category_label": "Glomazni otpad", "qty_kg": 30.0, "volume_m3": 5.0, "area_m2": 5.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/fb9cf47c-3de9-482c-bd20-2594737f081c.jpg", "https://eloo.haop.hr/public/api/cms/image/908fff7e-ca67-4881-ac68-86a271a33da5.jpg"], "lon": 13.84116, "lat": 44.858849, "distance_m": 646}, {"id": 673, "name": "Centar", "description": "Građevinski materijal", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Šuta", "category": "gradevni", "category_label": "Građevni otpad", "qty_kg": 3.0, "volume_m3": 2.0, "area_m2": 2.0, "status": "on_site", "status_label": "Otpad na lokaciji", "photos": ["https://eloo.haop.hr/public/api/cms/image/544cbdbd-52a3-4b62-b4ab-d7584ac2fbfc.jpg"], "lon": 13.844092, "lat": 44.870244, "distance_m": 659}, {"id": 759, "name": "Šurida 73, Štinjan", "description": "Namještaj i madraci pored ceste", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Drvenarija", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 300.0, "volume_m3": 2.0, "area_m2": 4.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/79143ec7-2217-409a-8a1f-6a8482502da4.jpg"], "lon": 13.851044, "lat": 44.868536, "distance_m": 730}, {"id": 660, "name": "Oš Vidikovac", "description": "U blizini osnovne škole Vidikovac u šumici odbačen građevinski otpad.", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Građevinski otpad", "category": "gradevni", "category_label": "Građevni otpad", "qty_kg": 300.0, "volume_m3": 2.0, "area_m2": 5.0, "status": "on_site", "status_label": "Otpad na lokaciji", "photos": ["https://eloo.haop.hr/public/api/cms/image/e7ca8a89-587c-46b2-bb50-ea7dd3f1c68e.jpg", "https://eloo.haop.hr/public/api/cms/image/42981cca-ccef-42a6-a1f2-fd9f28e3fabf.jpg"], "lon": 13.850963, "lat": 44.85948, "distance_m": 770}, {"id": 591, "name": "Zadarska 18", "description": "Zadarska 18", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Namještaj - kauč", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 50.0, "volume_m3": 1.0, "area_m2": 1.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/4ce21578-cf24-4552-b9a7-72435e95904f.jpg", "https://eloo.haop.hr/public/api/cms/image/8e7a0514-9aab-414d-9564-0503b7f204f2.jpg"], "lon": 13.851394, "lat": 44.869517, "distance_m": 824}, {"id": 586, "name": "Zadarska 16 Pula", "description": "Stari namjestaj odlozen od strane nepoznatog vlasnika uz kontenjere", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Drveni", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 50.0, "volume_m3": 2.0, "area_m2": 2.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/2e2ccab2-b7a7-40e2-94fd-b3b621866381.jpg", "https://eloo.haop.hr/public/api/cms/image/3d8baa21-d58d-43e0-bf7d-0dd456548d50.jpg"], "lon": 13.851617, "lat": 44.869574, "distance_m": 841}, {"id": 667, "name": "Sv.Polikarpa 7", "description": "Drvenarija na javnoj površini", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Drvenarija", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 300.0, "volume_m3": 2.0, "area_m2": 2.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/de7ff8f6-90ee-47ad-8429-6d60483f5208.jpg"], "lon": 13.8332, "lat": 44.862317, "distance_m": 880}, {"id": 668, "name": "Jeretova 42", "description": "Krupni otpad u blizini kontejnera za otpad", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Drvenarija i bijela tehnika", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 400.0, "volume_m3": 2.0, "area_m2": 3.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/6ab35c35-a524-4c07-8069-de5e7192cacb.jpg"], "lon": 13.832861, "lat": 44.862269, "distance_m": 907}, {"id": 562, "name": "Banovčeva 2", "description": "Uz ogradni zid", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "plastika i drvenarija", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 3.0, "volume_m3": 1.0, "area_m2": 1.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/5d50273b-2833-4b45-a594-5b71bde7b604.jpg"], "lon": 13.839341, "lat": 44.856406, "distance_m": 952}, {"id": 605, "name": "Cara Emina 2", "description": "Namještaj blizu kante za otpad", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Drvenarija", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 100.0, "volume_m3": 1.0, "area_m2": 2.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/8f676637-f4c2-4886-83e9-e8f7363d1eda.jpg", "https://eloo.haop.hr/public/api/cms/image/5f91252e-362a-4a21-895d-e8ef7fa00733.jpg", "https://eloo.haop.hr/public/api/cms/image/bf235928-a26c-4fe8-8495-4a637d27dc01.jpg"], "lon": 13.834091, "lat": 44.859372, "distance_m": 954}, {"id": 628, "name": "Viška 2, Pula", "description": "Željezo i grane uz kontejner", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Metal i drvo", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 100.0, "volume_m3": 1.0, "area_m2": 2.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/064c66f7-ed00-45ba-967e-e5a3a9dc6e21.jpg"], "lon": 13.842245, "lat": 44.855804, "distance_m": 955}, {"id": 578, "name": "Viška 2", "description": "Uz posude za komunalni otpad odlozen madrac i dr.", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Mjesani", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 20.0, "volume_m3": 1.0, "area_m2": 2.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/1415e473-3ed3-43a3-841a-0f9d6806035a.jpg"], "lon": 13.842099, "lat": 44.855551, "distance_m": 985}, {"id": 686, "name": "Teslina 17", "description": "Na trotoaru", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Krupni otpad", "category": "glomazni", "category_label": "Glomazni otpad", "qty_kg": 30.0, "volume_m3": 1.0, "area_m2": 1.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/7eb539f0-5299-46fd-bb97-8d2baaeef21f.jpg", "https://eloo.haop.hr/public/api/cms/image/dae53124-a1b4-453d-b49b-20c5d0f3b4c6.jpg"], "lon": 13.851792, "lat": 44.871435, "distance_m": 1005}, {"id": 627, "name": "Varaždinska 15", "description": "Pored posude za komunalni otpad, ostavljeni drveni dijelovi kuhinjskog namještaja.", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Drveni namještaj", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 50.0, "volume_m3": 1.0, "area_m2": 2.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/e73c0faf-9847-47e7-b04e-9bfa5f490ef7.jpg", "https://eloo.haop.hr/public/api/cms/image/0ace02ff-f587-402d-83b0-a57e400327ea.jpg", "https://eloo.haop.hr/public/api/cms/image/5056c899-57fc-447d-806f-fa5a7ba6aea8.jpg"], "lon": 13.851522, "lat": 44.87199, "distance_m": 1041}, {"id": 659, "name": "Varaždinska 15", "description": "Pored posude za komunalni otpad, ostavljeni drveni dijelovi kuhinjskog namještaja.", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Drveni namještaj", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 50.0, "volume_m3": 1.0, "area_m2": 2.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/7407172f-e2a6-49a3-8203-ecf97c7caf82.jpg", "https://eloo.haop.hr/public/api/cms/image/2fc069f4-ce2b-4f07-a6a8-a9b1c02ea4e3.jpg", "https://eloo.haop.hr/public/api/cms/image/5c60f26d-f82d-42e7-9301-582ff2ed198e.jpg"], "lon": 13.851522, "lat": 44.87199, "distance_m": 1041}, {"id": 631, "name": "Banovčeva 31", "description": "Namjestaj uz posude za komunalni otpad", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Drveni", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 150.0, "volume_m3": 1.0, "area_m2": 3.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/0dd6cbc1-1ef3-404d-8cef-db749a7fbc11.jpg"], "lon": 13.838849, "lat": 44.855447, "distance_m": 1065}, {"id": 632, "name": "Zoranićeva 11", "description": "Madracu, školjka i dr. Na zelenoj površini", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Mjesani", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 100.0, "volume_m3": 1.0, "area_m2": 3.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/7fdeb2e0-5385-494b-8a47-1f824ebd9c7d.jpg"], "lon": 13.838849, "lat": 44.855447, "distance_m": 1065}, {"id": 633, "name": "Budičinova 4", "description": "uz ogradni zid na nogostupu namjestaj", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Drveni", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 100.0, "volume_m3": 1.0, "area_m2": 2.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/61d27b7a-d55f-42de-a572-1e37377dde73.jpg"], "lon": 13.838849, "lat": 44.855447, "distance_m": 1065}, {"id": 634, "name": "Besenghijeva 2 Pula", "description": "Drvenarija na javnoj povrsini", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Drveni", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 50.0, "volume_m3": 1.0, "area_m2": 2.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/d1e6b776-e31c-4812-8013-f2e444b0a9b0.jpg"], "lon": 13.838849, "lat": 44.855447, "distance_m": 1065}, {"id": 565, "name": "Viška 24", "description": "Drvena stolarija odbačena uz posude za komunalni otpad od nepoznatog vlasnika", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "20 03 07", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 100.0, "volume_m3": 2.0, "area_m2": 2.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/6c4255d3-d0dc-4435-8637-83a132aa002f.jpg"], "lon": 13.841175, "lat": 44.854821, "distance_m": 1077}, {"id": 587, "name": "Karlovačka 16", "description": "Krupni otpad", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Komunalni otpad", "category": "mijesani", "category_label": "Miješani komunalni otpad", "qty_kg": 50.0, "volume_m3": 1.0, "area_m2": 1.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/f16b12f1-54d8-4af0-9427-79f936b781b5.jpg", "https://eloo.haop.hr/public/api/cms/image/9f456419-d2bb-47ad-b463-61af84a36422.jpg"], "lon": 13.854759, "lat": 44.870271, "distance_m": 1080}, {"id": 604, "name": "Lj.Posavskog 17", "description": "Namjestaj blizu kante za otpad", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Drvenarija", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 200.0, "volume_m3": 2.0, "area_m2": 2.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/63dbf5f6-4679-481f-8706-ff3aed1dd537.jpg"], "lon": 13.832428, "lat": 44.858979, "distance_m": 1088}, {"id": 588, "name": "Rižanske skupstine 15", "description": "Krupni otpad", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Komunalni otpad", "category": "mijesani", "category_label": "Miješani komunalni otpad", "qty_kg": 100.0, "volume_m3": 1.0, "area_m2": 1.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/b4821148-e6e7-47eb-ba11-39061fff956e.jpg", "https://eloo.haop.hr/public/api/cms/image/8b2a9643-c583-482a-a64d-ad8ee8bf6eaf.jpg", "https://eloo.haop.hr/public/api/cms/image/d11b465a-e1c4-4742-bcc3-925758b360b8.jpg"], "lon": 13.856039, "lat": 44.869038, "distance_m": 1089}, {"id": 601, "name": "Palazzine 2", "description": "Bijela tehnika i šuta blizu kante za otpad", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Bijela tehnika i građevinski", "category": "gradevni", "category_label": "Građevni otpad", "qty_kg": 100.0, "volume_m3": 1.0, "area_m2": 2.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/b1aa2f18-0c24-424f-907b-dc6e9f2e2fbb.jpg"], "lon": 13.83246, "lat": 44.857986, "distance_m": 1150}, {"id": 12492, "name": "Park Pineta - Gregovica", "description": "Lokacija Bunkera s otpadom na rubu šumice Gregovica nalazi se na kraju ulice Prilaz Plovana Mikule i može se doći do iste lokacije sa samog kraja ulice Valvazorova.\r\nk.č.br. 660/21, MB 324256 k.o. PULA", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Glomazni otpad", "category": "glomazni", "category_label": "Glomazni otpad", "qty_kg": 2000.0, "volume_m3": 19.0, "area_m2": 100.0, "status": "reported", "status_label": "Prijavili građani", "photos": ["https://eloo.haop.hr/public/api/cms/image/78c23640-3dfa-41ba-9e61-05959eb24a7b.jpg", "https://eloo.haop.hr/public/api/cms/image/be7d4f6c-b0cc-4b6f-8fad-257482a7b4b8.jpg", "https://eloo.haop.hr/public/api/cms/image/570c619c-847c-4a1d-8fba-30b4d6bf99e3.jpg", "https://eloo.haop.hr/public/api/cms/image/1db407b2-23e7-4ef7-9ad9-901395b5e614.jpg"], "lon": 13.858776, "lat": 44.864333, "distance_m": 1170}, {"id": 8101, "name": "k.č. 5132/3, k.o. Pula", "description": "Na livadi azbeste ploče, podnica od kreveta, drvene palete i dr. otpad", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Građevni otpad – onečišćen opasnim tvarima (npr. koji sadrži azbest ili ostatke boja i sl.)", "category": "opasni", "category_label": "Opasni otpad (azbest, kemikalije, ulja)", "qty_kg": 100.0, "volume_m3": 5.0, "area_m2": 2.0, "status": "reported", "status_label": "Prijavili građani", "photos": ["https://eloo.haop.hr/public/api/cms/image/e2c641a7-04ae-41f4-aa62-edfb3acbf7dc.jpg"], "lon": 13.837114, "lat": 44.853931, "distance_m": 1274}, {"id": 564, "name": "Barbalićeva 3", "description": "Otpad uz prometnicu.", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Komunalni otpad", "category": "mijesani", "category_label": "Miješani komunalni otpad", "qty_kg": 50.0, "volume_m3": 1.0, "area_m2": 2.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/76d6900d-1ddd-45cc-acd2-6569f7af0325.jpg", "https://eloo.haop.hr/public/api/cms/image/e06b569d-8d65-4cf5-8972-1169bcbdb146.jpg"], "lon": 13.859301, "lat": 44.867863, "distance_m": 1274}, {"id": 592, "name": "Nobileova 60", "description": "Nobileova 60", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Komunalni otpad", "category": "mijesani", "category_label": "Miješani komunalni otpad", "qty_kg": 70.0, "volume_m3": 1.0, "area_m2": 1.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/31ed0ba4-1069-4fff-afa8-dbb10bba5837.jpg", "https://eloo.haop.hr/public/api/cms/image/7cd1fa22-f19a-4aee-aacb-4528ba49e3f5.jpg"], "lon": 13.856376, "lat": 44.872134, "distance_m": 1310}, {"id": 603, "name": "Krležina 35, Pula", "description": "Uz kontenjere ostavljena drvenarija", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Drveni", "category": "ostalo", "category_label": "Ostalo", "qty_kg": 50.0, "volume_m3": 1.0, "area_m2": 2.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/bc7e0a0c-9170-4542-a6e0-a982e4550921.jpg"], "lon": 13.841444, "lat": 44.852454, "distance_m": 1333}, {"id": 715, "name": "Bože Gumpca bb", "description": "Krupni otpad blizu kontejnera", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Građevinski - drvenarija -bjela tehnika", "category": "gradevni", "category_label": "Građevni otpad", "qty_kg": 300.0, "volume_m3": 2.0, "area_m2": 4.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/e8cf90d0-0f4a-4e5f-b091-496c4d389c99.jpg"], "lon": 13.857255, "lat": 44.871997, "distance_m": 1353}, {"id": 6626, "name": "Ulica Rimske centurijacije 57", "description": "Napušteno vozilo na javnoj površini već godinu dana.\nOsobno sam već javljala komunalcima koji su nakon više mjeseci postavili obavijest i ništa se nije dogodilo.\nSramotno je da nam gradske službe tako loše funkcioniraju.", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "16 01 06 Otpadna vozila ili dijelovi vozila (neopasni)", "category": "vozila", "category_label": "Vozila, dijelovi i gume", "qty_kg": 965.0, "volume_m3": 9.0, "area_m2": 8.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/986b73e9-4cae-4275-8ae6-8fc66d5af0b2.jpg", "https://eloo.haop.hr/public/api/cms/image/fdc0a874-31b4-4912-8e1a-387de49dd152.jpg"], "lon": 13.859513, "lat": 44.869988, "distance_m": 1381}, {"id": 719, "name": "Agnana 4/6", "description": "Krupni otpad blizu kontejnera", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Građevinski - drvenarija -bjela tehnika", "category": "gradevni", "category_label": "Građevni otpad", "qty_kg": 300.0, "volume_m3": 2.0, "area_m2": 3.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/e88ce997-147e-4445-bc36-980c9a852315.jpg", "https://eloo.haop.hr/public/api/cms/image/e2b5d71f-4feb-4aba-9e2b-60dd6f4c79c9.jpg"], "lon": 13.826662, "lat": 44.861986, "distance_m": 1392}, {"id": 4036, "name": null, "description": "Iza dječjeg parka Valsaline, na kraju ceste (kod kućnog broja 35) gdje se silazi u vrtove s lijeve i desne strane nalazi se nekoliko m3 raznog otpada.", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": null, "category": "nepoznato", "category_label": "Vrsta nije navedena", "qty_kg": null, "volume_m3": null, "area_m2": null, "status": "on_site", "status_label": "Otpad na lokaciji", "photos": ["https://eloo.haop.hr/public/api/cms/image/ebf8a4ba-c8a9-4e1e-badb-3af6b9f7f700.jpg", "https://eloo.haop.hr/public/api/cms/image/d754f6d7-2dc1-4fcc-99d8-811ced18a332.jpg", "https://eloo.haop.hr/public/api/cms/image/a9e7680a-24f2-4e81-9514-4087909474bb.jpg", "https://eloo.haop.hr/public/api/cms/image/68e8951b-d55a-499e-b22d-d57fca721ea6.jpg"], "lon": 13.836371, "lat": 44.85293, "distance_m": 1400}, {"id": 10798, "name": "Valkane šuma", "description": "K.č. br 5186/1 na cca 40 m2 je odbacen mjesani otpad ( satiri, madraci, plastične vrećice, staklene boce, tenisice, srednji kofer )", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Glomazni otpad", "category": "glomazni", "category_label": "Glomazni otpad", "qty_kg": 100.0, "volume_m3": 3.0, "area_m2": 40.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/9692759a-acbc-4c57-9c65-b57c04a3a359.jpg", "https://eloo.haop.hr/public/api/cms/image/80fc8e86-1387-4502-94f2-58d775ceff5d.jpg", "https://eloo.haop.hr/public/api/cms/image/81208db5-b4ee-4443-aef7-1a0369967080.jpg", "https://eloo.haop.hr/public/api/cms/image/62c5e9de-c297-4c5c-a888-3dc9e59f422c.jpg"], "lon": 13.830124, "lat": 44.856304, "distance_m": 1410}, {"id": 595, "name": "palisina", "description": "Ispod Industrijsko-obrtnicke skole na jednom puteljku- prečacu koji vodi na Palisinu ulicu odbaceni su neki tepih, suncobran, djecji vrtic i neke cigle.", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "glomazni", "category": "glomazni", "category_label": "Glomazni otpad", "qty_kg": 150.0, "volume_m3": 3.0, "area_m2": 3.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/d4e26594-e671-4d56-902f-1e98f6f7cf1a.jpg", "https://eloo.haop.hr/public/api/cms/image/f688059f-18b5-44c6-b81c-8052026c24e3.jpg", "https://eloo.haop.hr/public/api/cms/image/28c0ecd5-43c9-4442-aa1d-28d8fdf3df37.jpg"], "lon": 13.85226, "lat": 44.853019, "distance_m": 1416}, {"id": 615, "name": "Porečka , Pula", "description": "Građevinski materijal uz posude za otpad", "settlement": "Pula", "municipality": "Pula", "mb": "03590", "waste_type": "Građevinski", "category": "gradevni", "category_label": "Građevni otpad", "qty_kg": 50.0, "volume_m3": 1.0, "area_m2": 2.0, "status": "removed", "status_label": "Uklonjeno", "photos": ["https://eloo.haop.hr/public/api/cms/image/88ed03aa-7e09-4001-b51e-dde7902bd916.jpg"], "lon": 13.852904, "lat": 44.875442, "distance_m": 1424}], "with_photo": 61, "points": {"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.843969, 44.864309]}, "properties": {"id": 717, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.844364, 44.86496]}, "properties": {"id": 607, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.844903, 44.864661]}, "properties": {"id": 606, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.845153, 44.864729]}, "properties": {"id": 619, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.843639, 44.863114]}, "properties": {"id": 589, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.841715, 44.864793]}, "properties": {"id": 692, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.846467, 44.865925]}, "properties": {"id": 618, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.846368, 44.862551]}, "properties": {"id": 685, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.842571, 44.861964]}, "properties": {"id": 689, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.841922, 44.861701]}, "properties": {"id": 600, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.841467, 44.861562]}, "properties": {"id": 599, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.842936, 44.860159]}, "properties": {"id": 3984, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.846065, 44.860237]}, "properties": {"id": 10961, "status": "on_site", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.849994, 44.863122]}, "properties": {"id": 598, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.850591, 44.866147]}, "properties": {"id": 657, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.838035, 44.86116]}, "properties": {"id": 625, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.838047, 44.861142]}, "properties": {"id": 626, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.849949, 44.860909]}, "properties": {"id": 597, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.845359, 44.8587]}, "properties": {"id": 617, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.841121, 44.858953]}, "properties": {"id": 542, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.845387, 44.858654]}, "properties": {"id": 616, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.841149, 44.858862]}, "properties": {"id": 5972, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.841163, 44.858852]}, "properties": {"id": 487, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.841157, 44.858852]}, "properties": {"id": 6198, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.84116, 44.858849]}, "properties": {"id": 778, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.844092, 44.870244]}, "properties": {"id": 673, "status": "on_site", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.851044, 44.868536]}, "properties": {"id": 759, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.850963, 44.85948]}, "properties": {"id": 660, "status": "on_site", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.851394, 44.869517]}, "properties": {"id": 591, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.851617, 44.869574]}, "properties": {"id": 586, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.8332, 44.862317]}, "properties": {"id": 667, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.832861, 44.862269]}, "properties": {"id": 668, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.839341, 44.856406]}, "properties": {"id": 562, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.834091, 44.859372]}, "properties": {"id": 605, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.842245, 44.855804]}, "properties": {"id": 628, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.842099, 44.855551]}, "properties": {"id": 578, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.851792, 44.871435]}, "properties": {"id": 686, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.851522, 44.87199]}, "properties": {"id": 627, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.851522, 44.87199]}, "properties": {"id": 659, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.838849, 44.855447]}, "properties": {"id": 631, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.838849, 44.855447]}, "properties": {"id": 632, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.838849, 44.855447]}, "properties": {"id": 633, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.838849, 44.855447]}, "properties": {"id": 634, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.841175, 44.854821]}, "properties": {"id": 565, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.854759, 44.870271]}, "properties": {"id": 587, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.832428, 44.858979]}, "properties": {"id": 604, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.856039, 44.869038]}, "properties": {"id": 588, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.83246, 44.857986]}, "properties": {"id": 601, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.858776, 44.864333]}, "properties": {"id": 12492, "status": "reported", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.837114, 44.853931]}, "properties": {"id": 8101, "status": "reported", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.859301, 44.867863]}, "properties": {"id": 564, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.856376, 44.872134]}, "properties": {"id": 592, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.841444, 44.852454]}, "properties": {"id": 603, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.857255, 44.871997]}, "properties": {"id": 715, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.859513, 44.869988]}, "properties": {"id": 6626, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.826662, 44.861986]}, "properties": {"id": 719, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.836371, 44.85293]}, "properties": {"id": 4036, "status": "on_site", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.830124, 44.856304]}, "properties": {"id": 10798, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.85226, 44.853019]}, "properties": {"id": 595, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.852904, 44.875442]}, "properties": {"id": 615, "status": "removed", "photo": true, "mb": "03590"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [13.826222, 44.861358]}, "properties": {"id": 710, "status": "removed", "photo": true, "mb": "03590"}}]}, "recycling_yards": [{"id": 72, "kind": "recycling_yard", "kind_label": "Reciklažno dvorište", "year": 2018, "name": "Reciklažno dvorište Pula - Pola", "operator": "Pula Herculanea d.o.o.", "address": "Valmade 38, PULA - POLA", "status": null, "url": null, "info": {"oznaka": "REC-97-G-1", "zupanija": "Istarska", "obuhvacena": "MO Grada Pule"}, "lon": 13.874404, "lat": 44.8698, "distance_m": 2481}, {"id": 71, "kind": "recycling_yard", "kind_label": "Reciklažno dvorište", "year": 2018, "name": "Reciklažno dvorište Pula - Pola", "operator": "Metis d.d.", "address": "Valica 8, Pula, PULA - POLA", "status": null, "url": null, "info": {"oznaka": "REC-40-G-1", "zupanija": "Istarska", "obuhvacena": "Grad Pula"}, "lon": 13.868796, "lat": 44.886137, "distance_m": 3120}, {"id": 84, "kind": "recycling_yard", "kind_label": "Reciklažno dvorište", "year": 2018, "name": "Reciklažno dvorište Svetvinčenat", "operator": "FERUS", "address": "Bibići 61, Bibići, SVETVINČENAT", "status": null, "url": null, "info": {"oznaka": "REC-104-G-1", "zupanija": "Istarska", "obuhvacena": "Općinska naselja općine Svetvinčenat"}, "lon": 13.879842, "lat": 45.05881, "distance_m": 21800}], "nearest": {"landfill": {"id": 120, "kind": "landfill", "kind_label": "Odlagalište", "year": 2026, "name": "Županijski centar za gospodarenje otpadom (ŽCGO) Kaštijun", "operator": "KAŠTIJUN društvo s ograničenom odgovornošću za gospodarenje otpadom", "address": "Pula, PULA - POLA", "status": "aktivno", "url": null, "info": {"vrsta": "komunalni - proizvodni", "sanacija": "nije primjenjivo", "zupanija": "Istarska", "kategorija": "bioreaktorsko odlagalište"}, "lon": 13.88638, "lat": 44.839647, "distance_m": 4330}, "sorting": {"id": 207, "kind": "sorting", "kind_label": "Sortirnica", "year": 2026, "name": "KOMUNALNI SERVIS d. o. o. za komunalnu djelatnost", "operator": "KOMUNALNI SERVIS d. o. o. za komunalnu djelatnost", "address": "Galafija 6, ROVINJ - ROVIGNO", "status": null, "url": null, "info": {"zupanija": "Istarska"}, "lon": 13.720984, "lat": 45.066518, "distance_m": 24477}, "cgo": {"id": 231, "kind": "cgo", "kind_label": "Centar za gospodarenje otpadom", "year": 2026, "name": "CGO KAŠTIJUN", "operator": null, "address": null, "status": "U funkciji", "url": null, "info": {"zupanija": "Istarska", "pripad_jls": "Istarska županija: sve JLS."}, "lon": 13.885958, "lat": 44.840241, "distance_m": 4263}, "compost": {"id": 254, "kind": "compost", "kind_label": "Kompostana", "year": 2025, "name": "ODVODNJA POREČ društvo s ograničenom odgovornošću za djelatnost javne odvodnje", "operator": "ODVODNJA POREČ društvo s ograničenom odgovornošću za djelatnost javne odvodnje", "address": "Poreč", "status": "Dozvola za gospodarenje otpadom", "url": null, "info": {"zupanija": "Istarska", "kapacitet_t_god": 4120}, "lon": 13.614789, "lat": 45.214133, "distance_m": 42866}, "cave_dump": {"id": 1019, "kind": "cave_dump", "kind_label": "Otpad u špilji ili jami", "year": 2025, "name": "Rudnici kod Loborike", "operator": "Speleološko društvo Underground", "address": null, "status": null, "url": "https://cistopodzemlje.info/hr/objekt/rudnici-kod-loborike", "info": {"dubina": "-", "kat_br": "-", "duljina": "-"}, "lon": 13.896996, "lat": 44.911805, "distance_m": 6738}}, "computed_at": "2026-11-07T21:39:54.956425+00:00"}
+{
+  "location": { "lat": 44.86431, "lon": 13.84397 },
+  "radius_m": 1500,
+  "municipality": {
+    "mb": "03590",
+    "name": "Pula",
+    "kind": "Grad",
+    "county": "Istarska",
+    "sep_2022": 28.8
+  },
+  "counts": { "on_site": 4, "reported": 2, "removed": 55, "total": 61 },
+  "sites": [
+    {
+      "id": 717,
+      "name": "Rovinjska 1",
+      "description": "Namještaj blizu kontejnera",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Drvenarija",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 200.0,
+      "volume_m3": 1.0,
+      "area_m2": 3.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/98840905-cf0d-4a60-a44a-f6aaab228a7f.jpg"
+      ],
+      "lon": 13.843969,
+      "lat": 44.864309,
+      "distance_m": 0
+    },
+    {
+      "id": 607,
+      "name": "Rizzijeva 14, Pula",
+      "description": "Kauč i karton na nogostupu",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Papir i drvenarija",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 50.0,
+      "volume_m3": 1.0,
+      "area_m2": 2.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/a9ac939a-7c47-4b87-8f69-e8015b988677.jpg"
+      ],
+      "lon": 13.844364,
+      "lat": 44.86496,
+      "distance_m": 79
+    },
+    {
+      "id": 606,
+      "name": "Gajeva 8, Pula",
+      "description": "Uz kontenjere razni otpad",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Mjesani",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 20.0,
+      "volume_m3": 1.0,
+      "area_m2": 2.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/053cb398-d175-4593-8164-cb235a6f0514.jpg"
+      ],
+      "lon": 13.844903,
+      "lat": 44.864661,
+      "distance_m": 83
+    },
+    {
+      "id": 619,
+      "name": "Cara Emina 2",
+      "description": "Cara Emina 2",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Komunalni otpad",
+      "category": "mijesani",
+      "category_label": "Miješani komunalni otpad",
+      "qty_kg": 100.0,
+      "volume_m3": 1.0,
+      "area_m2": 1.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/b5598e21-a4f8-4e10-bf06-96542f85fbdc.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/5466e624-7f33-429b-9ad3-351b1371781a.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/161b738a-489e-4677-8f98-a32449cd71fc.jpg"
+      ],
+      "lon": 13.845153,
+      "lat": 44.864729,
+      "distance_m": 104
+    },
+    {
+      "id": 589,
+      "name": "Gajeva bb Rojc",
+      "description": "Ulaz u Rojc",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Komunalni otpad",
+      "category": "mijesani",
+      "category_label": "Miješani komunalni otpad",
+      "qty_kg": 50.0,
+      "volume_m3": 1.0,
+      "area_m2": 1.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/e44b1187-8381-4a08-a976-ea5f01118d09.jpg"
+      ],
+      "lon": 13.843639,
+      "lat": 44.863114,
+      "distance_m": 135
+    },
+    {
+      "id": 692,
+      "name": "Mornarički trg 4",
+      "description": "Krupni otpad blizu kontejnera",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Drvenarija i bjela tehnika",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 300.0,
+      "volume_m3": 2.0,
+      "area_m2": 2.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/e7b91a69-b3f0-4009-b5ad-20815e1e345c.jpg"
+      ],
+      "lon": 13.841715,
+      "lat": 44.864793,
+      "distance_m": 186
+    },
+    {
+      "id": 618,
+      "name": "Vergerijeva 5",
+      "description": "Vergerijeva 5",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Krupni otpad",
+      "category": "glomazni",
+      "category_label": "Glomazni otpad",
+      "qty_kg": 50.0,
+      "volume_m3": 1.0,
+      "area_m2": 1.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/4d9344b9-278d-4af3-ba01-b201cb4a1b6c.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/7b760f5d-288b-4424-86ff-686cf48156d3.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/974adc91-1882-4617-b23a-ceac10cceb83.jpg"
+      ],
+      "lon": 13.846467,
+      "lat": 44.865925,
+      "distance_m": 267
+    },
+    {
+      "id": 685,
+      "name": "Mate Balote 4",
+      "description": "Uz raskršće",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Jogi madrac",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 20.0,
+      "volume_m3": 1.0,
+      "area_m2": 1.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/55218e24-98d7-407d-b3c5-944dbacaf42e.jpg"
+      ],
+      "lon": 13.846368,
+      "lat": 44.862551,
+      "distance_m": 272
+    },
+    {
+      "id": 689,
+      "name": "Keršovanijeva 7",
+      "description": "Krupni otpad blizu kontejnera",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Drvenarija",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 100.0,
+      "volume_m3": 1.0,
+      "area_m2": 2.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/90e14e71-c392-41a7-b452-826384210eeb.jpg"
+      ],
+      "lon": 13.842571,
+      "lat": 44.861964,
+      "distance_m": 283
+    },
+    {
+      "id": 600,
+      "name": "Lj.Posavskog 9",
+      "description": "Drvena građa blizu kanti za otpad",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Drvenarija",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 100.0,
+      "volume_m3": 2.0,
+      "area_m2": 2.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/a3f42056-1e61-4f22-a81d-4e6d831cfa55.jpg"
+      ],
+      "lon": 13.841922,
+      "lat": 44.861701,
+      "distance_m": 332
+    },
+    {
+      "id": 599,
+      "name": "Keršovanijeva 29, Pula",
+      "description": "Drvenarija uz kontenjere",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Drveni",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 50.0,
+      "volume_m3": 2.0,
+      "area_m2": 2.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/72913115-e9a5-4ab5-bdab-f70d72697665.jpg"
+      ],
+      "lon": 13.841467,
+      "lat": 44.861562,
+      "distance_m": 364
+    },
+    {
+      "id": 3984,
+      "name": "Olge ban 11",
+      "description": "Na javnoj zelenoj povrsini razni otpad",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Mješani",
+      "category": "mijesani",
+      "category_label": "Miješani komunalni otpad",
+      "qty_kg": 200.0,
+      "volume_m3": 2.0,
+      "area_m2": 4.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/c1eef974-f79d-4868-8470-f482bb89fc99.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/cb05d59b-5a41-4182-bfd7-3115c58e75a5.jpg"
+      ],
+      "lon": 13.842936,
+      "lat": 44.860159,
+      "distance_m": 468
+    },
+    {
+      "id": 10961,
+      "name": "Kašićeva ulica",
+      "description": "Odbačen glomazni otpad",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Drveni dijelovi od komode, daske, kovčeg, i drugo",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 90.0,
+      "volume_m3": 3.0,
+      "area_m2": 5.0,
+      "status": "on_site",
+      "status_label": "Otpad na lokaciji",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/dd3e3a6f-0f91-4e0b-8a01-c98d6f1bde70.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/631af862-9686-4c7f-9f48-e456752a2a69.jpg"
+      ],
+      "lon": 13.846065,
+      "lat": 44.860237,
+      "distance_m": 482
+    },
+    {
+      "id": 598,
+      "name": "Koparska 46,48",
+      "description": "Drvenarija i šuta uz kante za otpad",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Građevinski, drveni",
+      "category": "gradevni",
+      "category_label": "Građevni otpad",
+      "qty_kg": 200.0,
+      "volume_m3": 3.0,
+      "area_m2": 3.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/c8d82731-bcc7-41a2-84ab-3eb2f672a614.jpg"
+      ],
+      "lon": 13.849994,
+      "lat": 44.863122,
+      "distance_m": 494
+    },
+    {
+      "id": 657,
+      "name": "D.Vitezića 22",
+      "description": "Cigle i drvenarija blizu kante za otpad",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Građevinski i drvenarija",
+      "category": "gradevni",
+      "category_label": "Građevni otpad",
+      "qty_kg": 100.0,
+      "volume_m3": 1.0,
+      "area_m2": 2.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/1b82f1b3-4694-4181-be60-d686944f41fc.jpg"
+      ],
+      "lon": 13.850591,
+      "lat": 44.866147,
+      "distance_m": 562
+    },
+    {
+      "id": 625,
+      "name": "Negrijeva 4",
+      "description": "Madraci i drvenarija uz kontenjere",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Drveni",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 30.0,
+      "volume_m3": 1.0,
+      "area_m2": 2.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/1faea3d7-87b6-4bf6-afea-8af92c890445.jpg"
+      ],
+      "lon": 13.838035,
+      "lat": 44.86116,
+      "distance_m": 585
+    },
+    {
+      "id": 626,
+      "name": "Prekomorskih brigada",
+      "description": "Uz kruzni tok za pjescanu uvalu ostavljene vrece pune smeca",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Razno",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 200.0,
+      "volume_m3": 2.0,
+      "area_m2": 6.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/b6d14fbf-9afe-44b1-83c1-dfef82b25dd5.jpg"
+      ],
+      "lon": 13.838047,
+      "lat": 44.861142,
+      "distance_m": 586
+    },
+    {
+      "id": 597,
+      "name": "Viteziceva 52, Pula",
+      "description": "Šuta i dr. Uz kontenjere",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Građevinski",
+      "category": "gradevni",
+      "category_label": "Građevni otpad",
+      "qty_kg": 50.0,
+      "volume_m3": 2.0,
+      "area_m2": 2.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/b0288085-f1eb-4825-af14-259209907efb.jpg"
+      ],
+      "lon": 13.849949,
+      "lat": 44.860909,
+      "distance_m": 605
+    },
+    {
+      "id": 617,
+      "name": "Krležina 25",
+      "description": "Pored kontenjera televizor i namjestaj",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Drvenarija i plastika",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 50.0,
+      "volume_m3": 1.0,
+      "area_m2": 2.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/62a5d28b-2e5e-449d-aabc-76e202ead8d2.jpg"
+      ],
+      "lon": 13.845359,
+      "lat": 44.8587,
+      "distance_m": 633
+    },
+    {
+      "id": 542,
+      "name": "Kalpurnija Pizona 1 i 3",
+      "description": "Dobar dan,\nU ulici Kalpurnija Pizona (br. 1 i br.3), pored kanti za smeće, nepoznate osobe su u noći 6.09.2020.g., iskrcale veliki madrac koji je tamo već desetak dana.\nMolimo za pomoć pri odvozu istog.\nHvala i srdačan pozdrav,\nStanari zgrade br. 1 i br. 3",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "lomazni otpad",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 15.0,
+      "volume_m3": 1.0,
+      "area_m2": 4.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/cc838b4a-b9d6-4eea-ac99-0ca73dbffe92.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/bec08919-0e2e-4264-b516-3a86282fa37e.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/63483adf-cc13-47e7-9d8d-61b3072826dc.jpg"
+      ],
+      "lon": 13.841121,
+      "lat": 44.858953,
+      "distance_m": 636
+    },
+    {
+      "id": 616,
+      "name": "Marijanijeva 1",
+      "description": "Namjestaj pored kontenjera",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Drveni",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 100.0,
+      "volume_m3": 1.0,
+      "area_m2": 2.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/829e7b1f-c538-4e48-8aed-f62907410958.jpg"
+      ],
+      "lon": 13.845387,
+      "lat": 44.858654,
+      "distance_m": 638
+    },
+    {
+      "id": 5972,
+      "name": "Ostavljeno vozilo bez R.O.",
+      "description": "Na Verudi, na adresi Kalpurnija Pizona 1, već mjesec dana na javnoj površini parkiran je neregistrirani kombi. Fotografija u prilogu.",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "neregistrirani kombi",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 1800.0,
+      "volume_m3": 15.0,
+      "area_m2": 9.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/81f942e7-d286-4d0c-a04b-9bba595afe69.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/5f758cdb-0955-44cf-b067-a60d5647a970.jpg"
+      ],
+      "lon": 13.841149,
+      "lat": 44.858862,
+      "distance_m": 645
+    },
+    {
+      "id": 487,
+      "name": "Ulica Kalpurnija Pizona u Puli (broj 1 i 3)",
+      "description": "U ulici Kalpurnija Pizona u Puli (broj 1 i 3) na trotoaru je parkirano napušteno vozilo (kombi) bez registracijskih tablica. Također, na istoj lokaciji uz kontejnere, stoji odložen odbačeni namještaj te zeleni otpad. Vozilo i otpad su već duže vrijeme na toj lokaciji. Unaprijed  hvala i Lp.",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "otpadna vozila, komunalni otpad",
+      "category": "vozila",
+      "category_label": "Vozila, dijelovi i gume",
+      "qty_kg": 1900.0,
+      "volume_m3": 16.0,
+      "area_m2": 9.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/933ceeb6-e450-4ea7-bd9d-7430a878283d.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/ebebbfee-554e-43fb-ac6a-5aab04ed40b9.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/972d63ae-5fd2-40af-8a3f-d97c1806fd8e.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/57a4896b-4e0b-449e-b45f-797565ed235c.jpg"
+      ],
+      "lon": 13.841163,
+      "lat": 44.858852,
+      "distance_m": 646
+    },
+    {
+      "id": 6198,
+      "name": "Odbačeni otpad",
+      "description": "Adresa: Ulica Kalpurnija Pizona 1 i 3\n\nKombi bez tablica na javnoj površini, već prijavljen prije 20ak dana (ali i dalje stoji), \nte krupni otpad, mašina i dr., od jutros.\n\nHvala.",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Kombi bez tablica na javnoj površini, te krupni otpad, mašina i dr.",
+      "category": "glomazni",
+      "category_label": "Glomazni otpad",
+      "qty_kg": 1800.0,
+      "volume_m3": 15.0,
+      "area_m2": 8.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/af6afb5a-9d8d-4d9e-99f7-2bb114438878.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/80d1f49f-ab54-45f7-91d7-8729393066a1.jpg"
+      ],
+      "lon": 13.841157,
+      "lat": 44.858852,
+      "distance_m": 646
+    },
+    {
+      "id": 778,
+      "name": "Kalpurnija Pizona 1 i 3",
+      "description": "Pula, na adresi Kalpurnija Pizona 1 i 3\nveć više od mjesec dana stoji hrpa (cca 3-4 m3) odloženog, što zelenog otpada, što namještaja i dr.\nLjubazno molimo da se isti odveze sa javne površine. \nHvala i srdačan pozdrav",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "glomazni otpad",
+      "category": "glomazni",
+      "category_label": "Glomazni otpad",
+      "qty_kg": 30.0,
+      "volume_m3": 5.0,
+      "area_m2": 5.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/fb9cf47c-3de9-482c-bd20-2594737f081c.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/908fff7e-ca67-4881-ac68-86a271a33da5.jpg"
+      ],
+      "lon": 13.84116,
+      "lat": 44.858849,
+      "distance_m": 646
+    },
+    {
+      "id": 673,
+      "name": "Centar",
+      "description": "Građevinski materijal",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Šuta",
+      "category": "gradevni",
+      "category_label": "Građevni otpad",
+      "qty_kg": 3.0,
+      "volume_m3": 2.0,
+      "area_m2": 2.0,
+      "status": "on_site",
+      "status_label": "Otpad na lokaciji",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/544cbdbd-52a3-4b62-b4ab-d7584ac2fbfc.jpg"
+      ],
+      "lon": 13.844092,
+      "lat": 44.870244,
+      "distance_m": 659
+    },
+    {
+      "id": 759,
+      "name": "Šurida 73, Štinjan",
+      "description": "Namještaj i madraci pored ceste",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Drvenarija",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 300.0,
+      "volume_m3": 2.0,
+      "area_m2": 4.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/79143ec7-2217-409a-8a1f-6a8482502da4.jpg"
+      ],
+      "lon": 13.851044,
+      "lat": 44.868536,
+      "distance_m": 730
+    },
+    {
+      "id": 660,
+      "name": "Oš Vidikovac",
+      "description": "U blizini osnovne škole Vidikovac u šumici odbačen građevinski otpad.",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Građevinski otpad",
+      "category": "gradevni",
+      "category_label": "Građevni otpad",
+      "qty_kg": 300.0,
+      "volume_m3": 2.0,
+      "area_m2": 5.0,
+      "status": "on_site",
+      "status_label": "Otpad na lokaciji",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/e7ca8a89-587c-46b2-bb50-ea7dd3f1c68e.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/42981cca-ccef-42a6-a1f2-fd9f28e3fabf.jpg"
+      ],
+      "lon": 13.850963,
+      "lat": 44.85948,
+      "distance_m": 770
+    },
+    {
+      "id": 591,
+      "name": "Zadarska 18",
+      "description": "Zadarska 18",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Namještaj - kauč",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 50.0,
+      "volume_m3": 1.0,
+      "area_m2": 1.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/4ce21578-cf24-4552-b9a7-72435e95904f.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/8e7a0514-9aab-414d-9564-0503b7f204f2.jpg"
+      ],
+      "lon": 13.851394,
+      "lat": 44.869517,
+      "distance_m": 824
+    },
+    {
+      "id": 586,
+      "name": "Zadarska 16 Pula",
+      "description": "Stari namjestaj odlozen od strane nepoznatog vlasnika uz kontenjere",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Drveni",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 50.0,
+      "volume_m3": 2.0,
+      "area_m2": 2.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/2e2ccab2-b7a7-40e2-94fd-b3b621866381.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/3d8baa21-d58d-43e0-bf7d-0dd456548d50.jpg"
+      ],
+      "lon": 13.851617,
+      "lat": 44.869574,
+      "distance_m": 841
+    },
+    {
+      "id": 667,
+      "name": "Sv.Polikarpa 7",
+      "description": "Drvenarija na javnoj površini",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Drvenarija",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 300.0,
+      "volume_m3": 2.0,
+      "area_m2": 2.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/de7ff8f6-90ee-47ad-8429-6d60483f5208.jpg"
+      ],
+      "lon": 13.8332,
+      "lat": 44.862317,
+      "distance_m": 880
+    },
+    {
+      "id": 668,
+      "name": "Jeretova 42",
+      "description": "Krupni otpad u blizini kontejnera za otpad",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Drvenarija i bijela tehnika",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 400.0,
+      "volume_m3": 2.0,
+      "area_m2": 3.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/6ab35c35-a524-4c07-8069-de5e7192cacb.jpg"
+      ],
+      "lon": 13.832861,
+      "lat": 44.862269,
+      "distance_m": 907
+    },
+    {
+      "id": 562,
+      "name": "Banovčeva 2",
+      "description": "Uz ogradni zid",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "plastika i drvenarija",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 3.0,
+      "volume_m3": 1.0,
+      "area_m2": 1.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/5d50273b-2833-4b45-a594-5b71bde7b604.jpg"
+      ],
+      "lon": 13.839341,
+      "lat": 44.856406,
+      "distance_m": 952
+    },
+    {
+      "id": 605,
+      "name": "Cara Emina 2",
+      "description": "Namještaj blizu kante za otpad",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Drvenarija",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 100.0,
+      "volume_m3": 1.0,
+      "area_m2": 2.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/8f676637-f4c2-4886-83e9-e8f7363d1eda.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/5f91252e-362a-4a21-895d-e8ef7fa00733.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/bf235928-a26c-4fe8-8495-4a637d27dc01.jpg"
+      ],
+      "lon": 13.834091,
+      "lat": 44.859372,
+      "distance_m": 954
+    },
+    {
+      "id": 628,
+      "name": "Viška 2, Pula",
+      "description": "Željezo i grane uz kontejner",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Metal i drvo",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 100.0,
+      "volume_m3": 1.0,
+      "area_m2": 2.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/064c66f7-ed00-45ba-967e-e5a3a9dc6e21.jpg"
+      ],
+      "lon": 13.842245,
+      "lat": 44.855804,
+      "distance_m": 955
+    },
+    {
+      "id": 578,
+      "name": "Viška 2",
+      "description": "Uz posude za komunalni otpad odlozen madrac i dr.",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Mjesani",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 20.0,
+      "volume_m3": 1.0,
+      "area_m2": 2.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/1415e473-3ed3-43a3-841a-0f9d6806035a.jpg"
+      ],
+      "lon": 13.842099,
+      "lat": 44.855551,
+      "distance_m": 985
+    },
+    {
+      "id": 686,
+      "name": "Teslina 17",
+      "description": "Na trotoaru",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Krupni otpad",
+      "category": "glomazni",
+      "category_label": "Glomazni otpad",
+      "qty_kg": 30.0,
+      "volume_m3": 1.0,
+      "area_m2": 1.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/7eb539f0-5299-46fd-bb97-8d2baaeef21f.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/dae53124-a1b4-453d-b49b-20c5d0f3b4c6.jpg"
+      ],
+      "lon": 13.851792,
+      "lat": 44.871435,
+      "distance_m": 1005
+    },
+    {
+      "id": 627,
+      "name": "Varaždinska 15",
+      "description": "Pored posude za komunalni otpad, ostavljeni drveni dijelovi kuhinjskog namještaja.",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Drveni namještaj",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 50.0,
+      "volume_m3": 1.0,
+      "area_m2": 2.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/e73c0faf-9847-47e7-b04e-9bfa5f490ef7.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/0ace02ff-f587-402d-83b0-a57e400327ea.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/5056c899-57fc-447d-806f-fa5a7ba6aea8.jpg"
+      ],
+      "lon": 13.851522,
+      "lat": 44.87199,
+      "distance_m": 1041
+    },
+    {
+      "id": 659,
+      "name": "Varaždinska 15",
+      "description": "Pored posude za komunalni otpad, ostavljeni drveni dijelovi kuhinjskog namještaja.",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Drveni namještaj",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 50.0,
+      "volume_m3": 1.0,
+      "area_m2": 2.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/7407172f-e2a6-49a3-8203-ecf97c7caf82.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/2fc069f4-ce2b-4f07-a6a8-a9b1c02ea4e3.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/5c60f26d-f82d-42e7-9301-582ff2ed198e.jpg"
+      ],
+      "lon": 13.851522,
+      "lat": 44.87199,
+      "distance_m": 1041
+    },
+    {
+      "id": 631,
+      "name": "Banovčeva 31",
+      "description": "Namjestaj uz posude za komunalni otpad",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Drveni",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 150.0,
+      "volume_m3": 1.0,
+      "area_m2": 3.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/0dd6cbc1-1ef3-404d-8cef-db749a7fbc11.jpg"
+      ],
+      "lon": 13.838849,
+      "lat": 44.855447,
+      "distance_m": 1065
+    },
+    {
+      "id": 632,
+      "name": "Zoranićeva 11",
+      "description": "Madracu, školjka i dr. Na zelenoj površini",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Mjesani",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 100.0,
+      "volume_m3": 1.0,
+      "area_m2": 3.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/7fdeb2e0-5385-494b-8a47-1f824ebd9c7d.jpg"
+      ],
+      "lon": 13.838849,
+      "lat": 44.855447,
+      "distance_m": 1065
+    },
+    {
+      "id": 633,
+      "name": "Budičinova 4",
+      "description": "uz ogradni zid na nogostupu namjestaj",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Drveni",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 100.0,
+      "volume_m3": 1.0,
+      "area_m2": 2.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/61d27b7a-d55f-42de-a572-1e37377dde73.jpg"
+      ],
+      "lon": 13.838849,
+      "lat": 44.855447,
+      "distance_m": 1065
+    },
+    {
+      "id": 634,
+      "name": "Besenghijeva 2 Pula",
+      "description": "Drvenarija na javnoj povrsini",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Drveni",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 50.0,
+      "volume_m3": 1.0,
+      "area_m2": 2.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/d1e6b776-e31c-4812-8013-f2e444b0a9b0.jpg"
+      ],
+      "lon": 13.838849,
+      "lat": 44.855447,
+      "distance_m": 1065
+    },
+    {
+      "id": 565,
+      "name": "Viška 24",
+      "description": "Drvena stolarija odbačena uz posude za komunalni otpad od nepoznatog vlasnika",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "20 03 07",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 100.0,
+      "volume_m3": 2.0,
+      "area_m2": 2.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/6c4255d3-d0dc-4435-8637-83a132aa002f.jpg"
+      ],
+      "lon": 13.841175,
+      "lat": 44.854821,
+      "distance_m": 1077
+    },
+    {
+      "id": 587,
+      "name": "Karlovačka 16",
+      "description": "Krupni otpad",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Komunalni otpad",
+      "category": "mijesani",
+      "category_label": "Miješani komunalni otpad",
+      "qty_kg": 50.0,
+      "volume_m3": 1.0,
+      "area_m2": 1.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/f16b12f1-54d8-4af0-9427-79f936b781b5.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/9f456419-d2bb-47ad-b463-61af84a36422.jpg"
+      ],
+      "lon": 13.854759,
+      "lat": 44.870271,
+      "distance_m": 1080
+    },
+    {
+      "id": 604,
+      "name": "Lj.Posavskog 17",
+      "description": "Namjestaj blizu kante za otpad",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Drvenarija",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 200.0,
+      "volume_m3": 2.0,
+      "area_m2": 2.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/63dbf5f6-4679-481f-8706-ff3aed1dd537.jpg"
+      ],
+      "lon": 13.832428,
+      "lat": 44.858979,
+      "distance_m": 1088
+    },
+    {
+      "id": 588,
+      "name": "Rižanske skupstine 15",
+      "description": "Krupni otpad",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Komunalni otpad",
+      "category": "mijesani",
+      "category_label": "Miješani komunalni otpad",
+      "qty_kg": 100.0,
+      "volume_m3": 1.0,
+      "area_m2": 1.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/b4821148-e6e7-47eb-ba11-39061fff956e.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/8b2a9643-c583-482a-a64d-ad8ee8bf6eaf.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/d11b465a-e1c4-4742-bcc3-925758b360b8.jpg"
+      ],
+      "lon": 13.856039,
+      "lat": 44.869038,
+      "distance_m": 1089
+    },
+    {
+      "id": 601,
+      "name": "Palazzine 2",
+      "description": "Bijela tehnika i šuta blizu kante za otpad",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Bijela tehnika i građevinski",
+      "category": "gradevni",
+      "category_label": "Građevni otpad",
+      "qty_kg": 100.0,
+      "volume_m3": 1.0,
+      "area_m2": 2.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/b1aa2f18-0c24-424f-907b-dc6e9f2e2fbb.jpg"
+      ],
+      "lon": 13.83246,
+      "lat": 44.857986,
+      "distance_m": 1150
+    },
+    {
+      "id": 12492,
+      "name": "Park Pineta - Gregovica",
+      "description": "Lokacija Bunkera s otpadom na rubu šumice Gregovica nalazi se na kraju ulice Prilaz Plovana Mikule i može se doći do iste lokacije sa samog kraja ulice Valvazorova.\r\nk.č.br. 660/21, MB 324256 k.o. PULA",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Glomazni otpad",
+      "category": "glomazni",
+      "category_label": "Glomazni otpad",
+      "qty_kg": 2000.0,
+      "volume_m3": 19.0,
+      "area_m2": 100.0,
+      "status": "reported",
+      "status_label": "Prijavili građani",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/78c23640-3dfa-41ba-9e61-05959eb24a7b.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/be7d4f6c-b0cc-4b6f-8fad-257482a7b4b8.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/570c619c-847c-4a1d-8fba-30b4d6bf99e3.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/1db407b2-23e7-4ef7-9ad9-901395b5e614.jpg"
+      ],
+      "lon": 13.858776,
+      "lat": 44.864333,
+      "distance_m": 1170
+    },
+    {
+      "id": 8101,
+      "name": "k.č. 5132/3, k.o. Pula",
+      "description": "Na livadi azbeste ploče, podnica od kreveta, drvene palete i dr. otpad",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Građevni otpad – onečišćen opasnim tvarima (npr. koji sadrži azbest ili ostatke boja i sl.)",
+      "category": "opasni",
+      "category_label": "Opasni otpad (azbest, kemikalije, ulja)",
+      "qty_kg": 100.0,
+      "volume_m3": 5.0,
+      "area_m2": 2.0,
+      "status": "reported",
+      "status_label": "Prijavili građani",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/e2c641a7-04ae-41f4-aa62-edfb3acbf7dc.jpg"
+      ],
+      "lon": 13.837114,
+      "lat": 44.853931,
+      "distance_m": 1274
+    },
+    {
+      "id": 564,
+      "name": "Barbalićeva 3",
+      "description": "Otpad uz prometnicu.",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Komunalni otpad",
+      "category": "mijesani",
+      "category_label": "Miješani komunalni otpad",
+      "qty_kg": 50.0,
+      "volume_m3": 1.0,
+      "area_m2": 2.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/76d6900d-1ddd-45cc-acd2-6569f7af0325.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/e06b569d-8d65-4cf5-8972-1169bcbdb146.jpg"
+      ],
+      "lon": 13.859301,
+      "lat": 44.867863,
+      "distance_m": 1274
+    },
+    {
+      "id": 592,
+      "name": "Nobileova 60",
+      "description": "Nobileova 60",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Komunalni otpad",
+      "category": "mijesani",
+      "category_label": "Miješani komunalni otpad",
+      "qty_kg": 70.0,
+      "volume_m3": 1.0,
+      "area_m2": 1.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/31ed0ba4-1069-4fff-afa8-dbb10bba5837.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/7cd1fa22-f19a-4aee-aacb-4528ba49e3f5.jpg"
+      ],
+      "lon": 13.856376,
+      "lat": 44.872134,
+      "distance_m": 1310
+    },
+    {
+      "id": 603,
+      "name": "Krležina 35, Pula",
+      "description": "Uz kontenjere ostavljena drvenarija",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Drveni",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 50.0,
+      "volume_m3": 1.0,
+      "area_m2": 2.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/bc7e0a0c-9170-4542-a6e0-a982e4550921.jpg"
+      ],
+      "lon": 13.841444,
+      "lat": 44.852454,
+      "distance_m": 1333
+    },
+    {
+      "id": 715,
+      "name": "Bože Gumpca bb",
+      "description": "Krupni otpad blizu kontejnera",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Građevinski - drvenarija -bjela tehnika",
+      "category": "gradevni",
+      "category_label": "Građevni otpad",
+      "qty_kg": 300.0,
+      "volume_m3": 2.0,
+      "area_m2": 4.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/e8cf90d0-0f4a-4e5f-b091-496c4d389c99.jpg"
+      ],
+      "lon": 13.857255,
+      "lat": 44.871997,
+      "distance_m": 1353
+    },
+    {
+      "id": 6626,
+      "name": "Ulica Rimske centurijacije 57",
+      "description": "Napušteno vozilo na javnoj površini već godinu dana.\nOsobno sam već javljala komunalcima koji su nakon više mjeseci postavili obavijest i ništa se nije dogodilo.\nSramotno je da nam gradske službe tako loše funkcioniraju.",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "16 01 06 Otpadna vozila ili dijelovi vozila (neopasni)",
+      "category": "vozila",
+      "category_label": "Vozila, dijelovi i gume",
+      "qty_kg": 965.0,
+      "volume_m3": 9.0,
+      "area_m2": 8.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/986b73e9-4cae-4275-8ae6-8fc66d5af0b2.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/fdc0a874-31b4-4912-8e1a-387de49dd152.jpg"
+      ],
+      "lon": 13.859513,
+      "lat": 44.869988,
+      "distance_m": 1381
+    },
+    {
+      "id": 719,
+      "name": "Agnana 4/6",
+      "description": "Krupni otpad blizu kontejnera",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Građevinski - drvenarija -bjela tehnika",
+      "category": "gradevni",
+      "category_label": "Građevni otpad",
+      "qty_kg": 300.0,
+      "volume_m3": 2.0,
+      "area_m2": 3.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/e88ce997-147e-4445-bc36-980c9a852315.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/e2b5d71f-4feb-4aba-9e2b-60dd6f4c79c9.jpg"
+      ],
+      "lon": 13.826662,
+      "lat": 44.861986,
+      "distance_m": 1392
+    },
+    {
+      "id": 4036,
+      "name": null,
+      "description": "Iza dječjeg parka Valsaline, na kraju ceste (kod kućnog broja 35) gdje se silazi u vrtove s lijeve i desne strane nalazi se nekoliko m3 raznog otpada.",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": null,
+      "category": "nepoznato",
+      "category_label": "Vrsta nije navedena",
+      "qty_kg": null,
+      "volume_m3": null,
+      "area_m2": null,
+      "status": "on_site",
+      "status_label": "Otpad na lokaciji",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/ebf8a4ba-c8a9-4e1e-badb-3af6b9f7f700.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/d754f6d7-2dc1-4fcc-99d8-811ced18a332.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/a9e7680a-24f2-4e81-9514-4087909474bb.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/68e8951b-d55a-499e-b22d-d57fca721ea6.jpg"
+      ],
+      "lon": 13.836371,
+      "lat": 44.85293,
+      "distance_m": 1400
+    },
+    {
+      "id": 10798,
+      "name": "Valkane šuma",
+      "description": "K.č. br 5186/1 na cca 40 m2 je odbacen mjesani otpad ( satiri, madraci, plastične vrećice, staklene boce, tenisice, srednji kofer )",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Glomazni otpad",
+      "category": "glomazni",
+      "category_label": "Glomazni otpad",
+      "qty_kg": 100.0,
+      "volume_m3": 3.0,
+      "area_m2": 40.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/9692759a-acbc-4c57-9c65-b57c04a3a359.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/80fc8e86-1387-4502-94f2-58d775ceff5d.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/81208db5-b4ee-4443-aef7-1a0369967080.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/62c5e9de-c297-4c5c-a888-3dc9e59f422c.jpg"
+      ],
+      "lon": 13.830124,
+      "lat": 44.856304,
+      "distance_m": 1410
+    },
+    {
+      "id": 595,
+      "name": "palisina",
+      "description": "Ispod Industrijsko-obrtnicke skole na jednom puteljku- prečacu koji vodi na Palisinu ulicu odbaceni su neki tepih, suncobran, djecji vrtic i neke cigle.",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "glomazni",
+      "category": "glomazni",
+      "category_label": "Glomazni otpad",
+      "qty_kg": 150.0,
+      "volume_m3": 3.0,
+      "area_m2": 3.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/d4e26594-e671-4d56-902f-1e98f6f7cf1a.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/f688059f-18b5-44c6-b81c-8052026c24e3.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/28c0ecd5-43c9-4442-aa1d-28d8fdf3df37.jpg"
+      ],
+      "lon": 13.85226,
+      "lat": 44.853019,
+      "distance_m": 1416
+    },
+    {
+      "id": 615,
+      "name": "Porečka , Pula",
+      "description": "Građevinski materijal uz posude za otpad",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Građevinski",
+      "category": "gradevni",
+      "category_label": "Građevni otpad",
+      "qty_kg": 50.0,
+      "volume_m3": 1.0,
+      "area_m2": 2.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/88ed03aa-7e09-4001-b51e-dde7902bd916.jpg"
+      ],
+      "lon": 13.852904,
+      "lat": 44.875442,
+      "distance_m": 1424
+    }
+  ],
+  "with_photo": 61,
+  "points": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.843969, 44.864309] },
+        "properties": { "id": 717, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.844364, 44.86496] },
+        "properties": { "id": 607, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.844903, 44.864661] },
+        "properties": { "id": 606, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.845153, 44.864729] },
+        "properties": { "id": 619, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.843639, 44.863114] },
+        "properties": { "id": 589, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.841715, 44.864793] },
+        "properties": { "id": 692, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.846467, 44.865925] },
+        "properties": { "id": 618, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.846368, 44.862551] },
+        "properties": { "id": 685, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.842571, 44.861964] },
+        "properties": { "id": 689, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.841922, 44.861701] },
+        "properties": { "id": 600, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.841467, 44.861562] },
+        "properties": { "id": 599, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.842936, 44.860159] },
+        "properties": { "id": 3984, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.846065, 44.860237] },
+        "properties": { "id": 10961, "status": "on_site", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.849994, 44.863122] },
+        "properties": { "id": 598, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.850591, 44.866147] },
+        "properties": { "id": 657, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.838035, 44.86116] },
+        "properties": { "id": 625, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.838047, 44.861142] },
+        "properties": { "id": 626, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.849949, 44.860909] },
+        "properties": { "id": 597, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.845359, 44.8587] },
+        "properties": { "id": 617, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.841121, 44.858953] },
+        "properties": { "id": 542, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.845387, 44.858654] },
+        "properties": { "id": 616, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.841149, 44.858862] },
+        "properties": { "id": 5972, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.841163, 44.858852] },
+        "properties": { "id": 487, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.841157, 44.858852] },
+        "properties": { "id": 6198, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.84116, 44.858849] },
+        "properties": { "id": 778, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.844092, 44.870244] },
+        "properties": { "id": 673, "status": "on_site", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.851044, 44.868536] },
+        "properties": { "id": 759, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.850963, 44.85948] },
+        "properties": { "id": 660, "status": "on_site", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.851394, 44.869517] },
+        "properties": { "id": 591, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.851617, 44.869574] },
+        "properties": { "id": 586, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.8332, 44.862317] },
+        "properties": { "id": 667, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.832861, 44.862269] },
+        "properties": { "id": 668, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.839341, 44.856406] },
+        "properties": { "id": 562, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.834091, 44.859372] },
+        "properties": { "id": 605, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.842245, 44.855804] },
+        "properties": { "id": 628, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.842099, 44.855551] },
+        "properties": { "id": 578, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.851792, 44.871435] },
+        "properties": { "id": 686, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.851522, 44.87199] },
+        "properties": { "id": 627, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.851522, 44.87199] },
+        "properties": { "id": 659, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.838849, 44.855447] },
+        "properties": { "id": 631, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.838849, 44.855447] },
+        "properties": { "id": 632, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.838849, 44.855447] },
+        "properties": { "id": 633, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.838849, 44.855447] },
+        "properties": { "id": 634, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.841175, 44.854821] },
+        "properties": { "id": 565, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.854759, 44.870271] },
+        "properties": { "id": 587, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.832428, 44.858979] },
+        "properties": { "id": 604, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.856039, 44.869038] },
+        "properties": { "id": 588, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.83246, 44.857986] },
+        "properties": { "id": 601, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.858776, 44.864333] },
+        "properties": { "id": 12492, "status": "reported", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.837114, 44.853931] },
+        "properties": { "id": 8101, "status": "reported", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.859301, 44.867863] },
+        "properties": { "id": 564, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.856376, 44.872134] },
+        "properties": { "id": 592, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.841444, 44.852454] },
+        "properties": { "id": 603, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.857255, 44.871997] },
+        "properties": { "id": 715, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.859513, 44.869988] },
+        "properties": { "id": 6626, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.826662, 44.861986] },
+        "properties": { "id": 719, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.836371, 44.85293] },
+        "properties": { "id": 4036, "status": "on_site", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.830124, 44.856304] },
+        "properties": { "id": 10798, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.85226, 44.853019] },
+        "properties": { "id": 595, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.852904, 44.875442] },
+        "properties": { "id": 615, "status": "removed", "photo": true, "mb": "03590" }
+      },
+      {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [13.826222, 44.861358] },
+        "properties": { "id": 710, "status": "removed", "photo": true, "mb": "03590" }
+      }
+    ]
+  },
+  "recycling_yards": [
+    {
+      "id": 72,
+      "kind": "recycling_yard",
+      "kind_label": "Reciklažno dvorište",
+      "year": 2018,
+      "name": "Reciklažno dvorište Pula - Pola",
+      "operator": "Pula Herculanea d.o.o.",
+      "address": "Valmade 38, PULA - POLA",
+      "status": null,
+      "url": null,
+      "info": { "oznaka": "REC-97-G-1", "zupanija": "Istarska", "obuhvacena": "MO Grada Pule" },
+      "lon": 13.874404,
+      "lat": 44.8698,
+      "distance_m": 2481
+    },
+    {
+      "id": 71,
+      "kind": "recycling_yard",
+      "kind_label": "Reciklažno dvorište",
+      "year": 2018,
+      "name": "Reciklažno dvorište Pula - Pola",
+      "operator": "Metis d.d.",
+      "address": "Valica 8, Pula, PULA - POLA",
+      "status": null,
+      "url": null,
+      "info": { "oznaka": "REC-40-G-1", "zupanija": "Istarska", "obuhvacena": "Grad Pula" },
+      "lon": 13.868796,
+      "lat": 44.886137,
+      "distance_m": 3120
+    },
+    {
+      "id": 84,
+      "kind": "recycling_yard",
+      "kind_label": "Reciklažno dvorište",
+      "year": 2018,
+      "name": "Reciklažno dvorište Svetvinčenat",
+      "operator": "FERUS",
+      "address": "Bibići 61, Bibići, SVETVINČENAT",
+      "status": null,
+      "url": null,
+      "info": {
+        "oznaka": "REC-104-G-1",
+        "zupanija": "Istarska",
+        "obuhvacena": "Općinska naselja općine Svetvinčenat"
+      },
+      "lon": 13.879842,
+      "lat": 45.05881,
+      "distance_m": 21800
+    }
+  ],
+  "nearest": {
+    "landfill": {
+      "id": 120,
+      "kind": "landfill",
+      "kind_label": "Odlagalište",
+      "year": 2026,
+      "name": "Županijski centar za gospodarenje otpadom (ŽCGO) Kaštijun",
+      "operator": "KAŠTIJUN društvo s ograničenom odgovornošću za gospodarenje otpadom",
+      "address": "Pula, PULA - POLA",
+      "status": "aktivno",
+      "url": null,
+      "info": {
+        "vrsta": "komunalni - proizvodni",
+        "sanacija": "nije primjenjivo",
+        "zupanija": "Istarska",
+        "kategorija": "bioreaktorsko odlagalište"
+      },
+      "lon": 13.88638,
+      "lat": 44.839647,
+      "distance_m": 4330
+    },
+    "sorting": {
+      "id": 207,
+      "kind": "sorting",
+      "kind_label": "Sortirnica",
+      "year": 2026,
+      "name": "KOMUNALNI SERVIS d. o. o. za komunalnu djelatnost",
+      "operator": "KOMUNALNI SERVIS d. o. o. za komunalnu djelatnost",
+      "address": "Galafija 6, ROVINJ - ROVIGNO",
+      "status": null,
+      "url": null,
+      "info": { "zupanija": "Istarska" },
+      "lon": 13.720984,
+      "lat": 45.066518,
+      "distance_m": 24477
+    },
+    "cgo": {
+      "id": 231,
+      "kind": "cgo",
+      "kind_label": "Centar za gospodarenje otpadom",
+      "year": 2026,
+      "name": "CGO KAŠTIJUN",
+      "operator": null,
+      "address": null,
+      "status": "U funkciji",
+      "url": null,
+      "info": { "zupanija": "Istarska", "pripad_jls": "Istarska županija: sve JLS." },
+      "lon": 13.885958,
+      "lat": 44.840241,
+      "distance_m": 4263
+    },
+    "compost": {
+      "id": 254,
+      "kind": "compost",
+      "kind_label": "Kompostana",
+      "year": 2025,
+      "name": "ODVODNJA POREČ društvo s ograničenom odgovornošću za djelatnost javne odvodnje",
+      "operator": "ODVODNJA POREČ društvo s ograničenom odgovornošću za djelatnost javne odvodnje",
+      "address": "Poreč",
+      "status": "Dozvola za gospodarenje otpadom",
+      "url": null,
+      "info": { "zupanija": "Istarska", "kapacitet_t_god": 4120 },
+      "lon": 13.614789,
+      "lat": 45.214133,
+      "distance_m": 42866
+    },
+    "cave_dump": {
+      "id": 1019,
+      "kind": "cave_dump",
+      "kind_label": "Otpad u špilji ili jami",
+      "year": 2025,
+      "name": "Rudnici kod Loborike",
+      "operator": "Speleološko društvo Underground",
+      "address": null,
+      "status": null,
+      "url": "https://cistopodzemlje.info/hr/objekt/rudnici-kod-loborike",
+      "info": { "dubina": "-", "kat_br": "-", "duljina": "-" },
+      "lon": 13.896996,
+      "lat": 44.911805,
+      "distance_m": 6738
+    }
+  },
+  "computed_at": "2026-11-07T21:39:54.956425+00:00"
+}

@@ -56,7 +56,7 @@ export function RateMap({ data, height = 'h-[420px]', highlight, bbox, ariaLabel
       type: 'line',
       source: 'mun',
       filter: ['==', ['get', 'mb'], highlight ?? '__none__'],
-      paint: { 'line-color': '#0F2E2A', 'line-width': 3 },
+      paint: { 'line-color': '#111111', 'line-width': 3 },
     });
     map.fitBounds(bbox ?? CROATIA_BOUNDS, { padding: 24, duration: 0, maxZoom: 11 });
 
@@ -76,7 +76,7 @@ export function RateMap({ data, height = 'h-[420px]', highlight, bbox, ariaLabel
       popup
         .setLngLat(e.lngLat)
         .setHTML(
-          `<strong>${String(p.name)}</strong><br/><span style="color:#5b6662">${String(p.county)}</span><br/>` +
+          `<strong>${String(p.name)}</strong><br/><span style="color:#5f5f5f">${String(p.county)}</span><br/>` +
             `Odvaja <strong>${pct(rate)}</strong> otpada (2022.)`,
         )
         .addTo(map);

@@ -1,0 +1,181 @@
+{
+  "items": [
+    {
+      "id": 12977,
+      "name": "Iznad duplje 2",
+      "description": "makadamska cesta iznad Bribira",
+      "settlement": "Gornji Zagon",
+      "municipality": "Novi Vinodolski",
+      "mb": "02909",
+      "waste_type": "Građevni otpad – ne sadrži opasne tvari, npr. šuta",
+      "category": "gradevni",
+      "category_label": "Građevni otpad",
+      "qty_kg": 1500.0,
+      "volume_m3": 6.0,
+      "area_m2": 20.0,
+      "status": "reported",
+      "status_label": "Prijavili građani",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/935bd613-e300-473a-ab5e-c3b7853adc24.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/bd5e282d-797f-4847-be09-2e8db6ba2750.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/e46aade1-c76e-4149-be45-87da9bc2d305.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/ddf37b22-2e40-467f-a2c8-da73bda8efdd.jpg"
+      ],
+      "lon": 14.795279,
+      "lat": 45.157583
+    },
+    {
+      "id": 12880,
+      "name": "Zaton Dražnikova ulica 70-72",
+      "description": "U samom mjestu  Zaton -Nin između izgrađenih parcela stvara se divlji deponij raznog građevinskog otpada - kamen, beton, željezo, plastika, tekstil, boje, vodovodne cijevi,... Intenzivni navoz dogodio se od 19.-21.9.2023. U prilogu se nalazi fotografija automobila osobe koji je radio na bageru.",
+      "settlement": "Zaton",
+      "municipality": "Nin",
+      "mb": "02828",
+      "waste_type": "Građevni otpad – onečišćen opasnim tvarima (npr. koji sadrži azbest ili ostatke boja i sl.)",
+      "category": "opasni",
+      "category_label": "Opasni otpad (azbest, kemikalije, ulja)",
+      "qty_kg": 1650.0,
+      "volume_m3": 1100.0,
+      "area_m2": 1000.0,
+      "status": "reported",
+      "status_label": "Prijavili građani",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/b241c92b-0fdf-4151-80f7-220da48ae65c.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/05fbe29e-7b8f-4a0b-82a3-b15dcf308fd7.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/d7ddf441-761a-4edd-9a20-647451813859.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/4ad2048a-69ce-406a-ac65-56dbc19fb2fa.jpg"
+      ],
+      "lon": 15.170642,
+      "lat": 44.227469
+    },
+    {
+      "id": 363,
+      "name": "Meštrovica / Kukljaš",
+      "description": "Put prema Lapovcu, s Makloševačke strane. Raznovrsni kućni otpad.",
+      "settlement": "Našice",
+      "municipality": "Našice",
+      "mb": "02780",
+      "waste_type": "otpadni papir, tekstil, autogume, dijelovi građevne stolarije i ostali miješani otpad",
+      "category": "vozila",
+      "category_label": "Vozila, dijelovi i gume",
+      "qty_kg": 400.0,
+      "volume_m3": 4.0,
+      "area_m2": 20.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/53076b82-8c1a-4642-aac4-d114cbaf89a4.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/a76725d0-9a4a-4de0-b572-2943007c8aa9.jpg"
+      ],
+      "lon": 18.123193,
+      "lat": 45.488791
+    },
+    {
+      "id": 168,
+      "name": "ŽIVEC ( VINOGRAD )",
+      "description": "Otpad bačen uz nerazvrstanu cestu u Jertovcu (Živec)",
+      "settlement": "Jertovec",
+      "municipality": "Konjščina",
+      "mb": "02003",
+      "waste_type": "Miješani komunalni otpad, plastika, papir, karton, umivaonik, metal, boje i lakovi.",
+      "category": "mijesani",
+      "category_label": "Miješani komunalni otpad",
+      "qty_kg": 70.0,
+      "volume_m3": 0.5,
+      "area_m2": 30.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/02082b1f-b4c6-4c64-9f8e-677807643fc3.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/b6603036-3e2d-4d20-b49c-b05f0ff081f1.jpg"
+      ],
+      "lon": 16.17831,
+      "lat": 46.035341
+    },
+    {
+      "id": 6449,
+      "name": null,
+      "description": "Stari automobili i ostali otpad na javnoj povrsini. Br. cestice 1867/5",
+      "settlement": "Kaštel Novi",
+      "municipality": "Kaštela",
+      "mb": "01813",
+      "waste_type": null,
+      "category": "nepoznato",
+      "category_label": "Vrsta nije navedena",
+      "qty_kg": null,
+      "volume_m3": null,
+      "area_m2": null,
+      "status": "reported",
+      "status_label": "Prijavili građani",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/813554c6-ccb1-4b5a-a43c-20b942131064.jpg"
+      ],
+      "lon": 16.33747,
+      "lat": 43.556526
+    },
+    {
+      "id": 8547,
+      "name": "Folka",
+      "description": "Križanje Otona Župančića i Marije Jurić Zagorke",
+      "settlement": "Zagreb",
+      "municipality": "Grad Zagreb",
+      "mb": "01333",
+      "waste_type": "Miješani komunalni otpad",
+      "category": "mijesani",
+      "category_label": "Miješani komunalni otpad",
+      "qty_kg": 50.0,
+      "volume_m3": 2.0,
+      "area_m2": 3.0,
+      "status": "reported",
+      "status_label": "Prijavili građani",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/94b048f2-6444-4800-b190-a7451db391e1.jpg"
+      ],
+      "lon": 16.003915,
+      "lat": 45.795211
+    },
+    {
+      "id": 610,
+      "name": "Gervaisova 18, Pula",
+      "description": "Stari namjestaj uz kontenjere",
+      "settlement": "Pula",
+      "municipality": "Pula",
+      "mb": "03590",
+      "waste_type": "Namjestaj",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 30.0,
+      "volume_m3": 1.0,
+      "area_m2": 2.0,
+      "status": "removed",
+      "status_label": "Uklonjeno",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/2467a36d-e5df-4419-bb94-258fc9747660.jpg"
+      ],
+      "lon": 13.850281,
+      "lat": 44.849616
+    },
+    {
+      "id": 14157,
+      "name": "Sv. Bartul, stron",
+      "description": "S lijeve strane markirane staze prema Krapnu. Stotinjak metara od početka staze",
+      "settlement": "Sveti Bartul",
+      "municipality": "Raša",
+      "mb": "03689",
+      "waste_type": "Ostalo",
+      "category": "ostalo",
+      "category_label": "Ostalo",
+      "qty_kg": 2000.0,
+      "volume_m3": 3.0,
+      "area_m2": 100.0,
+      "status": "reported",
+      "status_label": "Prijavili građani",
+      "photos": [
+        "https://eloo.haop.hr/public/api/cms/image/c709a114-e601-4ee1-97c1-b82d142407eb.jpg",
+        "https://eloo.haop.hr/public/api/cms/image/9b6a87d1-85e3-46a7-861a-af29bd9ad250.jpg"
+      ],
+      "lon": 14.089868,
+      "lat": 45.08997
+    }
+  ]
+}

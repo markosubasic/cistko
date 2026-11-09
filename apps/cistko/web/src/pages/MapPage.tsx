@@ -10,10 +10,6 @@ import type { DumpCollection, DumpStatus } from '../lib/types';
 
 const KINDS: { kind: string; label: string }[] = [
   { kind: 'recycling_yard', label: 'Reciklažna dvorišta (2018.)' },
-  { kind: 'sorting', label: 'Sortirnice (2026.)' },
-  { kind: 'landfill', label: 'Odlagališta (2026.)' },
-  { kind: 'cgo', label: 'Centri za gospodarenje otpadom (2026.)' },
-  { kind: 'compost', label: 'Kompostane (2025.)' },
   { kind: 'cave_dump', label: 'Otpad u špiljama i jamama (2025.)' },
 ];
 
@@ -49,12 +45,9 @@ export function MapPage() {
     list.includes(v) ? list.filter((x) => x !== v) : [...list, v];
 
   return (
-    <div className="ck-wrap mt-8 grid gap-6">
+    <div className="ck-wrap grid gap-6 pt-8">
       <header>
-        <p className="ck-eyebrow">Karta odbačenog otpada</p>
-        <h1 className="mt-1 text-3xl font-semibold tracking-tight sm:text-4xl">
-          Cijela Hrvatska na jednoj karti
-        </h1>
+        <h1 className=" text-[2rem] sm:text-[2.75rem]">Cijela Hrvatska na jednoj karti</h1>
         <p className="ck-muted mt-2 max-w-3xl">
           {dumps.data ? int(dumps.data.features.length) : '…'} lokacija iz službene Evidencije
           lokacija odbačenog otpada, uz objekte za gospodarenje otpadom. Približi kartu i klikni
@@ -70,7 +63,7 @@ export function MapPage() {
                 type="button"
                 aria-pressed={statuses.includes(s)}
                 onClick={() => setStatuses((l) => toggle(l, s))}
-                className={`ck-chip min-h-[36px] border ${statuses.includes(s) ? 'border-transparent bg-white shadow' : 'border-[#e4e2da] bg-transparent opacity-60'}`}
+                className={`ck-chip min-h-[40px] border border-[#111] px-3 ${statuses.includes(s) ? 'bg-white' : 'bg-transparent opacity-50'}`}
               >
                 <span className="ck-dot" style={{ background: STATUS_COLOR[s] }} />
                 {STATUS_TEXT[s]}
@@ -104,7 +97,7 @@ export function MapPage() {
           )}
         </div>
         <aside className="grid content-start gap-4">
-          <fieldset className="ck-card ck-card-pad">
+          <fieldset className="border-t border-[#111] pt-3">
             <legend className="sr-only">Objekti na karti</legend>
             <p className="mb-2 font-semibold">Objekti na karti</p>
             <div className="grid gap-2">
@@ -117,7 +110,7 @@ export function MapPage() {
                     type="checkbox"
                     checked={kinds.includes(k.kind)}
                     onChange={() => setKinds((l) => toggle(l, k.kind))}
-                    className="h-4 w-4 accent-[#0F2E2A]"
+                    className="h-4 w-4 accent-[#111]"
                   />
                   <span className="ck-dot" style={{ background: FACILITY_COLOR[k.kind] }} />
                   {k.label}
@@ -127,7 +120,7 @@ export function MapPage() {
           </fieldset>
           {selected != null ? (
             detail.data ? (
-              <div className="ck-rise">
+              <div>
                 <DumpCard d={detail.data} />
                 {detail.data.mb ? (
                   <Link
@@ -142,8 +135,8 @@ export function MapPage() {
               <div className="ck-card h-64 animate-pulse" />
             )
           ) : facility ? (
-            <div className="ck-card ck-card-pad ck-rise grid gap-1.5">
-              <span className="ck-eyebrow">{String(facility.kind_label)}</span>
+            <div className="ck-card ck-card-pad grid gap-1.5">
+              <span className="text-[#5f5f5f]">{String(facility.kind_label)}</span>
               <span className="text-lg font-semibold">{String(facility.name ?? 'bez naziva')}</span>
               {facility.address ? (
                 <span className="text-sm">{String(facility.address)}</span>

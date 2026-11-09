@@ -1,1 +1,189 @@
-{"dumps":{"on_site":9182,"reported":2012,"removed":3001,"total":14195,"with_photo":2667,"categories":[{"category":"glomazni","label":"Glomazni otpad","count":11648},{"category":"nepoznato","label":"Vrsta nije navedena","count":1270},{"category":"mijesani","label":"Miješani komunalni otpad","count":474},{"category":"gradevni","label":"Građevni otpad","count":333},{"category":"ostalo","label":"Ostalo","count":197},{"category":"opasni","label":"Opasni otpad (azbest, kemikalije, ulja)","count":195},{"category":"vozila","label":"Vozila, dijelovi i gume","count":63},{"category":"elektronicki","label":"Električni i elektronički otpad","count":15}],"removed_share":21.1,"top_municipality":{"name":"Grad Zagreb","count":11856}},"separation":{"median_2022":16.7,"median_2019":7.7,"max_2022":74.3,"at_least_50":30,"under_10":164,"improved":456,"municipalities":556,"best":{"mb":"00159","name":"Belica","county":"Međimurska","sep_2022":74.3}},"counties":[{"rb":"20","name":"Međimurska","recycling_2022":53.8,"median_separation_2022":59.1,"municipalities":25},{"rb":"06","name":"Koprivničko-križevačka","recycling_2022":49.4,"median_separation_2022":26.3,"municipalities":25},{"rb":"05","name":"Varaždinska","recycling_2022":46.1,"median_separation_2022":31.2,"municipalities":28},{"rb":"18","name":"Istarska","recycling_2022":42.9,"median_separation_2022":29.2,"municipalities":41},{"rb":"21","name":"Grad Zagreb","recycling_2022":40.9,"median_separation_2022":27.6,"municipalities":1},{"rb":"14","name":"Osječko-baranjska","recycling_2022":39.9,"median_separation_2022":13.9,"municipalities":42},{"rb":"10","name":"Virovitičko-podravska","recycling_2022":38.2,"median_separation_2022":12.4,"municipalities":16},{"rb":"08","name":"Primorsko-goranska","recycling_2022":36.0,"median_separation_2022":29.6,"municipalities":36},{"rb":"01","name":"Zagrebačka","recycling_2022":33.3,"median_separation_2022":19.2,"municipalities":34},{"rb":"02","name":"Krapinsko-zagorska","recycling_2022":33.2,"median_separation_2022":24.8,"municipalities":32},{"rb":"03","name":"Sisačko-moslavačka","recycling_2022":31.8,"median_separation_2022":15.7,"municipalities":19},{"rb":"07","name":"Bjelovarsko-bilogorska","recycling_2022":30.9,"median_separation_2022":10.4,"municipalities":23},{"rb":"11","name":"Požeško-slavonska","recycling_2022":29.5,"median_separation_2022":13.6,"municipalities":10},{"rb":"04","name":"Karlovačka","recycling_2022":28.4,"median_separation_2022":8.4,"municipalities":22},{"rb":"16","name":"Vukovarsko-srijemska","recycling_2022":27.5,"median_separation_2022":12.2,"municipalities":31},{"rb":"13","name":"Zadarska","recycling_2022":26.9,"median_separation_2022":10.1,"municipalities":34},{"rb":"12","name":"Brodsko-posavska","recycling_2022":26.2,"median_separation_2022":7.5,"municipalities":28},{"rb":"15","name":"Šibensko-kninska","recycling_2022":25.5,"median_separation_2022":10.6,"municipalities":20},{"rb":"17","name":"Splitsko-dalmatinska","recycling_2022":24.7,"median_separation_2022":8.0,"municipalities":55},{"rb":"19","name":"Dubrovačko-neretvanska","recycling_2022":23.9,"median_separation_2022":2.8,"municipalities":22},{"rb":"09","name":"Ličko-senjska","recycling_2022":21.6,"median_separation_2022":0.0,"municipalities":12}],"facilities":{"recycling_yard":{"count":102,"label":"Reciklažno dvorište","year":2018},"landfill":{"count":63,"label":"Odlagalište","year":2026},"sorting":{"count":62,"label":"Sortirnica","year":2026},"cgo":{"count":11,"label":"Centar za gospodarenje otpadom","year":2026},"compost":{"count":27,"label":"Kompostana","year":2025},"cave_dump":{"count":842,"label":"Otpad u špilji ili jami","year":2025}},"eu_recycling_targets":{"2025":55,"2030":60,"2035":65}}
+{
+  "dumps": {
+    "on_site": 9182,
+    "reported": 2012,
+    "removed": 3001,
+    "total": 14195,
+    "with_photo": 2667,
+    "categories": [
+      { "category": "glomazni", "label": "Glomazni otpad", "count": 11648 },
+      { "category": "nepoznato", "label": "Vrsta nije navedena", "count": 1270 },
+      { "category": "mijesani", "label": "Miješani komunalni otpad", "count": 474 },
+      { "category": "gradevni", "label": "Građevni otpad", "count": 333 },
+      { "category": "ostalo", "label": "Ostalo", "count": 197 },
+      { "category": "opasni", "label": "Opasni otpad (azbest, kemikalije, ulja)", "count": 195 },
+      { "category": "vozila", "label": "Vozila, dijelovi i gume", "count": 63 },
+      { "category": "elektronicki", "label": "Električni i elektronički otpad", "count": 15 }
+    ],
+    "removed_share": 21.1,
+    "top_municipality": { "name": "Grad Zagreb", "count": 11856 }
+  },
+  "separation": {
+    "median_2022": 16.7,
+    "median_2019": 7.7,
+    "max_2022": 74.3,
+    "at_least_50": 30,
+    "under_10": 164,
+    "improved": 456,
+    "municipalities": 556,
+    "best": { "mb": "00159", "name": "Belica", "county": "Međimurska", "sep_2022": 74.3 }
+  },
+  "counties": [
+    {
+      "rb": "20",
+      "name": "Međimurska",
+      "recycling_2022": 53.8,
+      "median_separation_2022": 59.1,
+      "municipalities": 25
+    },
+    {
+      "rb": "06",
+      "name": "Koprivničko-križevačka",
+      "recycling_2022": 49.4,
+      "median_separation_2022": 26.3,
+      "municipalities": 25
+    },
+    {
+      "rb": "05",
+      "name": "Varaždinska",
+      "recycling_2022": 46.1,
+      "median_separation_2022": 31.2,
+      "municipalities": 28
+    },
+    {
+      "rb": "18",
+      "name": "Istarska",
+      "recycling_2022": 42.9,
+      "median_separation_2022": 29.2,
+      "municipalities": 41
+    },
+    {
+      "rb": "21",
+      "name": "Grad Zagreb",
+      "recycling_2022": 40.9,
+      "median_separation_2022": 27.6,
+      "municipalities": 1
+    },
+    {
+      "rb": "14",
+      "name": "Osječko-baranjska",
+      "recycling_2022": 39.9,
+      "median_separation_2022": 13.9,
+      "municipalities": 42
+    },
+    {
+      "rb": "10",
+      "name": "Virovitičko-podravska",
+      "recycling_2022": 38.2,
+      "median_separation_2022": 12.4,
+      "municipalities": 16
+    },
+    {
+      "rb": "08",
+      "name": "Primorsko-goranska",
+      "recycling_2022": 36.0,
+      "median_separation_2022": 29.6,
+      "municipalities": 36
+    },
+    {
+      "rb": "01",
+      "name": "Zagrebačka",
+      "recycling_2022": 33.3,
+      "median_separation_2022": 19.2,
+      "municipalities": 34
+    },
+    {
+      "rb": "02",
+      "name": "Krapinsko-zagorska",
+      "recycling_2022": 33.2,
+      "median_separation_2022": 24.8,
+      "municipalities": 32
+    },
+    {
+      "rb": "03",
+      "name": "Sisačko-moslavačka",
+      "recycling_2022": 31.8,
+      "median_separation_2022": 15.7,
+      "municipalities": 19
+    },
+    {
+      "rb": "07",
+      "name": "Bjelovarsko-bilogorska",
+      "recycling_2022": 30.9,
+      "median_separation_2022": 10.4,
+      "municipalities": 23
+    },
+    {
+      "rb": "11",
+      "name": "Požeško-slavonska",
+      "recycling_2022": 29.5,
+      "median_separation_2022": 13.6,
+      "municipalities": 10
+    },
+    {
+      "rb": "04",
+      "name": "Karlovačka",
+      "recycling_2022": 28.4,
+      "median_separation_2022": 8.4,
+      "municipalities": 22
+    },
+    {
+      "rb": "16",
+      "name": "Vukovarsko-srijemska",
+      "recycling_2022": 27.5,
+      "median_separation_2022": 12.2,
+      "municipalities": 31
+    },
+    {
+      "rb": "13",
+      "name": "Zadarska",
+      "recycling_2022": 26.9,
+      "median_separation_2022": 10.1,
+      "municipalities": 34
+    },
+    {
+      "rb": "12",
+      "name": "Brodsko-posavska",
+      "recycling_2022": 26.2,
+      "median_separation_2022": 7.5,
+      "municipalities": 28
+    },
+    {
+      "rb": "15",
+      "name": "Šibensko-kninska",
+      "recycling_2022": 25.5,
+      "median_separation_2022": 10.6,
+      "municipalities": 20
+    },
+    {
+      "rb": "17",
+      "name": "Splitsko-dalmatinska",
+      "recycling_2022": 24.7,
+      "median_separation_2022": 8.0,
+      "municipalities": 55
+    },
+    {
+      "rb": "19",
+      "name": "Dubrovačko-neretvanska",
+      "recycling_2022": 23.9,
+      "median_separation_2022": 2.8,
+      "municipalities": 22
+    },
+    {
+      "rb": "09",
+      "name": "Ličko-senjska",
+      "recycling_2022": 21.6,
+      "median_separation_2022": 0.0,
+      "municipalities": 12
+    }
+  ],
+  "facilities": {
+    "recycling_yard": { "count": 102, "label": "Reciklažno dvorište", "year": 2018 },
+    "landfill": { "count": 63, "label": "Odlagalište", "year": 2026 },
+    "sorting": { "count": 62, "label": "Sortirnica", "year": 2026 },
+    "cgo": { "count": 11, "label": "Centar za gospodarenje otpadom", "year": 2026 },
+    "compost": { "count": 27, "label": "Kompostana", "year": 2025 },
+    "cave_dump": { "count": 842, "label": "Otpad u špilji ili jami", "year": 2025 }
+  },
+  "eu_recycling_targets": { "2025": 55, "2030": 60, "2035": 65 }
+}

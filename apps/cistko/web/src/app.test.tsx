@@ -6,6 +6,7 @@ import league from './__fixtures__/2026-11-07_league_top5_bottom5.json';
 import municipality from './__fixtures__/2026-11-07_municipality_00019.json';
 import nearby from './__fixtures__/2026-11-07_nearby_pula_1500.json';
 import overview from './__fixtures__/2026-11-07_overview.json';
+import photos from './__fixtures__/2026-11-09_photos_8.json';
 import {
   countyLabel,
   fullName,
@@ -38,6 +39,7 @@ function routeFixture(url: string): unknown {
   if (path.startsWith('/league')) return league;
   if (path.startsWith('/municipalities/00019')) return municipality;
   if (path.startsWith('/nearby')) return nearby;
+  if (path.startsWith('/photos')) return photos;
   if (
     path.startsWith('/municipalities.geojson') ||
     path.startsWith('/dumps') ||
@@ -94,13 +96,18 @@ describe('format helpers', () => {
   });
 });
 
-describe('pages on recorded API responses (2026-11-07)', () => {
+describe('pages on recorded API responses (2026-11-07 and 2026-11-09)', () => {
   it('home shows the national numbers and the league', async () => {
     renderAt('/', <HomePage />);
-    expect(await screen.findByText('14.195')).toBeInTheDocument();
+    expect((await screen.findAllByText('14.195')).length).toBeGreaterThan(0);
     expect(screen.getByText('3.001')).toBeInTheDocument();
     expect(await screen.findByText('Općina Belica')).toBeInTheDocument();
-    expect(screen.getByText(/Nijedna županija ne reciklira 55/)).toBeInTheDocument();
+    expect(screen.getByText(/Nijedna županija ne reciklira/)).toBeInTheDocument();
+    // photos of the register are served from our own origin
+    const imgs = await screen.findAllByRole('img');
+    const srcs = imgs.map((i) => i.getAttribute('src') ?? '').filter((s) => s.includes('photo'));
+    expect(srcs.length).toBe(5);
+    expect(srcs.every((s) => /^\/api\/v1\/photo\/[0-9a-f-]{36}\.jpg$/.test(s))).toBe(true);
   });
 
   it('municipality card shows rate, change and rank', async () => {
@@ -109,8 +116,9 @@ describe('pages on recorded API responses (2026-11-07)', () => {
       await screen.findByRole('heading', { level: 1, name: 'Općina Andrijaševci' }),
     ).toBeInTheDocument();
     expect(screen.getByText('+8,7 p. b.')).toBeInTheDocument();
+    expect(screen.getAllByText('14,1 %').length).toBeGreaterThan(0);
     expect(screen.getByText(/320\. od 556 u Hrvatskoj/)).toBeInTheDocument();
-    expect(screen.getByText('upisanih lokacija')).toBeInTheDocument();
+    expect(screen.getAllByText(/upisanih lokacija/).length).toBeGreaterThan(0);
   });
 
   it('nearby lists the sites around Pula with their status', async () => {

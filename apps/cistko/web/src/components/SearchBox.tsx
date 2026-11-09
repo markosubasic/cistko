@@ -101,7 +101,7 @@ export function SearchBox<T>({
       </label>
       <div className="relative">
         <SearchIcon
-          className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[#5b6662]"
+          className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[#5f5f5f]"
           width={20}
           height={20}
         />
@@ -139,7 +139,7 @@ export function SearchBox<T>({
       {showPanel ? (
         <div id={listId} className="ck-suggest">
           {query.isFetching && !query.data ? (
-            <p className="px-4 py-3 text-sm text-[#5b6662]">Tražim…</p>
+            <p className="px-4 py-3 text-sm text-[#5f5f5f]">Tražim…</p>
           ) : null}
           {query.isError ? (
             <p className="px-4 py-3 text-sm text-[#b42318]">
@@ -147,7 +147,7 @@ export function SearchBox<T>({
             </p>
           ) : null}
           {query.isSuccess && items.length === 0 ? (
-            <p className="px-4 py-3 text-sm text-[#5b6662]">{emptyText}</p>
+            <p className="px-4 py-3 text-sm text-[#5f5f5f]">{emptyText}</p>
           ) : null}
           {items.length > 0 ? (
             <ul role="listbox" aria-label={label}>
@@ -162,7 +162,7 @@ export function SearchBox<T>({
                     choose(item);
                   }}
                   onMouseEnter={() => setActive(i)}
-                  className="min-h-[44px] cursor-pointer border-b border-[#efede6] px-4 py-2.5 last:border-b-0"
+                  className="min-h-[44px] cursor-pointer border-b border-[#d6d6d6] px-4 py-2.5 last:border-b-0"
                 >
                   {renderItem(item)}
                 </li>

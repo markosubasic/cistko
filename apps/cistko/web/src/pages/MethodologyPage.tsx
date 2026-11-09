@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { DataSourcesPage } from '@dt/ui';
 
 const LAYERS: [string, string, string][] = [
   [
@@ -25,12 +25,12 @@ export function MethodologyPage() {
   return (
     <div className="ck-wrap mt-8 grid max-w-3xl gap-6">
       <header>
-        <p className="ck-eyebrow">Kako računamo</p>
-        <h1 className="mt-1 text-3xl font-semibold tracking-tight sm:text-4xl">
-          Podaci, izračuni i ograničenja
-        </h1>
+        <h1 className="text-[2rem] sm:text-[2.75rem]">O podacima</h1>
+        <p className="ck-lead mt-3">
+          Odakle su brojke, kako ih računamo i što iz njih ne treba zaključivati.
+        </p>
       </header>
-      <section className="ck-card ck-card-pad grid gap-3">
+      <section className="ck-story grid gap-3 border-t border-[#111] pt-5">
         <h2 className="ck-h2">Odakle su podaci</h2>
         <p>
           Svi podaci dolaze iz baze „Gospodarenje otpadom” Ministarstva zaštite okoliša i
@@ -39,11 +39,7 @@ export function MethodologyPage() {
             Portalu otvorenih podataka
           </a>{' '}
           kao WFS servis (servisi.azo.hr/otpad/wfs). Čistko ih jednom preuzima i sprema u PostgreSQL
-          s PostGIS-om; vrijeme preuzimanja je na stranici{' '}
-          <Link to="/izvori" className="underline">
-            Izvori
-          </Link>
-          .
+          s PostGIS-om; vrijeme preuzimanja je na dnu stranice.
         </p>
         <div className="overflow-x-auto">
           <table className="ck-table">
@@ -66,7 +62,7 @@ export function MethodologyPage() {
           </table>
         </div>
       </section>
-      <section className="ck-card ck-card-pad grid gap-3">
+      <section className="ck-story grid gap-3 border-t border-[#111] pt-5">
         <h2 className="ck-h2">Što znače brojke</h2>
         <ul className="grid list-disc gap-2 pl-5">
           <li>
@@ -98,7 +94,7 @@ export function MethodologyPage() {
           </li>
         </ul>
       </section>
-      <section className="ck-card ck-card-pad grid gap-3">
+      <section className="ck-story grid gap-3 border-t border-[#111] pt-5">
         <h2 className="ck-h2">Ograničenja</h2>
         <ul className="grid list-disc gap-2 pl-5">
           <li>
@@ -109,8 +105,14 @@ export function MethodologyPage() {
           <li>Zapisi evidencije nemaju datum, pa se ne može prikazati kretanje kroz vrijeme.</li>
           <li>Količine i površine su procjene osobe koja je lokaciju upisala.</li>
           <li>Popis reciklažnih dvorišta je iz 2018.; noviji sloj nije objavljen u servisu.</li>
-          <li>Fotografije se učitavaju izravno s poslužitelja evidencije (eloo.haop.hr).</li>
+          <li>
+            Fotografije su s poslužitelja evidencije (eloo.haop.hr); Čistko ih preuzima i poslužuje
+            sa svoje adrese.
+          </li>
         </ul>
+      </section>
+      <section id="izvori" className="border-t border-[#111] pt-5">
+        <DataSourcesPage title="Izvori i vrijeme preuzimanja" />
       </section>
     </div>
   );

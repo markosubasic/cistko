@@ -7,7 +7,7 @@ import type { DumpCollection, FacilityCollection } from '../lib/types';
 import { POSITRON } from './RateMap';
 
 export const FACILITY_COLOR: Record<string, string> = {
-  recycling_yard: '#0EA5E9',
+  recycling_yard: '#1f5fbf',
   landfill: '#6B4F3A',
   sorting: '#7C3AED',
   cgo: '#0F766E',
@@ -98,13 +98,13 @@ export function DumpMap({
         id: 'outline-fill',
         type: 'fill',
         source: 'outline',
-        paint: { 'fill-color': '#34D399', 'fill-opacity': 0.08 },
+        paint: { 'fill-color': '#111111', 'fill-opacity': 0.04 },
       });
       map.addLayer({
         id: 'outline-line',
         type: 'line',
         source: 'outline',
-        paint: { 'line-color': '#0F2E2A', 'line-width': 2, 'line-dasharray': [2, 1] },
+        paint: { 'line-color': '#111111', 'line-width': 2, 'line-dasharray': [2, 1] },
       });
     }
     if (home && radiusM) {
@@ -113,13 +113,13 @@ export function DumpMap({
         id: 'radius-fill',
         type: 'fill',
         source: 'radius',
-        paint: { 'fill-color': '#0F2E2A', 'fill-opacity': 0.05 },
+        paint: { 'fill-color': '#111111', 'fill-opacity': 0.05 },
       });
       map.addLayer({
         id: 'radius-line',
         type: 'line',
         source: 'radius',
-        paint: { 'line-color': '#0F2E2A', 'line-width': 1.5, 'line-opacity': 0.5 },
+        paint: { 'line-color': '#111111', 'line-width': 1.5, 'line-opacity': 0.5 },
       });
     }
     if (facilities) {
@@ -165,10 +165,10 @@ export function DumpMap({
         source: 'dumps',
         filter: ['has', 'point_count'],
         paint: {
-          'circle-color': '#0F2E2A',
+          'circle-color': '#111111',
           'circle-opacity': 0.88,
           'circle-radius': ['step', ['get', 'point_count'], 14, 20, 18, 100, 24, 1000, 32],
-          'circle-stroke-color': '#34D399',
+          'circle-stroke-color': '#ffffff',
           'circle-stroke-width': 3,
         },
       });
@@ -222,7 +222,7 @@ export function DumpMap({
       const el = document.createElement('div');
       el.className = 'ck-home-marker';
       el.style.cssText =
-        'width:22px;height:22px;border-radius:999px;background:#0F2E2A;border:4px solid #34D399;box-shadow:0 0 0 6px rgba(52,211,153,.25)';
+        'width:22px;height:22px;border-radius:999px;background:#111111;border:3px solid #fff;outline:2px solid #111';
       new Marker({ element: el }).setLngLat(home).addTo(map);
     }
   }

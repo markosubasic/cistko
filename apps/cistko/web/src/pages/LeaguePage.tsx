@@ -2,7 +2,6 @@ import { ErrorState, LoadingSkeleton } from '@dt/ui';
 import { useQuery } from '@tanstack/react-query';
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { RateMap } from '../components/RateMap';
 import { api } from '../lib/api';
 import { fullName, int, pct, rateColor, signedPp } from '../lib/format';
 import type { LeagueRow } from '../lib/types';
@@ -20,10 +19,6 @@ const removedShare = (r: LeagueRow) => (r.dumps > 0 ? (100 * r.removed) / r.dump
 
 export function LeaguePage() {
   const league = useQuery({ queryKey: ['league'], queryFn: ({ signal }) => api.league(signal) });
-  const outlines = useQuery({
-    queryKey: ['outlines'],
-    queryFn: ({ signal }) => api.outlines(signal),
-  });
   const [county, setCounty] = useState('');
   const [q, setQ] = useState('');
   const [sort, setSort] = useState<SortKey>('sep_2022');
@@ -48,24 +43,16 @@ export function LeaguePage() {
   }, [league.data, county, q, sort]);
 
   return (
-    <div className="ck-wrap mt-8 grid gap-6">
+    <div className="ck-wrap grid gap-6 pt-8">
       <header>
-        <p className="ck-eyebrow">Liga općina</p>
-        <h1 className="mt-1 text-3xl font-semibold tracking-tight sm:text-4xl">
-          Tko odvaja najviše otpada?
-        </h1>
+        <h1 className="text-[2rem] sm:text-[2.75rem]">Tko odvaja najviše otpada?</h1>
         <p className="ck-muted mt-2 max-w-3xl">
           Svih 556 općina i gradova po udjelu odvojeno prikupljenog komunalnog otpada u javnoj
           usluzi (2022.), s promjenom od 2019. i stanjem upisanih lokacija odbačenog otpada.
         </p>
       </header>
-      {outlines.data ? (
-        <RateMap data={outlines.data} height="h-[360px]" />
-      ) : (
-        <div className="ck-map h-[360px] animate-pulse" />
-      )}
       <div className="ck-card overflow-hidden">
-        <div className="flex flex-wrap items-end gap-3 border-b border-[#e4e2da] p-4">
+        <div className="flex flex-wrap items-end gap-3 border-b border-[#b1b4b6] p-4">
           <label className="grid gap-1 text-sm font-semibold">
             Županija
             <select
@@ -74,7 +61,7 @@ export function LeaguePage() {
                 setCounty(e.target.value);
                 setLimit(60);
               }}
-              className="min-h-[44px] rounded-xl border border-[#e4e2da] bg-white px-3 font-normal"
+              className="min-h-[44px] border border-[#111] bg-white px-3 font-normal"
             >
               <option value="">Sve županije</option>
               {counties.map((c) => (
@@ -90,7 +77,7 @@ export function LeaguePage() {
               value={q}
               onChange={(e) => setQ(e.target.value)}
               placeholder="ime općine ili grada"
-              className="min-h-[44px] rounded-xl border border-[#e4e2da] px-3 font-normal"
+              className="min-h-[44px] border border-[#111] px-3 font-normal"
             />
           </label>
           <div className="ck-seg flex-wrap" role="group" aria-label="Poredaj po">
@@ -133,12 +120,12 @@ export function LeaguePage() {
               <tbody>
                 {rows.slice(0, limit).map((r) => (
                   <tr key={r.mb}>
-                    <td className="ck-num text-[#5b6662]">{r.rank_hr}.</td>
+                    <td className="ck-num text-[#5f5f5f]">{r.rank_hr}.</td>
                     <td>
                       <Link to={`/opcina/${r.mb}`} className="font-medium hover:underline">
                         {fullName(r.kind, r.name)}
                       </Link>
-                      <span className="block text-xs text-[#5b6662]">{r.county}</span>
+                      <span className="block text-xs text-[#5f5f5f]">{r.county}</span>
                     </td>
                     <td>
                       <span className="flex items-center gap-2">

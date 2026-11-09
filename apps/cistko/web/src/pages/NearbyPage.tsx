@@ -4,10 +4,9 @@ import { useMemo, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { DumpCard, StatusChip } from '../components/bits';
 import { DumpMap } from '../components/DumpMap';
-import { ArrowIcon, PinIcon, RecycleIcon } from '../components/icons';
 import { AddressSearch } from '../components/Searches';
 import { ApiError, api } from '../lib/api';
-import { countyLabel, distance, fullName, int, lokacija, pct, rateColor } from '../lib/format';
+import { countyLabel, distance, fullName, int, lokacija, pct } from '../lib/format';
 import type { DumpCollection, DumpStatus } from '../lib/types';
 
 const RADII = [500, 1500, 3000];
@@ -77,13 +76,11 @@ export function NearbyPage() {
   const listed = onlyPhotos ? d.sites.filter((s) => s.photos.length > 0) : d.sites;
 
   return (
-    <div className="ck-wrap mt-8 grid gap-8">
+    <div className="ck-wrap grid gap-10 pt-8">
       <header className="grid gap-4 md:grid-cols-[1fr_minmax(18rem,26rem)] md:items-end">
         <div>
-          <p className="ck-eyebrow">Oko tvoje adrese</p>
-          <h1 className="mt-1 text-3xl font-semibold tracking-tight sm:text-4xl">
-            {title ?? 'Odabrana točka'}
-          </h1>
+          <p className="ck-muted">Oko tvoje adrese</p>
+          <h1 className="mt-3 text-[2rem] sm:text-[2.75rem]">{title ?? 'Odabrana točka'}</h1>
           {m ? (
             <p className="ck-muted mt-2">
               {fullName(m.kind, m.name)}
@@ -142,62 +139,46 @@ export function NearbyPage() {
           </div>
         </div>
 
-        <aside className="grid content-start gap-4">
+        <aside className="grid content-start gap-8">
           {m ? (
-            <Link
-              to={`/opcina/${m.mb}`}
-              className="ck-card ck-card-pad group grid gap-2 no-underline"
-            >
-              <span className="ck-eyebrow">Tvoja {m.kind === 'Grad' ? 'jedinica' : 'općina'}</span>
-              <span className="text-xl font-semibold">{fullName(m.kind, m.name)}</span>
-              <span className="flex items-baseline gap-2">
-                <span
-                  className="ck-num text-4xl font-semibold"
-                  style={{ color: rateColor(m.sep_2022) }}
-                >
-                  {pct(m.sep_2022)}
-                </span>
-                <span className="ck-muted text-sm">otpada odvojeno 2022.</span>
-              </span>
-              <span className="inline-flex items-center gap-1 font-semibold text-[#047857]">
-                Kartica općine <ArrowIcon className="transition group-hover:translate-x-1" />
-              </span>
-            </Link>
+            <div>
+              <h2 className="text-lg font-semibold">{fullName(m.kind, m.name)}</h2>
+              <p className="mt-1">
+                <span className="ck-num text-[2rem] font-semibold">{pct(m.sep_2022)}</span>
+                <span className="ml-2 text-[#5f5f5f]">otpada odvojeno 2022.</span>
+              </p>
+              <p className="mt-2">
+                <Link to={`/opcina/${m.mb}`}>Kartica općine: rang, susjedi, napredak</Link>
+              </p>
+            </div>
           ) : null}
-          <div className="ck-card ck-card-pad">
-            <h2 className="flex items-center gap-2 font-semibold">
-              <RecycleIcon className="text-[#0EA5E9]" /> Najbliža reciklažna dvorišta
-            </h2>
-            <ul className="mt-3 grid gap-3">
-              {d.recycling_yards.map((f) => (
-                <li key={f.id} className="grid grid-cols-[1fr_auto] gap-2">
-                  <span>
-                    <span className="block font-medium">{f.name}</span>
-                    <span className="block text-sm text-[#5b6662]">{f.address}</span>
-                  </span>
-                  <span className="ck-num text-sm font-semibold">{distance(f.distance_m)}</span>
-                </li>
-              ))}
-            </ul>
-            <p className="mt-3 text-xs text-[#5b6662]">
+          <div>
+            <h2 className="text-lg font-semibold">Najbliža reciklažna dvorišta</h2>
+            <table className="ck-table mt-1">
+              <tbody>
+                {d.recycling_yards.map((f) => (
+                  <tr key={f.id}>
+                    <td>
+                      {f.name}
+                      <span className="block text-sm text-[#5f5f5f]">{f.address}</span>
+                    </td>
+                    <td className="ck-num text-right">{distance(f.distance_m)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <p className="mt-2 text-sm text-[#5f5f5f]">
               Popis stacionarnih reciklažnih dvorišta iz 2018.
             </p>
           </div>
-          <div className="ck-card ck-card-pad bg-[#0F2E2A] text-white">
-            <h2 className="flex items-center gap-2 font-semibold">
-              <PinIcon className="text-[#34D399]" /> Vidiš smeće kojeg nema na karti?
-            </h2>
-            <p className="mt-2 text-sm text-white/80">
+          <div className="border-t-4 border-[#111] pt-4">
+            <h2 className="text-lg font-semibold">Vidiš smeće kojeg nema na karti?</h2>
+            <p className="mt-2">
               Prijavi ga u službenu Evidenciju lokacija odbačenog otpada (ELOO). Prijave građana iz
               te evidencije Čistko prikazuje kao „Prijavili građani”.
             </p>
-            <a
-              href={ELOO}
-              target="_blank"
-              rel="noreferrer"
-              className="ck-btn ck-btn--mint mt-4 w-full"
-            >
-              Prijavi odbačeni otpad <ArrowIcon />
+            <a href={ELOO} target="_blank" rel="noreferrer" className="ck-btn mt-4">
+              Prijavi odbačeni otpad
             </a>
           </div>
         </aside>
@@ -220,14 +201,14 @@ export function NearbyPage() {
                 type="checkbox"
                 checked={onlyPhotos}
                 onChange={(e) => setOnlyPhotos(e.target.checked)}
-                className="h-4 w-4 accent-[#0F2E2A]"
+                className="h-4 w-4 accent-[#111]"
               />
               Samo s fotografijom
             </label>
           </div>
           <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {listed.slice(0, show).map((s) => (
-              <div key={s.id} id={`dump-${s.id}`} className="ck-rise">
+              <div key={s.id} id={`dump-${s.id}`}>
                 <DumpCard d={s} compact />
               </div>
             ))}

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 from typing import Any
 
@@ -292,6 +293,24 @@ _DUMP_SELECT = (
     "d.volume_m3, d.area_m2, d.status, d.photos, ST_X(d.geom) x, ST_Y(d.geom) y, m.name mname "
     "from dump_site d left join municipality m using (mb) "
 )
+
+
+def photo_sample(session: Session, limit: int) -> list[dict[str, Any]]:
+    """Photographed sites from as many different municipalities as possible, in a stable order
+    (one site per municipality, picked by a hash of its id, so the selection does not change between
+    requests but is spread over the country)."""
+    sql = _DUMP_SELECT + "where jsonb_array_length(d.photos) > 0 and d.mb is not null"
+    rows = session.execute(text(sql)).mappings().all()
+    seen: set[str] = set()
+    picked: list[dict[str, Any]] = []
+    for r in sorted(rows, key=lambda r: hashlib.md5(str(r["id"]).encode()).hexdigest()):  # noqa: S324
+        if r["mb"] in seen:
+            continue
+        seen.add(r["mb"])
+        picked.append(_dump_row(r))
+        if len(picked) >= limit:
+            break
+    return picked
 
 
 def dump_detail(session: Session, site_id: int) -> dict[str, Any] | None:

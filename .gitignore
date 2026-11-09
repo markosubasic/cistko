@@ -50,3 +50,6 @@ apps/*/data/derived/
 
 # osmnx default cache (our code redirects it to apps/*/data/cache)
 /cache/
+
+# Photo cache of the API (fetched from the register on demand)
+apps/*/data/photos/

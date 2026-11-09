@@ -67,6 +67,8 @@ export const api = {
   dumps: (mb?: string, signal?: AbortSignal) =>
     request<DumpCollection>(`/dumps${mb ? `?${qs({ mb })}` : ''}`, { signal }),
   dump: (id: number, signal?: AbortSignal) => request<Dump>(`/dumps/${id}`, { signal }),
+  photos: (limit: number, signal?: AbortSignal) =>
+    request<{ items: Dump[] }>(`/photos?${qs({ limit })}`, { signal }),
   nearby: (lat: number, lon: number, radius: number, signal?: AbortSignal) =>
     request<Nearby>(`/nearby?${qs({ lat, lon, radius_m: radius })}`, { signal }),
   facilities: (signal?: AbortSignal) => request<FacilityCollection>('/facilities', { signal }),

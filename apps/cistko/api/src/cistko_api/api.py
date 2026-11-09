@@ -8,9 +8,10 @@ from collections.abc import Callable
 from datetime import UTC, datetime
 from typing import Annotated, Any, Literal
 
-from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi import APIRouter, Depends, HTTPException, Query, Response
 from sqlalchemy.orm import Session
 
+from cistko_api import photos as photos_mod
 from cistko_api import stats
 from cistko_api.constants import (
     ELOO_PUBLIC_URL,
@@ -148,6 +149,31 @@ def make_router(get_session: Callable[..., Any], settings: CistkoSettings) -> AP
                 and (mb is None or f["properties"]["mb"] == mb)
             ],
         }
+
+    @router.get("/photo/{name}")
+    def photo(name: str) -> Response:
+        """A register photo served from this origin (``<uuid>.jpg``), cached on disk."""
+        uuid = name.removesuffix(".jpg")
+        if not name.endswith(".jpg") or not photos_mod.UUID_RE.match(uuid):
+            raise HTTPException(404, "Nepoznata fotografija.")
+        try:
+            data = photos_mod.get_photo(settings, uuid)
+        except photos_mod.PhotoError as exc:
+            raise HTTPException(502, "Fotografija trenutno nije dostupna.") from exc
+        return Response(
+            content=data,
+            media_type="image/jpeg",
+            headers={"Cache-Control": "public, max-age=604800, immutable"},
+        )
+
+    @router.get("/photos")
+    def photos(
+        limit: Annotated[int, Query(ge=1, le=24)] = 8,
+        session: Session = Depends(get_session),  # noqa: B008
+    ) -> dict[str, Any]:
+        """Photographed dump sites from different municipalities (stable selection) for the home page."""
+        items = cache.get(f"photos:{limit}", lambda: stats.photo_sample(session, limit))
+        return {"items": items}
 
     @router.get("/dumps/{site_id}")
     def dump(site_id: int, session: Session = Depends(get_session)) -> dict[str, Any]:  # noqa: B008

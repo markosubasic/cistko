@@ -84,3 +84,12 @@ export function countyLabel(county: string): string {
 export function fullName(kind: string, name: string): string {
   return name.toLowerCase().startsWith(kind.toLowerCase()) ? name : `${kind} ${name}`;
 }
+
+const ELOO_IMAGE =
+  /^https:\/\/eloo\.haop\.hr\/public\/api\/cms\/image\/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})\.jpg$/;
+
+/** Register photos are served from our own origin (`/api/v1/photo/<uuid>.jpg`); other URLs pass through. */
+export function photoUrl(url: string): string {
+  const m = ELOO_IMAGE.exec(url);
+  return m ? `/api/v1/photo/${m[1]}.jpg` : url;
+}

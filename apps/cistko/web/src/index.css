@@ -3,60 +3,49 @@
 @tailwind components;
 
 /*
- * Čistko look: deep forest ink (#0F2E2A) for the header and hero, fresh mint accent, warm off-white page,
- * white cards with soft shadows, IBM Plex (shared). Status colours: red = waste on site, amber = reported by
- * citizens, green = removed. Separation rate: red (little) -> green (a lot), see lib/format.ts.
- * White text on --brand-600/700 is >= 7:1.
+ * Čistko look: a newspaper data story. Serif headlines and standfirsts (Georgia, a system font, so no extra
+ * download), IBM Plex Sans for interface and numbers, white paper, black ink, thin rules, real photos.
+ * No gradients, shadows, highlight markers or animation. Status colours carry data only:
+ * red = waste on site, amber = reported by citizens, green = removed.
  */
 :root {
-  --brand-600: 15 46 42; /* #0F2E2A */
-  --brand-700: 10 33 30;
-  --accent-600: 4 120 87; /* #047857 */
+  --brand-600: 17 17 17;
+  --brand-700: 17 17 17;
+  --accent-600: 17 17 17;
 
-  --ink: #0f2e2a;
-  --ink-2: #16413b;
-  --mint: #34d399;
-  --mint-soft: #d1fae5;
-  --page: #f6f5f1;
-  --card: #ffffff;
-  --line: #e4e2da;
-  --muted: #5b6662;
-  --text: #13201d;
-  --on: #e5484d;
-  --rep: #f5a524;
-  --rem: #2bb673;
-  --radius: 16px;
-  --shadow: 0 1px 2px rgb(15 46 42 / 0.06), 0 8px 24px -12px rgb(15 46 42 / 0.18);
+  --ink: #111111;
+  --muted: #5f5f5f;
+  --line: #d6d6d6;
+  --soft: #f4f2ee;
+  --link: #0b4f9c;
+  --focus: #ffbf47;
+  --serif: Georgia, 'Times New Roman', Times, serif;
+  --text: #111111;
 }
 
 html,
 body {
-  background: var(--page);
-  color: var(--text);
+  background: #fff;
+  color: var(--ink);
 }
 
-body {
-  font-feature-settings: 'tnum' 1;
+a {
+  color: var(--link);
+  text-underline-offset: 2px;
 }
 
 .ck-num {
-  font-family: var(--font-sans);
   font-variant-numeric: tabular-nums;
-  letter-spacing: -0.02em;
 }
 
 /* ---------- header ---------- */
 .ck-header {
-  position: sticky;
-  top: 0;
-  z-index: 40;
-  background: rgb(15 46 42 / 0.96);
-  backdrop-filter: saturate(140%) blur(8px);
-  color: #fff;
-  border-bottom: 1px solid rgb(255 255 255 / 0.08);
+  background: #fff;
+  border-bottom: 1px solid var(--ink);
 }
 .ck-header a {
-  color: #fff;
+  color: var(--ink);
+  text-decoration: none;
 }
 .ck-nav {
   scrollbar-width: none;
@@ -67,43 +56,55 @@ body {
 .ck-nav a {
   white-space: nowrap;
   flex: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.45rem 0.8rem;
-  border-radius: 999px;
-  font-weight: 500;
-  color: rgb(255 255 255 / 0.82);
-  text-decoration: none;
-  transition: background 0.15s;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.9375rem;
 }
 .ck-nav a:hover {
-  background: rgb(255 255 255 / 0.08);
-  color: #fff;
+  text-decoration: underline;
 }
 .ck-nav a[aria-current='page'] {
-  background: var(--mint);
-  color: var(--ink);
-}
-@media (max-width: 640px) {
-  .ck-nav a {
-    padding: 0.35rem 0.65rem;
-    font-size: 0.875rem;
-  }
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 .ck-logo {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
-  font-weight: 600;
-  font-size: 1.25rem;
-  letter-spacing: -0.02em;
-  text-decoration: none;
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+.ck-dateline {
+  margin-top: 0.35rem;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.9375rem;
+  color: var(--muted);
+}
+.ck-header {
+  border-bottom: 3px double var(--ink) !important;
+}
+.ck-footer {
+  border-top: 1px solid var(--ink);
+  color: var(--muted);
+}
+.ck-lead-photo {
+  margin: 0;
+}
+.ck-lead-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: var(--soft);
+}
+.ck-lead-photo figcaption {
+  margin-top: 0.5rem;
 }
 
 /* ---------- layout ---------- */
 .ck-wrap {
-  max-width: 76rem;
+  max-width: 70rem;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
@@ -115,141 +116,136 @@ body {
     padding-right: 1.5rem;
   }
 }
-.ck-glass {
-  background: rgb(255 255 255 / 0.05);
-  border: 1px solid rgb(255 255 255 / 0.12);
-  border-radius: 1rem;
-  padding: 1rem;
+.ck-column {
+  max-width: 44rem;
 }
 
-/* ---------- hero ---------- */
-.ck-hero {
-  position: relative;
-  overflow: hidden;
-  background:
-    radial-gradient(1200px 400px at 85% -10%, rgb(52 211 153 / 0.28), transparent 60%),
-    radial-gradient(800px 300px at 0% 110%, rgb(245 165 36 / 0.16), transparent 60%),
-    linear-gradient(180deg, #0f2e2a, #12352f);
-  color: #fff;
-}
-.ck-hero::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(rgb(255 255 255 / 0.07) 1px, transparent 1px);
-  background-size: 22px 22px;
-  mask-image: linear-gradient(180deg, transparent, #000 30%, #000 70%, transparent);
-  pointer-events: none;
-}
-.ck-hero h1 {
-  font-weight: 600;
-  letter-spacing: -0.035em;
-  line-height: 1.04;
-}
-.ck-hero .ck-lead {
-  color: rgb(255 255 255 / 0.78);
-}
-.ck-mint {
-  color: var(--mint);
-}
-
-/* ---------- surfaces ---------- */
-.ck-card {
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-}
-.ck-card-pad {
-  padding: 1.25rem;
-}
-@media (min-width: 640px) {
-  .ck-card-pad {
-    padding: 1.5rem;
-  }
-}
-.ck-eyebrow {
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #047857;
+/* ---------- type ---------- */
+h1 {
+  font-family: var(--serif);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
 }
 .ck-h2 {
-  font-size: 1.375rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  font-family: var(--serif);
+  font-size: 1.75rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.ck-lead {
+  font-family: var(--serif);
+  font-size: 1.3125rem;
+  line-height: 1.55;
+}
+.ck-story p {
+  font-family: var(--serif);
+  font-size: 1.125rem;
+  line-height: 1.65;
 }
 .ck-muted {
   color: var(--muted);
 }
-
-/* ---------- stat tiles ---------- */
-.ck-stat {
-  display: grid;
-  gap: 0.25rem;
-}
-.ck-stat .ck-stat-value {
-  font-size: clamp(2rem, 4vw, 2.75rem);
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: -0.04em;
-}
-.ck-stat .ck-stat-label {
-  font-size: 0.875rem;
-  color: rgb(255 255 255 / 0.72);
-}
-.ck-card .ck-stat .ck-stat-label {
+.ck-caption {
+  font-size: 0.8125rem;
   color: var(--muted);
+  line-height: 1.35;
 }
 
-/* ---------- buttons, chips ---------- */
+/* ---------- surfaces ---------- */
+.ck-card {
+  background: #fff;
+  border: 1px solid var(--line);
+}
+.ck-card-pad {
+  padding: 1.25rem;
+}
+.ck-inset {
+  border-left: 3px solid var(--ink);
+  padding: 0.25rem 0 0.25rem 1rem;
+  font-style: italic;
+}
+
+/* ---------- photo strip ---------- */
+.ck-strip {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+@media (min-width: 768px) {
+  .ck-strip {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+.ck-strip figure {
+  margin: 0;
+}
+.ck-strip img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: var(--soft);
+}
+.ck-strip figcaption {
+  margin-top: 0.35rem;
+}
+
+/* ---------- stats (municipality page) ---------- */
+.ck-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 2rem;
+  border-top: 1px solid var(--ink);
+  padding-top: 1rem;
+}
+@media (min-width: 1024px) {
+  .ck-stats {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+.ck-stat-value {
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 600;
+  margin: 0;
+}
+.ck-stat-label {
+  margin-top: 0.25rem;
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+/* ---------- buttons, tags ---------- */
 .ck-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
   min-height: 44px;
-  padding: 0.55rem 1.1rem;
-  border-radius: 999px;
+  padding: 0.5rem 1rem;
   font-weight: 600;
   background: var(--ink);
-  color: #fff;
+  color: #fff !important;
   text-decoration: none;
-  border: 1px solid transparent;
-  transition:
-    transform 0.12s,
-    background 0.15s;
+  border: 0;
 }
 .ck-btn:hover {
-  background: var(--ink-2);
-}
-.ck-btn:active {
-  transform: translateY(1px);
-}
-.ck-btn--mint {
-  background: var(--mint);
-  color: var(--ink);
-}
-.ck-btn--mint:hover {
-  background: #6ee7b7;
+  background: #333;
 }
 .ck-btn--ghost {
-  background: transparent;
-  color: var(--ink);
-  border-color: var(--line);
+  background: #fff;
+  color: var(--ink) !important;
+  border: 1px solid var(--ink);
 }
 .ck-btn--ghost:hover {
-  background: #fff;
+  background: var(--soft);
 }
 .ck-chip {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  padding: 0.2rem 0.6rem;
-  border-radius: 999px;
-  font-size: 0.8125rem;
-  font-weight: 600;
+  font-size: 0.875rem;
   white-space: nowrap;
 }
 .ck-dot {
@@ -261,185 +257,132 @@ body {
 }
 .ck-seg {
   display: inline-flex;
-  padding: 0.25rem;
-  border-radius: 999px;
-  background: #ece9e1;
-  gap: 0.25rem;
+  border: 1px solid var(--ink);
 }
 .ck-seg button {
-  padding: 0.35rem 0.8rem;
-  border-radius: 999px;
-  font-weight: 600;
-  font-size: 0.875rem;
-  color: var(--muted);
+  padding: 0.35rem 0.85rem;
+  font-size: 0.9375rem;
+  color: var(--ink);
+  background: #fff;
+}
+.ck-seg button + button {
+  border-left: 1px solid var(--ink);
 }
 .ck-seg button[aria-pressed='true'] {
-  background: #fff;
-  color: var(--ink);
-  box-shadow: var(--shadow);
+  background: var(--ink);
+  color: #fff;
 }
 
 /* ---------- inputs ---------- */
 .ck-input {
   width: 100%;
-  min-height: 52px;
-  padding: 0.75rem 1rem 0.75rem 2.75rem;
-  border-radius: 14px;
-  border: 1px solid var(--line);
+  min-height: 48px;
+  padding: 0.5rem 0.75rem 0.5rem 2.5rem;
+  border: 1px solid var(--ink);
+  border-radius: 0;
   background: #fff;
-  color: var(--text);
-  font-size: 1rem;
-  box-shadow: var(--shadow);
+  color: var(--ink);
+  font-size: 1.0625rem;
 }
 .ck-input:focus {
-  outline: 3px solid rgb(52 211 153 / 0.55);
-  outline-offset: 1px;
-}
-.ck-hero .ck-input {
-  border-color: transparent;
+  outline: 3px solid var(--focus);
+  outline-offset: 0;
 }
 .ck-suggest {
   position: absolute;
   z-index: 30;
   left: 0;
   right: 0;
-  margin-top: 0.4rem;
   background: #fff;
-  color: var(--text);
-  border-radius: 14px;
-  border: 1px solid var(--line);
-  box-shadow: 0 16px 40px -12px rgb(15 46 42 / 0.35);
-  overflow: hidden;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  border-top: 0;
 }
 .ck-suggest li[aria-selected='true'],
 .ck-suggest li:hover {
-  background: var(--mint-soft);
+  background: var(--soft);
 }
 
 /* ---------- map ---------- */
 .ck-map {
   position: relative;
-  border-radius: var(--radius);
-  overflow: hidden;
   border: 1px solid var(--line);
-  background: #e8efe9;
+  background: #eef0ee;
 }
 .ck-map .maplibregl-map {
   height: 100%;
 }
+.ck-map .dt-map {
+  border-radius: 0;
+}
 .ck-legend {
   position: absolute;
-  left: 0.75rem;
-  bottom: 0.75rem;
+  left: 0.5rem;
+  bottom: 0.5rem;
   z-index: 2;
-  background: rgb(255 255 255 / 0.94);
-  border-radius: 12px;
-  padding: 0.6rem 0.75rem;
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 0.5rem 0.6rem;
   font-size: 0.75rem;
-  box-shadow: var(--shadow);
-  max-width: calc(100% - 1.5rem);
-}
-.maplibregl-popup-content {
-  border-radius: 12px !important;
-  padding: 0.75rem 0.9rem !important;
-  box-shadow: 0 12px 32px -12px rgb(15 46 42 / 0.4) !important;
-  font-family: var(--font-sans);
+  max-width: calc(100% - 1rem);
 }
 
 /* ---------- bars ---------- */
 .ck-bar {
-  height: 0.75rem;
-  border-radius: 999px;
-  background: #ece9e1;
+  height: 0.6rem;
+  background: var(--soft);
   position: relative;
   overflow: visible;
 }
 .ck-bar > span {
   display: block;
   height: 100%;
-  border-radius: 999px;
 }
 .ck-tick {
   position: absolute;
-  top: -0.35rem;
-  bottom: -0.35rem;
+  top: -0.3rem;
+  bottom: -0.3rem;
   width: 2px;
   background: var(--ink);
-  border-radius: 2px;
 }
 
 /* ---------- photos ---------- */
 .ck-photo {
   position: relative;
   overflow: hidden;
-  border-radius: 12px;
-  background: #e2e0d8;
+  background: var(--soft);
   aspect-ratio: 4 / 3;
 }
 .ck-photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s;
-}
-.ck-photo:hover img {
-  transform: scale(1.04);
 }
 
 /* ---------- table ---------- */
 .ck-table {
   width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  font-size: 0.9375rem;
+  border-collapse: collapse;
 }
 .ck-table th {
   position: sticky;
   top: 0;
-  background: #faf9f6;
+  background: #fff;
   text-align: left;
-  font-size: 0.75rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--muted);
   font-weight: 600;
-  padding: 0.6rem 0.75rem;
-  border-bottom: 1px solid var(--line);
+  padding: 0.5rem 0.75rem 0.5rem 0;
+  border-bottom: 1px solid var(--ink);
 }
 .ck-table td {
-  padding: 0.6rem 0.75rem;
-  border-bottom: 1px solid #efede6;
-}
-.ck-table tbody tr:hover {
-  background: #fbfaf7;
-}
-
-/* ---------- motion ---------- */
-@keyframes ck-rise {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-.ck-rise {
-  animation: ck-rise 0.5s ease-out both;
-}
-@media (prefers-reduced-motion: reduce) {
-  .ck-rise,
-  .ck-photo img {
-    animation: none;
-    transition: none;
-  }
+  padding: 0.5rem 0.75rem 0.5rem 0;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
 }
 
 /* ---------- focus ---------- */
 :focus-visible {
-  outline: 3px solid #10b981;
-  outline-offset: 2px;
+  outline: 3px solid var(--focus);
+  outline-offset: 0;
 }
 
 @media print {
