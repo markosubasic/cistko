@@ -82,7 +82,11 @@ inteligenciji **Claude Code** (Anthropic); radna pravila za taj alat su u [CLAUD
 
 ## Tim
 
-Ivan Stipić, Marko Subašić. Mentor: _upisati_.
+Tim **Polaris**, Fakultet elektrotehnike i računarstva, Sveučilište u Zagrebu:
+
+- Marko Subašić
+- Ivan Stipić
+- Mentor: prof. dr. sc. Zvonko Kostanjčar
 
 Zajednička osnova (`packages/core`, `packages/ui`, `infra/`) izdvojena je iz repozitorija
 [istipic/datathon-2026](https://github.com/istipic/datathon-2026) s očuvanom poviješću commitova.
