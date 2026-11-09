@@ -72,8 +72,8 @@ def overview(session: Session) -> dict[str, Any]:
     ).scalar_one()
     top_mun = session.execute(
         text(
-            "select m.name, count(*) n from dump_site d join municipality m using (mb) "
-            "group by m.name order by n desc limit 1"
+            "select m.name, count(*) n, m.mb from dump_site d join municipality m using (mb) "
+            "group by m.name, m.mb order by n desc limit 1"
         )
     ).one()
     sep = session.execute(
@@ -100,7 +100,23 @@ def overview(session: Session) -> dict[str, Any]:
     facilities = dict(
         session.execute(text("select kind, count(*) from facility group by kind")).all()
     )  # type: ignore[arg-type]
+    # The register is dominated by one city: split the counts so the home page can tell that story.
+    top_counts = _status_counts(session, "where mb = :mb", {"mb": top_mun[2]})
+    rest_counts = _status_counts(session, "where mb is distinct from :mb", {"mb": top_mun[2]})
+    without = session.execute(
+        text(
+            "select count(*) from municipality m "
+            "where not exists (select 1 from dump_site d where d.mb = m.mb)"
+        )
+    ).scalar_one()
     return {
+        "story": {
+            "top": {"mb": top_mun[2], "name": display_name(top_mun[0])}
+            | top_counts
+            | {"removed_share": _removed_share(top_counts)},
+            "rest": rest_counts | {"removed_share": _removed_share(rest_counts)},
+            "municipalities_without_dumps": int(without),
+        },
         "dumps": dumps
         | {
             "with_photo": int(with_photo),

@@ -392,6 +392,88 @@ h1 {
   }
 }
 
+/* ---------- scrolly story ---------- */
+.ck-scrolly-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  margin-top: 1rem;
+}
+.ck-scrolly-map {
+  position: sticky;
+  top: 0;
+  height: 52vh;
+  z-index: 3;
+  padding: 0.5rem 0;
+  background: #fff;
+}
+.ck-scrolly-steps {
+  position: relative;
+  z-index: 1;
+}
+.ck-step {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem 0;
+  opacity: 0.25;
+  transition: opacity 400ms ease;
+}
+.ck-step.is-active,
+.ck-step--end {
+  opacity: 1;
+}
+.ck-step--end {
+  min-height: 40vh;
+  align-items: flex-start;
+}
+.ck-step-big {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.ck-step-body {
+  margin-top: 0.75rem;
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  max-width: 28rem;
+}
+@media (min-width: 1024px) {
+  .ck-scrolly-grid {
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: 3rem;
+  }
+  .ck-scrolly-map {
+    grid-column: 2;
+    grid-row: 1;
+    height: 100vh;
+    padding: 1.5rem 0;
+  }
+  .ck-scrolly-steps {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .ck-step {
+    min-height: 90vh;
+  }
+}
+@media (max-width: 1023px) {
+  .ck-step {
+    justify-content: flex-end;
+    min-height: 75vh;
+  }
+  .ck-step-big {
+    font-size: 2.75rem;
+  }
+  .ck-step-body {
+    font-size: 1.125rem;
+  }
+}
+
 /* ---------- motion (all of it switched off for prefers-reduced-motion) ---------- */
 .ck-bar > span {
   transition: width 900ms cubic-bezier(0.22, 1, 0.36, 1);

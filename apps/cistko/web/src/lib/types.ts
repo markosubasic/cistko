@@ -30,6 +30,12 @@ export interface CategoryCount {
 }
 
 export interface Overview {
+  /** The register split into its biggest municipality and the rest of the country. */
+  story: {
+    top: StatusCounts & { mb: string; name: string; removed_share: number | null };
+    rest: StatusCounts & { removed_share: number | null };
+    municipalities_without_dumps: number;
+  };
   dumps: StatusCounts & {
     with_photo: number;
     categories: CategoryCount[];

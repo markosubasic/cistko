@@ -5,7 +5,9 @@ const nf1 = new Intl.NumberFormat('hr-HR', { minimumFractionDigits: 1, maximumFr
 
 export const int = (n: number) => nf0.format(n);
 export const dec1 = (n: number) => nf1.format(n);
-export const pct = (n: number | null | undefined) => (n == null ? '–' : `${nf1.format(n)} %`);
+/** Non-breaking space, so a percent sign never wraps onto its own line. */
+const NBSP = String.fromCharCode(0xa0);
+export const pct = (n: number | null | undefined) => (n == null ? '–' : `${nf1.format(n)}${NBSP}%`);
 
 export function signedPp(n: number | null | undefined): string {
   if (n == null) return '–';

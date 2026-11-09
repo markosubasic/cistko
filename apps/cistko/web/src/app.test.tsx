@@ -5,7 +5,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import league from './__fixtures__/2026-11-07_league_top5_bottom5.json';
 import municipality from './__fixtures__/2026-11-07_municipality_00019.json';
 import nearby from './__fixtures__/2026-11-07_nearby_pula_1500.json';
-import overview from './__fixtures__/2026-11-07_overview.json';
+import overview from './__fixtures__/2026-11-09_overview.json';
 import photos from './__fixtures__/2026-11-09_photos_8.json';
 import {
   countyLabel,
@@ -75,7 +75,7 @@ function renderAt(path: string, element: React.ReactNode, pattern = '*') {
 
 describe('format helpers', () => {
   it('formats percentages and percentage points in Croatian', () => {
-    expect(pct(16.7)).toBe('16,7 %');
+    expect(pct(16.7)).toBe(`16,7${String.fromCharCode(0xa0)}%`);
     expect(pct(null)).toBe('–');
     expect(signedPp(8.7)).toBe('+8,7 p. b.');
     expect(signedPp(-1.2)).toBe('−1,2 p. b.');
@@ -103,6 +103,9 @@ describe('pages on recorded API responses (2026-11-07 and 2026-11-09)', () => {
     expect(screen.getByText('3.001')).toBeInTheDocument();
     expect(await screen.findByText('Općina Belica')).toBeInTheDocument();
     expect(screen.getByText(/Nijedna županija ne reciklira/)).toBeInTheDocument();
+    // the scrolly story is built from the API numbers
+    expect(screen.getByText('Što zapravo piše u evidenciji')).toBeInTheDocument();
+    expect(screen.getByText(/nema nijednu upisanu lokaciju/)).toBeInTheDocument();
     // photos of the register are served from our own origin
     const imgs = await screen.findAllByRole('img');
     const srcs = imgs.map((i) => i.getAttribute('src') ?? '').filter((s) => s.includes('photo'));

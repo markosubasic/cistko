@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { CompareBars } from '../components/bits';
 import { CountUp, FadeImg, Reveal, Scribble } from '../components/motion';
 import { RateMap } from '../components/RateMap';
+import { Story } from '../components/Story';
 import { AddressSearch, MunicipalitySearch } from '../components/Searches';
 import { api } from '../lib/api';
 import { fullName, int, pct, photoUrl, STATUS_COLOR, STATUS_TEXT } from '../lib/format';
@@ -154,6 +155,8 @@ export function HomePage() {
           </div>
         </section>
       ) : null}
+
+      {o ? <Story overview={o} /> : null}
 
       <section aria-labelledby="map-h" className="grid gap-8 lg:grid-cols-[1.7fr_1fr]">
         <div className="grid content-start gap-3">

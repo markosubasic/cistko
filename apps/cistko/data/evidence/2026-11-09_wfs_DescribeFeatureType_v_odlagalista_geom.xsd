@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml" xmlns:otpad="http://otpad" elementFormDefault="qualified" targetNamespace="http://otpad">
+  <xsd:import namespace="http://www.opengis.net/gml" schemaLocation="https://servisi.azo.hr/schemas/gml/3.1.1/base/gml.xsd"/>
+  <xsd:complexType name="v_odlagalista_geomType">
+    <xsd:complexContent>
+      <xsd:extension base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="id" nillable="true" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="naziv_odlagalista" nillable="false" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="zupanija_odlagalista" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="grad_opcina_odlagalista" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="najblize_naselje" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="status_operativnosti_id" nillable="true" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="status_operativnosti" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="kolicina_odlozenog_otpada" nillable="true" type="xsd:decimal"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="kolicina_odlozenog_otpada_tone" nillable="true" type="xsd:decimal"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="kolicina_odlozenog_komunalni_tone" nillable="true" type="xsd:decimal"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="kolicina_odlozenog_proizvedeni_tone" nillable="true" type="xsd:decimal"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="kolicina_odlozenog_biorazgr_tone" nillable="true" type="xsd:decimal"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="kolicina_odlozenog_ostalog_biorazgr_tone" nillable="true" type="xsd:decimal"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="dozbola_za_odlaganje" nillable="true" type="xsd:boolean"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="upravitelj" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="mjesto_upravitelja" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="adresa_upravitelja" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="status_sanacije" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="zadnja_izmjena" nillable="true" type="xsd:dateTime"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="godina" nillable="false" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="izvjestajno_razdoblje" nillable="true" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="geometrija" nillable="true" type="gml:PointPropertyType"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="v_odlagalista_geom" substitutionGroup="gml:_Feature" type="otpad:v_odlagalista_geomType"/>
+</xsd:schema>

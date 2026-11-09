@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml" xmlns:otpad="http://otpad" elementFormDefault="qualified" targetNamespace="http://otpad">
+  <xsd:import namespace="http://www.opengis.net/gml" schemaLocation="https://servisi.azo.hr/schemas/gml/3.1.1/base/gml.xsd"/>
+  <xsd:complexType name="odbaceni_otpadType">
+    <xsd:complexContent>
+      <xsd:extension base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="odbaceni_otpad_id" nillable="false" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="nazivi_lokacije" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="opis_lokacije" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="naselje" nillable="false" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="grad_opcina" nillable="false" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="vrsta_otpada" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="ukupna_kolicina_otpada" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="procijenjena_povrsina_otpada" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="status_lokacije_otpada" nillable="false" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="koordinate" nillable="false" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="slika_1" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="slika_2" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="slika_3" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="slika_4" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="geometrija" nillable="true" type="gml:GeometryPropertyType"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="odbaceni_otpad" substitutionGroup="gml:_Feature" type="otpad:odbaceni_otpadType"/>
+</xsd:schema>

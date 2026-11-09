@@ -1,4 +1,23 @@
 {
+  "story": {
+    "top": {
+      "mb": "01333",
+      "name": "Grad Zagreb",
+      "on_site": 8233,
+      "reported": 876,
+      "removed": 2747,
+      "total": 11856,
+      "removed_share": 23.2
+    },
+    "rest": {
+      "on_site": 949,
+      "reported": 1136,
+      "removed": 254,
+      "total": 2339,
+      "removed_share": 10.9
+    },
+    "municipalities_without_dumps": 195
+  },
   "dumps": {
     "on_site": 9182,
     "reported": 2012,
