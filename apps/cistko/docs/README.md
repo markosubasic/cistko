@@ -1,9 +1,10 @@
 # Čistko
 
 **Gdje je smeće i tko ga čisti?** Čistko na jednom mjestu pokazuje prijavljeni odbačeni otpad u Hrvatskoj s
-fotografijama i statusom (otpad na lokaciji, prijavili građani, uklonjeno), koliko otpada odvaja svaka od 556
-općina i gradova (2022. i 2019.), županijske stope recikliranja u odnosu na cilj EU te reciklažna dvorišta,
-odlagališta, sortirnice, centre za gospodarenje otpadom, kompostane i otpad u špiljama.
+fotografijama i statusom iz službene evidencije (otpad na lokaciji, prijavili građani, označeno kao uklonjeno),
+koliko otpada odvaja svaka od 556 općina i gradova (2022. i 2019.), županijske stope recikliranja u odnosu na cilj
+EU te reciklažna dvorišta i otpad u špiljama. Odlagališta, sortirnice, centri za gospodarenje otpadom i kompostane
+također se učitavaju i dostupni su preko API-ja (`/facilities`).
 
 Datathon Portala otvorenih podataka 2026., izazov B „Okoliš i održivi prostor” (gospodarenje otpadom).
 Kôd: EUPL-1.2.

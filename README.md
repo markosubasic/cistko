@@ -1,10 +1,9 @@
 # Čistko
 
 **Gdje je smeće i tko ga čisti?** Karta 14 195 prijavljenih lokacija odbačenog otpada u Hrvatskoj s fotografijama i
-statusom (na lokaciji, prijavili građani, uklonjeno), stope odvajanja otpada za svih 556 općina i gradova (2022. i
-2019.), županijske stope recikliranja uz cilj EU od 55 %, reciklažna dvorišta, odlagališta, sortirnice, centri za
-gospodarenje otpadom, kompostane i otpad u špiljama. Sve iz službenih podataka Ministarstva na Portalu otvorenih
-podataka.
+statusom iz službene evidencije (otpad na lokaciji, prijavili građani, označeno kao uklonjeno), stope odvajanja
+otpada za svih 556 općina i gradova (2022. i 2019.), županijske stope recikliranja uz cilj EU od 55 %, reciklažna
+dvorišta i otpad u špiljama. Sve iz službenih podataka Ministarstva na Portalu otvorenih podataka.
 
 Rješenje za **Datathon Portala otvorenih podataka 2026.**, izazov B „Okoliš i održivi prostor”.
 Izvorni kôd je pod licencom [EUPL-1.2](LICENSE).
@@ -19,13 +18,18 @@ Izvorni kôd je pod licencom [EUPL-1.2](LICENSE).
 
 ## Što radi
 
+- **Naslovnica**: priča u podacima uz kartu koja se mijenja dok čitaš (gdje su upisane lokacije, što je označeno kao
+  uklonjeno, tko prijavljuje, koliko općina nema nijedan upis), fotografije iz evidencije, karta stopa odvajanja,
+  najbolje i najslabije općine, županije prema cilju EU i vrste odbačenog otpada.
 - **Oko tvoje adrese**: sve prijavljene lokacije u krugu 0,5 / 1,5 / 3 km s fotografijom i statusom, najbliža
   reciklažna dvorišta, stopa odvajanja tvoje općine i poveznica na službenu prijavu (ELOO).
 - **Kartica općine**: stopa odvajanja 2022. i 2019., rang u Hrvatskoj i županiji, usporedba s medijanom i susjedima,
-  upisane lokacije po statusu i vrsti, udio uklonjenog, fotografije, objekti na području.
+  upisane lokacije po statusu i vrsti, udio uklonjenog, fotografije i najbliža reciklažna dvorišta.
 - **Liga općina**: svih 556 jedinica s filtrom po županiji i sortiranjem po odvajanju, napretku, broju lokacija i
-  udjelu uklonjenog, uz kartu Hrvatske.
-- **Karta otpada**: 14 195 lokacija (grupirane), uz slojeve objekata za gospodarenje otpadom.
+  udjelu uklonjenog.
+- **Karta otpada**: 14 195 lokacija (grupirane) s filtrom po statusu, uz reciklažna dvorišta i otpad u špiljama;
+  klik na lokaciju otvara fotografiju i opis.
+- **O podacima**: izvori s vremenom preuzimanja, izračuni i ograničenja (uključujući ažurnost evidencije).
 
 ## Podaci
 
