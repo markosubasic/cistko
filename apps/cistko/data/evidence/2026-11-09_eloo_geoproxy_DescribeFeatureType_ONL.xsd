@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ELOO-APP="ELOO-APP" xmlns:gml="http://www.opengis.net/gml" elementFormDefault="qualified" targetNamespace="ELOO-APP">
+  <xsd:import namespace="http://www.opengis.net/gml" schemaLocation="http://cdusv-wweb-pr01:8080/geoserver/schemas/gml/3.1.1/base/gml.xsd"/>
+  <xsd:complexType name="ONLType">
+    <xsd:complexContent>
+      <xsd:extension base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="Id" nillable="false" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="geom" nillable="true" type="gml:GeometryPropertyType"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="AdministrativeWasteReportStatusId" nillable="false" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="WasteDataStatusId" nillable="false" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="WasteLocationStatusId" nillable="false" type="xsd:int"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="ONL" substitutionGroup="gml:_Feature" type="ELOO-APP:ONLType"/>
+</xsd:schema>

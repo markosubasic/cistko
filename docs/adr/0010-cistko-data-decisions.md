@@ -27,8 +27,10 @@
    shown as counts and as the share removed.
 6. **EU target only next to recycling.** The 55 % target of Directive (EU) 2018/851 concerns recycling; it is shown
    next to the county recycling rate, never next to a municipal separation rate.
-7. **Photos are hot-linked** from `eloo.haop.hr` (the register's own server) with `referrerpolicy=no-referrer`;
-   production CSP must allow that host for images.
+7. **Photos are proxied** (changed 2026-11-09; at first they were hot-linked from `eloo.haop.hr`, which some
+   browsers and networks blocked). `GET /api/v1/photo/{uuid}.jpg` accepts only the register's UUID image names,
+   fetches each image once from `eloo.haop.hr` and serves it from a disk cache, so the page loads images from its own
+   origin.
 8. **No new dependencies** beyond the shared stack.
 
 ## Consequences

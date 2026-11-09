@@ -4,7 +4,7 @@ const LAYERS: [string, string, string][] = [
   [
     'odbaceni_otpad',
     'Lokacije odbačenog otpada (Evidencija lokacija odbačenog otpada, ELOO)',
-    'bez datuma po zapisu',
+    'snimka oko veljače 2024.',
   ],
   [
     'jls_stopa_odv_otp_2022',
@@ -102,7 +102,12 @@ export function MethodologyPage() {
             većinu svih lokacija; mnoge općine nemaju nijednu. Zato Čistko ne rangira općine po
             broju lokacija, nego po odvajanju i udjelu uklonjenog.
           </li>
-          <li>Zapisi evidencije nemaju datum, pa se ne može prikazati kretanje kroz vrijeme.</li>
+          <li>
+            Zapisi evidencije nemaju datum. Objavljeni sloj je snimka iz približno veljače 2024.
+            (procjena prema datumima u opisima i datumima snimanja fotografija), a 9. 11. 2026. u
+            servisu je i dalje nepromijenjen. Živa evidencija na eloo.haop.hr danas ima oko 20.300
+            javnih lokacija, pa novije prijave i naknadna čišćenja ovdje nisu vidljiva.
+          </li>
           <li>Količine i površine su procjene osobe koja je lokaciju upisala.</li>
           <li>Popis reciklažnih dvorišta je iz 2018.; noviji sloj nije objavljen u servisu.</li>
           <li>

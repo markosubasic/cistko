@@ -1,0 +1,246 @@
+                                 PRAVILA ZA DATATHON
+                           PORTALA OTVORENIH PODATAKA
+
+                                        (u daljnjem tekstu: Pravila)
+
+                                              I. OPĆE ODREDBE
+
+Ovim se Pravilima uređuje provedba natjecanja "Datathon Portala otvorenih podataka“ (u daljnjem
+tekstu: Datathon). Datathon organizira Ministarstvo pravosuđa, uprave i digitalne transformacije,
+Vukovarska 49, Zagreb, (u daljnjem tekstu: MPUDT ili Organizator) u okviru ulaganja C2.3. R2-I2
+„Uspostava centralnog data lake repozitorija i sustava poslovne analitike“ Nacionalnog plana oporavka
+i otpornosti 2021.–2026. Organizator objavljuje Javni poziv, zaprima prijave i rješenja te imenuje
+Povjerenstvo za ocjenu rješenja.
+Kontakt adresa za sva pitanja, prijave i dostavu rješenja je open.data@mpudt.hr .
+
+Cilj je Datathona stvoriti gotovo IT rješenje ili razviti IT ideju, odnosno razrađeni koncept rješenja koje
+primjenom i povezivanjem otvorenih podataka stvara novu uporabnu vrijednost za građane, javni
+sektor i gospodarstvo, uz korištenje otvorenih podataka javnog sektora, osobito onih objavljenih na
+Portalu otvorenih podataka (data.gov.hr, u daljnjem tekstu: Portal).
+Pravilima se utvrđuju organizator, tematska područja, prihvatljivost sudionika, način podnošenja
+prijave, način dostave rješenja, tijek Datathona, način ocjenjivanja, nagrade, prava intelektualnog
+vlasništva te obrada osobnih podataka.
+Rokovi, kriteriji ocjenjivanja i iznosi nagrada utvrđuju se Javnim pozivom za sudjelovanje u Datathonu
+(u daljnjem tekstu: Javni poziv).
+Izrazi koji se koriste u ovim Pravilima, a imaju rodno značenje, koriste se neutralno i odnose se jednako
+na muški i ženski rod.
+
+                                   II. TEMATSKA PODRUČJA (IZAZOVI)
+
+Datathon se sastoji od tri Izazova:
+    – A) Društvo i javne usluge,
+    – B) Okoliš i održivi prostor,
+    – C) Gospodarstvo i učinkovito upravljanje.
+
+Svaki Izazov provodi se kao zasebno natjecanje jednake važnosti, s vlastitom rang-listom i nagradama.
+Opis Izazova i primjeri problema koje rješenja mogu obuhvatiti utvrđuju se Javnim pozivom.
+Tim može sudjelovati u jednom, dva ili sva tri Izazova, uz zasebnu prijavu i zasebno rješenje za svaki
+Izazov u kojem sudjeluje.
+
+                                        III. PODACI I TEHNOLOGIJE
+
+Rješenje mora koristiti otvorene podatke javnog sektora, a prednost se daje podacima objavljenima na
+Portalu. Uz njih se mogu koristiti i drugi javno dostupni izvori podataka (europski, nacionalni i lokalni
+portali otvorenih podataka, API servisi tijela javnog sektora i sl.), pod uvjetom da njihova dozvola
+dopušta korištenje u svrhu Datathona.
+Podaci s Portala koriste se sukladno otvorenoj dozvoli pod kojom su objavljeni, uz obvezu navođenja
+izvora, u skladu s Pravilnikom o vrstama i sadržaju dozvola za ponovnu uporabu informacija (»Narodne
+novine«, br. 67/17.). Timovi su dužni u dokumentaciji rješenja navesti sve korištene skupove podataka,
+njihove izdavatelje i poveznice na izvore.
+Rješenja se razvijaju korištenjem softvera otvorenog koda, a potiče se primjena naprednih tehnologija
+poput umjetne inteligencije, interneta stvari, proširene stvarnosti, velikih podataka ili lanca blokova.
+
+                                                IV. SUDIONICI
+
+Na Datathon se mogu prijaviti isključivo studentski timovi (u daljnjem tekstu: Tim). Tim čine najmanje
+dva, a najviše četiri studenta (u daljnjem tekstu: Sudionici) te jedan mentor.
+Mentor mora biti nastavnik visokog učilišta na kojem studira jedan od članova Tima, koji je ujedno i
+voditelj Tima , koji komunicira s Organizatorom u ime Tima.
+Pojedini Sudionik može biti član samo jednog Tima.
+Pravo sudjelovanja nemaju zaposlenici Organizatora koji sudjeluju u organizaciji ili provedbi Datathona,
+članovi Povjerenstva za ocjenu rješenja ni članovi njihovih užih obitelji.
+Sudionik je dužan u prijavi navesti točne, potpune i istinite podatke. Ako se naknadno utvrdi da
+Sudionik ne ispunjava uvjete za sudjelovanje ili je naveo netočne podatke, Organizator isključuje Tim
+iz Datathona u bilo kojoj fazi postupka i uskratiti mu pravo na nagradu.
+
+                                               V. JAVNI POZIV
+
+Javni poziv objavljuje se na Portalu (https://data.gov.hr/ ), na mrežnim stranicama MPUDT-a
+(https://mpudt.gov.hr/ ), priopćenjima za medije te ostalim kanalima javnog informiranja.
+Javnim pozivom utvrđuju se opis izazova, sadržaj i način podnošenja prijave, vremenska crta Datathona
+s rokovima, sadržaj rješenja, kriteriji ocjenjivanja te iznos i raspodjela nagrada.
+
+                                                 VI. PRIJAVA
+
+Svaki član Tima ispunjava online prijavni obrazac (u daljnjem tekstu: Prijava) dostupan putem
+poveznice objavljene u Javnom pozivu, u kojem navodi naziv Tima, izazov u kojem Tim sudjeluje i
+kontakt podatke mentora. Za svaki izazov podnosi se zasebna Prijava.
+Razmatraju se samo Prijave podnesene pravodobno, potpuno i istinito, u roku utvrđenom Javnim
+pozivom. Organizator može zatražiti dopunu Prijave.
+Organizator potvrđuje voditelju Tima zaprimanje Prijave elektroničkom poštom.
+Podnošenjem Prijave Sudionici i mentor potvrđuju da su pročitali i u cijelosti prihvaćaju ova Pravila i
+uvjete Javnog poziva.
+                                           VII. TIJEK DATATHONA
+
+Datathon se provodi na daljinu (online), osim predstavljanja nagrađenih rješenja. Rad na rješenjima,
+dostava rješenja i komunikacija sa stručnom podrškom odvijaju se elektroničkim putem. Ocjenjivanje
+se provodi bez javne prezentacije rješenja pred Povjerenstvom.
+
+Datathon se provodi u sljedećim fazama, u rokovima utvrđenima vremenskom crtom u Javnom pozivu:
+
+    – prijava Timova,
+    – razvoj rješenja, tijekom kojeg Timovi rade uz podršku svojih mentora, a pitanja o podacima,
+
+         Portalu i tehničkim problemima mogu uputiti stručnoj podršci Organizatora na
+         open.data@mpudt.hr ,
+    – dostava rješenja,
+    – ocjenjivanje i objava rezultata,
+    – predstavljanje nagrađenih rješenja na konferenciji MPUDT-a.
+Timovi koji u pojedinom Izazovu osvoje prva tri mjesta predstavljaju svoja rješenja na konferenciji
+MPUDT-a 23. studenoga 2026. u Zagrebu. Točna lokacija i satnica naknadno se objavljuju na Portalu i
+mrežnim stranicama MPUDT-a, a nagrađeni Timovi o tome se obavještavaju i elektroničkom poštom.
+Predstavljanje na konferenciji ne utječe na ocjenu ni na rang-listu.
+
+                                     VIII. RJEŠENJE I NAČIN DOSTAVE
+
+Rješenje može biti gotovo IT rješenje ili razrađeni koncept rješenja. Rješenje mora biti izvorno djelo
+Tima. Timovi smiju koristiti postojeće alate, biblioteke i komponente otvorenog koda, uključujući alate
+temeljene na umjetnoj inteligenciji, pod uvjetom da ne krše njihove licence i da ih navedu u
+dokumentaciji.
+
+Rješenje se dostavlja isključivo elektroničkom poštom na open.data@mpudt.hr , u roku utvrđenom
+Javnim pozivom, i sadrži:
+
+    – izvorni kod ili poveznicu na javni repozitorij (npr. github.com),
+    – tehničku i projektnu dokumentaciju, uključujući opis tehničke arhitekture i popis korištenih
+
+         skupova podataka s izvorima,
+    – demo materijale (npr. poveznicu na radni prototip, snimke zaslona),
+    – video prezentaciju rješenja u primjeni u trajanju do 3 minute, koja obuhvaća opis problema,
+
+         ciljne korisnike, korištene izvore podataka, funkcionalnosti, tehničku arhitekturu, korisničku
+         vrijednost i mogućnosti daljnjeg razvoja.
+Ako rješenje ili njegovi dijelovi prelaze ograničenje veličine elektroničke poruke, Tim dostavlja
+poveznicu na mjesto s kojeg ih je moguće preuzeti, dostupnu najmanje do objave rezultata.
+
+Rješenja dostavljena nakon isteka roka ili bez video prezentacije ne ocjenjuju se.
+
+                                   IX. POVJERENSTVO I OCJENJIVANJE
+
+Rješenja ocjenjuje Povjerenstvo za ocjenu rješenja (u daljnjem tekstu: Povjerenstvo) od najmanje 3
+(tri) člana, koje imenuje MPUDT. Uz zaposlenike MPUDT-a, članovi Povjerenstva mogu biti i vanjski
+stručnjaci.
+Član Povjerenstva koji je u sukobu interesa u odnosu na pojedini Tim, uključujući slučaj kad je s Timom
+ili mentorom povezan na istom visokom učilištu, dužan je to prijaviti Organizatoru i izuzeti se od
+ocjenjivanja tog Tima.
+Ocjenjivanje se provodi isključivo na temelju dostavljenog rješenja i dokumentacije, prema kriterijima
+utvrđenima Javnim pozivom, s najviše 60 bodova po rješenju. Svi članovi Povjerenstva imaju jednako
+pravo glasa, a konačni broj bodova rješenja jest zbroj bodova članova Povjerenstva.
+Za svaki izazov utvrđuje se zasebna rang-lista. U slučaju jednakog broja bodova prednost ima rješenje
+s većim brojem bodova u kriteriju „Izvedivost rješenja“, a zatim u kriteriju „Upotreba otvorenih
+podataka“.
+Ocjena Povjerenstva stručna je procjena njegovih članova i konačna je.
+Rang-liste i pobjednici objavljuju se na Portalu i/ili mrežnim stranicama MPUDT-a najkasnije 17.
+studenoga 2026.
+
+                                                 X. NAGRADE
+
+Nagrade se financiraju u okviru ulaganja C2.3. R2-I2 Nacionalnog plana oporavka i otpornosti 2021.–
+2026. Ukupni nagradni fond iznosi 12.000,00 EUR, odnosno 4.000,00 EUR za svaki izazov, a raspodjela
+po mjestima utvrđuje se Javnim pozivom.
+Tim može osvojiti nagradu u svakom izazovu u kojem je sudjelovao.
+Nagrada je neprenosiva. Sudionici ne mogu zahtijevati nagradu u drugom obliku ili iznosu od onoga
+utvrđenog Javnim pozivom. Nagrađeni Sudionici dužni su Organizatoru dostaviti podatke potrebne za
+isplatu nagrade u roku od 2 dana od objave rezultata.
+Organizator može odlučiti da se pojedina nagrada ne dodijeli ako u izazovu nije dostavljeno dovoljno
+rješenja ili nijedno rješenje ne ostvari najmanje 50 bodova.
+
+                                  XI. DISKVALIFIKACIJA I ODUSTANAK
+
+Organizator može diskvalificirati Tim, osobito ako Tim:
+    – ne ispunjava uvjete za sudjelovanje ili se ne pridržava odredaba ovih Pravila,
+    – je neistinito prikazao činjenice vezane uz Prijavu ili rješenje,
+    – je dostavio rješenje koje nije izvorno ili krši prava trećih osoba,
+    – ometa provedbu Datathona,
+    – krši propise Republike Hrvatske.
+
+Ako Sudionik odustane od sudjelovanja, voditelj Tima o tome bez odgode obavještava Organizatora.
+Tim može nastaviti sudjelovanje ako ima najmanje dva Sudionika i mentora; u protivnom se Tim
+isključuje iz Datathona.
+
+                              XII. PRAVA INTELEKTUALNOG VLASNIŠTVA
+
+Članovi Tima zadržavaju autorska i druga prava intelektualnog vlasništva na rješenju razvijenom u
+Datathonu.
+Objava rješenja pod licencom besplatnog softvera otvorenog koda na github.com ili sličnom javnom
+repozitoriju boduje se u skladu s kriterijima Javnog poziva. Izbor licence prepušten je Timu.
+
+Dostavom rješenja Tim daje Organizatoru neisključivo, besplatno i vremenski neograničeno pravo da
+rješenje i video prezentaciju, uz navođenje autora, predstavi javnosti, uključujući objavu među
+primjerima ponovne uporabe na Portalu, na mrežnim stranicama i društvenim mrežama MPUDT-a te
+u izvješćima o provedbi Nacionalnog plana oporavka i otpornosti.
+
+Sudionici jamče da rješenje ne povređuje prava intelektualnog vlasništva ni druga prava trećih osoba.
+Za povrede prava trećih osoba odgovaraju Sudionici.
+
+                                   XIII. OBRADA OSOBNIH PODATAKA
+
+Voditelj obrade osobnih podataka je MPUDT. Osobni podaci obrađuju se sukladno Uredbi (EU)
+2016/679 Europskog parlamenta i Vijeća od 27. travnja 2016. o zaštiti pojedinaca u vezi s obradom
+osobnih podataka i o slobodnom kretanju takvih podataka te o stavljanju izvan snage Direktive
+95/46/EZ (Opća uredba o zaštiti podataka) i Zakonu o provedbi Opće uredbe o zaštiti podataka
+(»Narodne novine«, br. 42/18.).
+
+Obrađuju se ime i prezime, adresa elektroničke pošte, visoko učilište i naziv Tima Sudionika i mentora,
+lik i glas iz video prezentacije, fotografije i audio-video snimke s konferencije te, za nagrađene
+Sudionike, podaci potrebni za isplatu nagrade (OIB, adresa, IBAN). Podaci se obrađuju isključivo u svrhu
+provedbe Datathona, informiranja javnosti o rezultatima, izvještavanja o provedbi Nacionalnog plana
+oporavka i otpornosti i isplate nagrada, na temelju čl. 6. st. 1. t. (e) Opće uredbe o zaštiti podataka
+(obavljanje zadaće od javnog interesa u okviru djelokruga MPUDT-a), a podaci potrebni za izvještavanje
+o provedbi Nacionalnog plana oporavka i otpornosti i za isplatu nagrada na temelju čl. 6. st. 1. t. (c)
+Opće uredbe o zaštiti podataka (poštovanje pravnih obveza voditelja obrade). Video prezentacija javno
+se objavljuje samo uz izričitu privolu članova Tima (čl. 6. st. 1. t. (a) Opće uredbe o zaštiti podataka),
+koja se daje u prijavnom obrascu i može se povući u bilo kojem trenutku, bez utjecaja na sudjelovanje
+u Datathonu. Imena članova Timova, nazivi Timova, visoka učilišta i rezultati Datathona javno se
+objavljuju.
+
+Organizator na konferenciji iz poglavlja VII. ovih Pravila fotografira i snima događaj, uključujući
+predstavljanja rješenja, radi informiranja javnosti o provedbi Datathona i politike otvorenih podataka
+te dokumentiranja provedbe Nacionalnog plana oporavka i otpornosti. Fotografije i audio-video
+snimke mogu se objaviti na Portalu, mrežnim stranicama i službenim profilima MPUDT-a na društvenim
+mrežama, ustupiti medijima i koristiti u izvješćima o provedbi Nacionalnog plana oporavka i otpornosti.
+Obrada se temelji na čl. 6. st. 1. t. (e) Opće uredbe o zaštiti podataka, a sudionici konferencije o
+snimanju se obavještavaju u pozivu na konferenciju i na samom događaju. Osoba koja ne želi biti
+fotografirana ili snimana izvan predstavljanja svojeg rješenja o tome može obavijestiti Organizatora
+prije početka ili tijekom konferencije.
+
+Osobni podaci iz Prijava, rješenja i dokumentacije ocjenjivanja čuvaju se do isteka roka čuvanja
+dokumentacije propisanog za provedbu ulaganja C2.3. R2-I2 Nacionalnog plana oporavka i otpornosti
+2021.–2026., a podaci potrebni za isplatu nagrade najmanje 11 godina od isteka proračunske godine u
+kojoj je nagrada isplaćena. Nakon isteka tih rokova podaci se brišu ili uništavaju, osim ako drugim
+propisom nije određeno drukčije.
+Sudionici i mentori imaju pravo na pristup, ispravak, brisanje i ograničenje obrade svojih podataka,
+pravo na prigovor te pravo povući privolu kad se obrada temelji na privoli. Zahtjevi se upućuju
+službeniku za zaštitu podataka MPUDT-a na zastitaosobnihpodataka@mpudt.hr. Ispitanik ima pravo
+podnijeti pritužbu Agenciji za zaštitu osobnih podataka.
+
+                                          XIV. ZAVRŠNE ODREDBE
+
+Sudjelovanje u Datathonu je besplatno. Sudionici sami snose troškove vlastitog rada i opreme, kao i
+troškove dolaska u Zagreb na konferenciju iz poglavlja VII. ovih Pravila, te odgovaraju za zaštitu i
+sigurnosnu kopiju podataka koje koriste.
+Organizator ne odgovara za štetu nastalu Sudionicima u vezi sa sudjelovanjem u Datathonu, osim štete
+prouzročene namjerno ili krajnjom nepažnjom.
+Članovi organizacijskog tima, Povjerenstva i druge osobe uključene u provedbu Datathona čuvaju u
+tajnosti sve informacije i podatke do kojih dođu tijekom Datathona, ne koriste ih u osobne svrhe i ne
+prenose ih trećim osobama.
+Organizator zadržava pravo izmjene i dopune ovih Pravila i Javnog poziva te izmjene, odgode ili prekida
+Datathona iz opravdanih razloga, o čemu se Sudionici pravodobno obavještavaju putem Portala i
+mrežnih stranica MPUDT-a.
+Organizator ne rješava sporove između Sudionika, članova istog ili različitih Timova. Za okolnosti koje
+nisu uređene ovim Pravilima odlučuje Organizator. Za sporove između Organizatora i Sudionika
+nadležan je stvarno nadležni sud u Zagrebu.
+Ova Pravila stupaju na snagu danom objave na Portalu i mrežnim stranicama MPUDT-a.
+
+U Zagrebu,
+

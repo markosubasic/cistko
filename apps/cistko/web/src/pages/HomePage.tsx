@@ -75,7 +75,8 @@ export function HomePage() {
           {o ? (
             <div className="ck-story grid gap-4">
               <p className="ck-lead">
-                U službenoj evidenciji odbačenog otpada upisano je{' '}
+                U službenoj evidenciji odbačenog otpada (objavljena snimka, stanje oko veljače
+                2024.) upisano je{' '}
                 <strong>
                   <CountUp value={o.dumps.total} format={(n) => int(Math.round(n))} />
                 </strong>{' '}

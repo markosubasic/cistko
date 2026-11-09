@@ -12,7 +12,7 @@ Izvorni kôd je pod licencom [EUPL-1.2](LICENSE).
 |                                    |                                                                                  |
 | ---------------------------------- | -------------------------------------------------------------------------------- |
 | Video prezentacija                 | _poveznica se dodaje prije predaje_                                              |
-| Radni prototip                     | _poveznica se dodaje nakon postavljanja na poslužitelj_                          |
+| Radni prototip                     | https://cistko.64-226-85-138.sslip.io                                            |
 | Tehnička i projektna dokumentacija | [apps/cistko/docs/README.md](apps/cistko/docs/README.md)                         |
 | Odluke o podacima                  | [docs/adr/0010-cistko-data-decisions.md](docs/adr/0010-cistko-data-decisions.md) |
 | Izvori podataka s dokazima         | [apps/cistko/data/evidence/](apps/cistko/data/evidence/)                         |
@@ -33,8 +33,13 @@ Svi podaci dolaze iz skupa [Gospodarenje otpadom - WFS](https://data.gov.hr/ckan
 Ministarstva zaštite okoliša i energetike (Portal otvorenih podataka), servis `https://servisi.azo.hr/otpad/wfs`:
 `odbaceni_otpad`, `jls_stopa_odv_otp_2022`, `jls_stopa_odvajanja_poticajna_2019`, `stopa_rec_zup_2022`,
 `rd_stacion_pt_2018`, `akt_odlag_2026`, `sortirnice_2026`, `cgo_2026`, `kompostane_2025`, `depo_speleo_2025`.
-Adrese: OpenStreetMap Nominatim. Karta: © OpenStreetMap contributors, OpenFreeMap. Detalji, izračuni i ograničenja:
+Adrese: [OpenStreetMap Nominatim](https://nominatim.org/). Karta: © [OpenStreetMap](https://www.openstreetmap.org/copyright)
+contributors (ODbL), [OpenFreeMap](https://openfreemap.org/). Detalji, izračuni i ograničenja:
 [dokumentacija](apps/cistko/docs/README.md).
+
+**Ažurnost.** Sloj `odbaceni_otpad` je snimka Evidencije lokacija odbačenog otpada (ELOO) iz približno veljače 2024.
+(procjena prema datumima u opisima i datumima snimanja fotografija; sami zapisi nemaju datum). Čistko ga je preuzeo 7. 11. 2026. i 9. 11. 2026. provjerio da je u servisu nepromijenjen. Živa evidencija na eloo.haop.hr danas ima oko
+20 300 javnih lokacija; vidi [dokaze](apps/cistko/data/evidence/2026-11-09_freshness_findings.txt).
 
 ## Struktura repozitorija
 

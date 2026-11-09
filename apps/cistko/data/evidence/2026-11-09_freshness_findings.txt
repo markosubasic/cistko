@@ -1,0 +1,48 @@
+Čistko: data freshness check, 2026-11-09 (probes ~12:14-12:30 UTC, User-Agent "cistko-datathon/1.0 (datathon research)")
+
+1. Ministry WFS (servisi.azo.hr/otpad/wfs), layer otpad:odbaceni_otpad
+   - resultType=hits: numberMatched=14195 (2026-11-09_wfs_odbaceni_otpad_hits.xml). Our API /overview: total 14195.
+   - Full GetFeature 2026-11-09 vs our raw copy of 2026-11-07 (data/raw/waste/odbaceni_otpad.geojson):
+     same 14195 IDs, 0 added, 0 removed, 0 changed features. Only the response timeStamp differs.
+   - Schema (DescribeFeatureType) has no date field: id, name, description, settlement, municipality, waste type,
+     quantity, area, status, coordinates (string, HTRS96/TM), slika_1..4.
+   - odbaceni_otpad_id is a contiguous 1..14195 row number of the export, NOT the ELOO register id
+     (WFS id 84 = Grebaštica, ELOO id 84 = Soboli; WFS id 14195 != ELOO id 14195). Join only by coordinates.
+   - GetCapabilities: same 98 layers as on 2026-11-07; only updateSequence changed (7754 -> 7845).
+
+2. When was the WFS snapshot taken? (no date field, so indirect evidence)
+   - Dates written in descriptions rise with the row number: 2020 (rows <=720), 2021 (3758-6199),
+     2022 (6752-10266), 2023 (11750-13918). Latest text: row 13918 "08/2023 prijavljen ... od tada do danas".
+   - EXIF capture dates of photos (2026-11-09_eloo_photo_exif_dates.txt): row 13510 = 2023-11-09,
+     row 14023 = 2024-01-12, row 14169 = 2024-01-30, row 14179 = 2024-01-31 (photos/<row>.jpg).
+   - CKAN resource last_modified 2023-03-13, resource metadata_modified 2024-04-04, package metadata_modified
+     2026-04-15; no licence, no update frequency (data_refresh_frequency empty), organisation marked
+     "(NEAKTIVAN)". File: 2026-11-09_ckan_package_show_gospodarenje-otpadom-wfs.json (unchanged since 2026-11-07).
+   => The odbaceni_otpad layer is a snapshot of ELOO from about early February 2024 and has not been refreshed.
+
+3. The live ELOO register (eloo.haop.hr) is newer
+   - Public JSON used by the ELOO site itself: GET https://eloo.haop.hr/public/api/Waste/{id}
+     (fields: id, x/yCoordinate HTRS96, name, description, estate, municipalityName, wasteTypeText, estimates,
+     images[], wasteLocationStatusName, wasteTypeList, removedWasteDate, wasteDataStatusId).
+     Samples: 2026-11-09_eloo_public_api_Waste_samples.json. No creation date; removedWasteDate exists (null in samples).
+   - Map layers of the ELOO site: WFS/WMS https://eloo.haop.hr/geoproxy/geoserver/ELOO-APP/{wfs,wms}
+     (not listed in GetCapabilities but served): ELOO-APP:ONL (otpad na lokaciji) 13755, ELOO-APP:OUKL
+     (uklonjen) 3793, ELOO-APP:PG (prijava građana) 2714, PGU 0, WD (all) 21440 (1178 with WasteDataStatusId=2,
+     i.e. not public). Attributes: Id, geom (EPSG:3765), status ids only (2026-11-09_eloo_geoproxy_DescribeFeatureType_ONL.xsd).
+   - Public total 20262 vs 14195 in the Ministry WFS (+43 %). Highest ELOO id ~27405.
+     Photo of ELOO id 27350 was taken 2026-10-26 (EXIF). So reports keep coming in; the Ministry WFS does not get them.
+   - Match Ministry WFS -> ELOO by coordinates (2026-11-09_eloo_vs_ministry_wfs_match_by_coordinates.txt):
+     14162 of 14195 matched (33 not found); highest matched ELOO id 20699; 6343 public ELOO records with
+     id > 20699 are not in the WFS. Status changes since the snapshot (approximate, 1936 ambiguous same-point matches):
+     219 on-site -> removed, 165 citizen report -> confirmed on-site, 46 citizen report -> removed,
+     285 now not public (WasteDataStatusId 2).
+
+4. Other layers (year from WFS title)
+   - Separation rate per municipality: newest is jls_stopa_odv_otp_2022 (used). No 2023/2024 layer.
+   - County recycling: stopa_rec_zup_2022 (used). No newer.
+   - Stationary recycling yards: rd_stacion_pt_2018 (used) is the newest; also rd_stacion_jls_p_2018,
+     rd_mobilna_jls_p_2021 (mobile yards 2021, not used).
+   - Newer/unused layers worth noting: crne_tocke_2024 (8 "black spots": Obrovac, Sovjak, Petrokemija, Kaštelanski
+     zaljev, Botovo, Salonit-Kosica, DIV Knin, Biljane Donje; status + funding), v_odlagalista_geom (317 landfills,
+     godina=2025, status_operativnosti aktivno/zatvoreno, status_sanacije završena/priprema/u tijeku; we use
+     akt_odlag_2026 with 63), bioplinska_postrojenja_2026, spaljivanje_suspaljivanje_2026, mulj_2024.

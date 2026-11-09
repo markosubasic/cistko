@@ -1,0 +1,299 @@
+{
+ "16000": "Tražena prijava otpada ne postoji u sustavu.",
+ "18000": {
+  "id": 18000,
+  "xCoordinate": 461083.574453118,
+  "yCoordinate": 5070350.33392353,
+  "name": "Kopernikova 30, Travno, Zagreb",
+  "description": "Već preko mjesec dana \"građani\" zatrpavaju zeleni otok, te dio ulice i parkinga krupnim i miješnaim otpadom. Širi se nesnosan smrad, te su viđeni štakori kako prekopavaju po smeću. Molim Vas hitnu reakciju.",
+  "estate": "Zagreb",
+  "municipalityName": "GRAD ZAGREB",
+  "wasteTypeText": "Glomazni otpad",
+  "estimatedSurfaceOfWaste": 0.0,
+  "estimatedWeightOfWaste": 0.0,
+  "estimatedVolumeOfWaste": 0.0,
+  "images": [],
+  "wasteLocationStatusId": 3,
+  "wasteLocationStatusName": "Otpad na lokaciji",
+  "wasteTypeList": [],
+  "removedWasteDate": null,
+  "wasteDataStatusId": 1
+ },
+ "20000": {
+  "id": 20000,
+  "xCoordinate": 463102.454782239,
+  "yCoordinate": 5075752.36989203,
+  "name": "raskrižje s ulicom Šeferova",
+  "description": "glomazni i razni ostatni otpad na površini javne namjene",
+  "estate": "Zagreb",
+  "municipalityName": "GRAD ZAGREB",
+  "wasteTypeText": "Glomazni otpad",
+  "estimatedSurfaceOfWaste": 0.0,
+  "estimatedWeightOfWaste": 0.0,
+  "estimatedVolumeOfWaste": 0.0,
+  "images": [],
+  "wasteLocationStatusId": 3,
+  "wasteLocationStatusName": "Otpad na lokaciji",
+  "wasteTypeList": [],
+  "removedWasteDate": null,
+  "wasteDataStatusId": 1
+ },
+ "25000": {
+  "id": 25000,
+  "xCoordinate": 464984.575889265,
+  "yCoordinate": 5076430.88239574,
+  "name": "kod boxa zgrade na Javorinskoj/Legradskoj",
+  "description": "glomazno i ostalo smeće",
+  "estate": "Zagreb",
+  "municipalityName": "GRAD ZAGREB",
+  "wasteTypeText": "Glomazni otpad",
+  "estimatedSurfaceOfWaste": 0.0,
+  "estimatedWeightOfWaste": 0.0,
+  "estimatedVolumeOfWaste": 0.0,
+  "images": [],
+  "wasteLocationStatusId": 3,
+  "wasteLocationStatusName": "Otpad na lokaciji",
+  "wasteTypeList": [],
+  "removedWasteDate": null,
+  "wasteDataStatusId": 1
+ },
+ "26000": {
+  "id": 26000,
+  "xCoordinate": 425465.045226702,
+  "yCoordinate": 5027289.38907639,
+  "name": "Barilović, središte naselja",
+  "description": "Salonitne ploče (azbest), gume, namještaj i građevinski otpad odloženi na okućnici ruševine u vlasništvu Općine Barilović, u središtu naselja Barilović.",
+  "estate": "Barilović",
+  "municipalityName": "BARILOVIĆ",
+  "wasteTypeText": "Građevni otpad – onečišćen opasnim tvarima (npr. koji sadrži azbest ili ostatke boja i sl.)",
+  "estimatedSurfaceOfWaste": 50.0,
+  "estimatedWeightOfWaste": 2500.0,
+  "estimatedVolumeOfWaste": 50.0,
+  "images": [
+   "/api/cms/image/e4b0e3f9-0631-40a1-b108-dc9f3754e47b.jpg",
+   "/api/cms/image/53bfc4a0-6aa0-4aa0-9a19-0c92f67953ba.jpg",
+   "/api/cms/image/4c4e800c-134f-400d-9c6e-2f098bb86022.jpg"
+  ],
+  "wasteLocationStatusId": 1,
+  "wasteLocationStatusName": "Prijavljen otpad na lokaciji od strane javnosti",
+  "wasteTypeList": [
+   {
+    "id": 5650,
+    "wasteTypeId": 1629,
+    "wasteTypeTitle": "17 06 05* građevinski materijali koji sadrže azbest",
+    "estimatedWeightOfWaste": 2500.0,
+    "estimatedVolumeOfWaste": 50.0
+   }
+  ],
+  "removedWasteDate": null,
+  "wasteDataStatusId": 1
+ },
+ "26750": {
+  "id": 26750,
+  "xCoordinate": 464601.413953223,
+  "yCoordinate": 5075782.84548269,
+  "name": "Cvjećarska ulica",
+  "description": "Otpad nastao nakon što je prije 2 mjeseca Vrtni centar VRT iz Štefanovečke ul. orezivao živicu. Nakon nekoliko zamolbi da otpad ukloni isti još uvijek nije uklonjen, pa se isti raznosi ulicom, trune, blokira kanalice i začepljuje odvod.",
+  "estate": "Zagreb",
+  "municipalityName": "GRAD ZAGREB",
+  "wasteTypeText": "Ostalo",
+  "estimatedSurfaceOfWaste": 100.0,
+  "estimatedWeightOfWaste": 100.0,
+  "estimatedVolumeOfWaste": 3.0,
+  "images": [
+   "/api/cms/image/bdd9e1ec-ab40-41f6-aed0-8300546d7ed2.jpg"
+  ],
+  "wasteLocationStatusId": 1,
+  "wasteLocationStatusName": "Prijavljen otpad na lokaciji od strane javnosti",
+  "wasteTypeList": [],
+  "removedWasteDate": null,
+  "wasteDataStatusId": 1
+ },
+ "26900": {
+  "id": 26900,
+  "xCoordinate": 514091.051130349,
+  "yCoordinate": 4831190.21582932,
+  "name": "Prisoje",
+  "description": "Uz glavnu prometnicu  nalazi veća količina nepropisno odloženog građevinskog i miješanog krupnog otpada, uključujući ostatke crijepa, betona, kamenja, lima, metala, drva, plastike i drugog građevinskog materijala. Otpad je razasut po zemljištu i dijelom obrastao vegetacijom.",
+  "estate": "Vojnić Sinjski",
+  "municipalityName": "TRILJ",
+  "wasteTypeText": "Glomazni otpad",
+  "estimatedSurfaceOfWaste": 5000.0,
+  "estimatedWeightOfWaste": 200000.0,
+  "estimatedVolumeOfWaste": 200.0,
+  "images": [
+   "/api/cms/image/759debc7-1505-4108-a9ea-756afe9e6e20.jpg",
+   "/api/cms/image/a4070181-8815-4d45-8f2e-6559422f1f3d.jpg",
+   "/api/cms/image/653bdcf6-a809-4ab0-839a-40f7e421c2b1.jpg",
+   "/api/cms/image/b16e398d-a638-4ca4-a189-43cbfc76c5d9.jpg"
+  ],
+  "wasteLocationStatusId": 1,
+  "wasteLocationStatusName": "Prijavljen otpad na lokaciji od strane javnosti",
+  "wasteTypeList": [
+   {
+    "id": 7536,
+    "wasteTypeId": 1812,
+    "wasteTypeTitle": "20 03 07 glomazni otpad",
+    "estimatedWeightOfWaste": 200000.0,
+    "estimatedVolumeOfWaste": 200.0
+   }
+  ],
+  "removedWasteDate": null,
+  "wasteDataStatusId": 1
+ },
+ "27000": {
+  "id": 27000,
+  "xCoordinate": 462568.888116348,
+  "yCoordinate": 5068674.56223843,
+  "name": "Jakuševec",
+  "description": "Na putu s lijeve strane sto metara iza groblja u Jakuševcu istovareno cca 4 kubika glomaznog i miješanog komunalnog otpada.",
+  "estate": "Zagreb",
+  "municipalityName": "GRAD ZAGREB",
+  "wasteTypeText": "Glomazni otpad",
+  "estimatedSurfaceOfWaste": 9.0,
+  "estimatedWeightOfWaste": 500.0,
+  "estimatedVolumeOfWaste": 4.0,
+  "images": [
+   "/api/cms/image/fa5229f6-d08a-430c-b775-bc9ef8cd9aa6.jpg"
+  ],
+  "wasteLocationStatusId": 1,
+  "wasteLocationStatusName": "Prijavljen otpad na lokaciji od strane javnosti",
+  "wasteTypeList": [
+   {
+    "id": 7688,
+    "wasteTypeId": 1812,
+    "wasteTypeTitle": "20 03 07 glomazni otpad",
+    "estimatedWeightOfWaste": 500.0,
+    "estimatedVolumeOfWaste": 4.0
+   }
+  ],
+  "removedWasteDate": null,
+  "wasteDataStatusId": 1
+ },
+ "27100": {
+  "id": 27100,
+  "xCoordinate": 510787.814057506,
+  "yCoordinate": 4839458.68641583,
+  "name": "Sinj uz Župića bujicu",
+  "description": "Preko puta adrese Put Župića 16 i 16a. Molim da se izavrši očevid na navedenoj lokaciji te naloži uklanjanje otpada i sanaciju površine odgovornoj osobi ili putem nadležne komunalne službe vlasniku nekretnine Put Župića 16 i/ili 16a, koji su otpad i odložili na navedeno mjesto.",
+  "estate": "Sinj",
+  "municipalityName": "SINJ",
+  "wasteTypeText": "Građevni otpad – onečišćen opasnim tvarima (npr. koji sadrži azbest ili ostatke boja i sl.)",
+  "estimatedSurfaceOfWaste": 7.0,
+  "estimatedWeightOfWaste": 150.0,
+  "estimatedVolumeOfWaste": 3.0,
+  "images": [
+   "/api/cms/image/72579185-e8cb-4d6d-af87-36d63d0cebd0.jpg",
+   "/api/cms/image/cfd80e92-7146-45f5-86da-486dc7e8de6f.jpg",
+   "/api/cms/image/9b5e2f28-23fe-4f95-a823-5b5eeb28b521.jpg"
+  ],
+  "wasteLocationStatusId": 1,
+  "wasteLocationStatusName": "Prijavljen otpad na lokaciji od strane javnosti",
+  "wasteTypeList": [
+   {
+    "id": 7868,
+    "wasteTypeId": 1629,
+    "wasteTypeTitle": "17 06 05* građevinski materijali koji sadrže azbest",
+    "estimatedWeightOfWaste": 150.0,
+    "estimatedVolumeOfWaste": 3.0
+   }
+  ],
+  "removedWasteDate": null,
+  "wasteDataStatusId": 1
+ },
+ "27300": {
+  "id": 27300,
+  "xCoordinate": 496899.319027041,
+  "yCoordinate": 4819985.33400534,
+  "name": "Domovinskog rata nepoznati broj",
+  "description": "Glomazni otpad skriven iza ograde tamnom mrežom, odmah uz cestu. Godinama je vec tu, a vidljiv je i na google mapama. Mozda je to i gradsko zemljiste, ne znam. Imovinsko-pravni odnosi su neriješeni.\r\nStari namještaj, ograde, plastika, svašta nabacano.",
+  "estate": "Split",
+  "municipalityName": "SPLIT",
+  "wasteTypeText": "Glomazni otpad",
+  "estimatedSurfaceOfWaste": 150.0,
+  "estimatedWeightOfWaste": 3000.0,
+  "estimatedVolumeOfWaste": 75.0,
+  "images": [],
+  "wasteLocationStatusId": 1,
+  "wasteLocationStatusName": "Prijavljen otpad na lokaciji od strane javnosti",
+  "wasteTypeList": [
+   {
+    "id": 8163,
+    "wasteTypeId": 1812,
+    "wasteTypeTitle": "20 03 07 glomazni otpad",
+    "estimatedWeightOfWaste": 3000.0,
+    "estimatedVolumeOfWaste": 75.0
+   }
+  ],
+  "removedWasteDate": null,
+  "wasteDataStatusId": 1
+ },
+ "27350": {
+  "id": 27350,
+  "xCoordinate": 469367.866618769,
+  "yCoordinate": 5088667.47744938,
+  "name": "Kamenolom Kašina",
+  "description": "Osim plastičnih djelova automobila, retrovizora i slično, na lokaciji je nekoliko vreća kakve sam vidio na televiziji, a vezano za opasni otpad u Lici. Da li ih je pod zemljom, pretpostavljam da jest.",
+  "estate": "Kašina",
+  "municipalityName": "GRAD ZAGREB",
+  "wasteTypeText": "Otpadna vozila ili dijelovi vozila (opasni)",
+  "estimatedSurfaceOfWaste": 100.0,
+  "estimatedWeightOfWaste": 1000.0,
+  "estimatedVolumeOfWaste": 50.0,
+  "images": [
+   "/api/cms/image/ca83086f-575c-4b17-96ab-b2c5a861d2a0.jpg",
+   "/api/cms/image/1d3a2204-eeab-47af-a5e9-ce3ace0cf8fb.jpg"
+  ],
+  "wasteLocationStatusId": 1,
+  "wasteLocationStatusName": "Prijavljen otpad na lokaciji od strane javnosti",
+  "wasteTypeList": [
+   {
+    "id": 8305,
+    "wasteTypeId": 1511,
+    "wasteTypeTitle": "16 01 04* otpadna vozila",
+    "estimatedWeightOfWaste": 1000.0,
+    "estimatedVolumeOfWaste": 50.0
+   }
+  ],
+  "removedWasteDate": null,
+  "wasteDataStatusId": 1
+ },
+ "27400": {
+  "id": 27400,
+  "xCoordinate": 444192.216299053,
+  "yCoordinate": 5066446.810352,
+  "name": "Okička cesta 30 Rakov potok ",
+  "description": "Susjedu je ne registrirani kamion istovario 3 palete azbestnih ploča za koje pretpostavljamo da ce trpati u rupu koju je iskopao u dvorištu \r\nZamolio bi Vas hitnu reakciju prije nego dođe do razbijanja navedenih ploča.\r\nTakođer moram naglasiti kako je većina ploča vec napuknuta",
+  "estate": "Rakov Potok",
+  "municipalityName": "SAMOBOR",
+  "wasteTypeText": "Građevni otpad – onečišćen opasnim tvarima (npr. koji sadrži azbest ili ostatke boja i sl.)",
+  "estimatedSurfaceOfWaste": 150.0,
+  "estimatedWeightOfWaste": 150.0,
+  "estimatedVolumeOfWaste": 150.0,
+  "images": [
+   "/api/cms/image/8dfc3550-76e0-4090-b6b3-a9f729fc6932.jpg",
+   "/api/cms/image/f404b335-d574-4484-bbe0-9993bc2b2a07.jpg",
+   "/api/cms/image/0141c722-b675-47f8-a2fc-fa2188fe101f.jpg",
+   "/api/cms/image/97f76fe0-5c34-4fe1-b786-878f79636ad7.jpg"
+  ],
+  "wasteLocationStatusId": 1,
+  "wasteLocationStatusName": "Prijavljen otpad na lokaciji od strane javnosti",
+  "wasteTypeList": [
+   {
+    "id": 8469,
+    "wasteTypeId": 1629,
+    "wasteTypeTitle": "17 06 05* građevinski materijali koji sadrže azbest",
+    "estimatedWeightOfWaste": 150.0,
+    "estimatedVolumeOfWaste": 150.0
+   }
+  ],
+  "removedWasteDate": null,
+  "wasteDataStatusId": 1
+ },
+ "27420": "Tražena prijava otpada ne postoji u sustavu.",
+ "27450": "Tražena prijava otpada ne postoji u sustavu.",
+ "27500": "Tražena prijava otpada ne postoji u sustavu.",
+ "28750": "Tražena prijava otpada ne postoji u sustavu.",
+ "29400": "Tražena prijava otpada ne postoji u sustavu.",
+ "30000": "Tražena prijava otpada ne postoji u sustavu."
+}

@@ -174,8 +174,9 @@ export function NearbyPage() {
           <div className="border-t-4 border-[#111] pt-4">
             <h2 className="text-lg font-semibold">Vidiš smeće kojeg nema na karti?</h2>
             <p className="mt-2">
-              Prijavi ga u službenu Evidenciju lokacija odbačenog otpada (ELOO). Prijave građana iz
-              te evidencije Čistko prikazuje kao „Prijavili građani”.
+              Prijavi ga u službenu Evidenciju lokacija odbačenog otpada (ELOO). Čistko prikazuje
+              objavljenu snimku te evidencije (stanje oko veljače 2024.), pa se nova prijava ovdje
+              neće odmah vidjeti.
             </p>
             <a href={ELOO} target="_blank" rel="noreferrer" className="ck-btn mt-4">
               Prijavi odbačeni otpad

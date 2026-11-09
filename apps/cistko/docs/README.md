@@ -30,7 +30,7 @@ s fotografijama, stope odvajanja po općinama, popisi objekata. Nitko ih ne spaj
         └── cistko ingest all (Typer CLI): GeoJSON EPSG:4326 → PostgreSQL + PostGIS ───────────┤
               municipality, county, dump_site, facility, data_source, ingestion_run            │
                                      │                                                          │
-                     FastAPI /api/v1 (overview, municipalities, league, dumps, nearby, facilities, geocode)
+                     FastAPI /api/v1 (overview, municipalities, league, dumps, nearby, facilities, photos, geocode)
                                      │
                      React SPA (Vite, TypeScript, Tailwind, @dt/ui, MapLibre GL)  ◄── Caddy
 ```
@@ -58,8 +58,16 @@ s fotografijama, stope odvajanja po općinama, popisi objekata. Nitko ih ne spaj
 - Skup na portalu: [Gospodarenje otpadom - WFS](https://data.gov.hr/ckan/dataset/gospodarenje-otpadom-wfs),
   izdavač Ministarstvo zaštite okoliša i energetike; servis `https://servisi.azo.hr/otpad/wfs`. CKAN zapis ne navodi
   licenciju.
-- Fotografije se učitavaju izravno s poslužitelja evidencije (`eloo.haop.hr`).
-- Geokodiranje adresa: OpenStreetMap Nominatim (cache 30 dana). Karta: © OpenStreetMap contributors, OpenFreeMap.
+- **Ažurnost evidencije**: `odbaceni_otpad` je snimka ELOO-a iz približno veljače 2024. Zapisi nemaju datum; snimka je
+  datirana prema datumima koje su prijavitelji upisali u opise (rastu s rednim brojem zapisa do 2023.) i EXIF datumima
+  fotografija najnovijih zapisa (do 31. 1. 2024.). Servis 9. 11. 2026. vraća istih 14 195 zapisa kao pri preuzimanju 7. 11. 2026. Živa evidencija (eloo.haop.hr) ima oko 20 300 javnih lokacija. Dokazi:
+  [`2026-11-09_freshness_findings.txt`](../data/evidence/2026-11-09_freshness_findings.txt).
+- Fotografije su na poslužitelju evidencije (`eloo.haop.hr`); API ih preuzima, sprema u lokalni cache i poslužuje s
+  vlastite adrese (`/api/v1/photo/{uuid}.jpg`, prihvaća samo UUID nazive slika iz evidencije).
+- Geokodiranje adresa: [OpenStreetMap Nominatim](https://nominatim.org/) (cache 30 dana,
+  [pravila korištenja](https://operations.osmfoundation.org/policies/nominatim/)). Karta: ©
+  [OpenStreetMap contributors](https://www.openstreetmap.org/copyright) (ODbL), stil i pločice
+  [OpenFreeMap](https://openfreemap.org/).
 - Cilj EU: [Direktiva (EU) 2018/851](https://eur-lex.europa.eu/legal-content/HR/TXT/?uri=CELEX:32018L0851), čl. 11.:
   barem 55 % pripreme za ponovnu uporabu i recikliranja komunalnog otpada do 2025.
 
@@ -94,8 +102,42 @@ Dokazi sondiranja (GetCapabilities, DescribeFeatureType svih korištenih slojeva
 | `GET /dumps/{id}`                 | jedna lokacija s opisom, količinom i fotografijama                                           |
 | `GET /nearby?lat=&lon=&radius_m=` | oko adrese: lokacije, brojevi po statusu, najbliža dvorišta i objekti, jedinica              |
 | `GET /facilities?kind=`           | objekti (reciklažna dvorišta, odlagališta, sortirnice, CGO, kompostane, špilje)              |
+| `GET /photos?limit=`              | uzorak lokacija s fotografijom, najviše jedna po općini (naslovnica)                         |
+| `GET /photo/{uuid}.jpg`           | fotografija iz evidencije preko vlastitog poslužitelja (cache na disku)                      |
+| `GET /about`                      | opis aplikacije i izvora                                                                     |
 | `GET /geocode?q=`                 | adresa u Hrvatskoj (Nominatim)                                                               |
 | `GET /sources`, `GET /health`     | izvori s vremenom dohvaćanja, zdravlje (zajednička jezgra)                                   |
+
+## Interoperabilnost i standardi
+
+- Ulaz: **OGC WFS 2.0** (GeoServer Ministarstva), izlaz `application/json` (**GeoJSON**, RFC 7946) u **EPSG:4326**;
+  granice jedinica dolaze iz istog servisa.
+- Pohrana: PostgreSQL 16 + **PostGIS** (geometrije EPSG:4326, prostorni indeksi GiST); svako preuzimanje ima zapis u
+  tablicama `data_source` i `ingestion_run` (izvor, URL, vrijeme, broj zapisa).
+- Izlaz: **REST/JSON** API s automatskim **OpenAPI 3** opisom (`/docs`, `/openapi.json`); karte dobivaju **GeoJSON**,
+  pa se API može izravno koristiti u QGIS-u, drugim aplikacijama ili na portalu.
+- Identifikatori: matični broj jedinice lokalne samouprave (`mb`) i redni broj županije, kao u izvornim slojevima.
+- Kôd je pod licencom **EUPL-1.2**; sučelje je na hrvatskom, upotrebljivo tipkovnicom i čitačem zaslona i poštuje
+  postavku smanjenog kretanja.
+
+## Preduvjeti za uvođenje
+
+- **Tehnički**: Linux poslužitelj s Dockerom (prototip radi na 1 vCPU / 2 GB RAM), PostgreSQL + PostGIS, Caddy za
+  HTTPS. Učitavanje svih slojeva traje oko minute i može se pokretati periodički (`make ingest APP=cistko STEP=all`).
+- **Organizacijski**: vlasnik podataka (Ministarstvo) treba redovito osvježavati sloj `odbaceni_otpad` iz žive
+  evidencije; općine trebaju sustavno upisivati lokacije (danas 195 od 556 nema nijednu).
+- **Pravni**: CKAN zapis skupa ne navodi licenciju; za produkciju treba potvrda uvjeta korištenja (uključujući
+  fotografije iz ELOO-a). Nominatim i OpenFreeMap koriste se u skladu s njihovim pravilima (cache, atribucija); za
+  veći promet treba vlastiti geokoder.
+
+## Daljnji razvoj
+
+1. Povezivanje sa živom evidencijom ELOO (oko 20 300 javnih lokacija, nove prijave stižu stalno) ili redovito
+   osvježavanje sloja na portalu, uz noćno ponovno učitavanje i prikaz „stanje na dan”.
+2. Dodatni slojevi iz istog servisa: `crne_tocke_2024` (8 najonečišćenijih lokacija, npr. Sovjak, Obrovac) i
+   `v_odlagalista_geom` (317 odlagališta sa statusom sanacije).
+3. Stope odvajanja za 2023. i kasnije kad budu objavljene; pokazatelji po stanovniku uz podatke DZS-a o stanovništvu.
+4. Obavijest općini kad se na njezinu području pojavi nova prijava; izvoz kartice općine u PDF za vijećnike.
 
 ## Pokretanje
 
@@ -118,7 +160,8 @@ pnpm --filter cistko-web test       # stranice na snimljenim odgovorima API-ja
 
 - Evidencija pokazuje koliko se prijavljuje, a ne koliko je otpada: 11 856 od 14 195 lokacija je u Gradu Zagrebu, a
   mnoge jedinice nemaju nijednu. Zato Čistko ne rangira po broju lokacija.
-- Zapisi evidencije nemaju datum, pa se ne može prikazati kretanje kroz vrijeme.
+- Zapisi evidencije nemaju datum, a objavljeni sloj je snimka iz približno veljače 2024.: novije prijave i promjene
+  statusa (npr. naknadno uklonjene lokacije) u njemu se ne vide, pa se ne može prikazati ni kretanje kroz vrijeme.
 - Količine i površine su procjene osobe koja je lokaciju upisala.
 - Popis reciklažnih dvorišta u servisu je iz 2018.
 - Stopa 0 % znači da u javnoj usluzi nije prijavljen odvojeno prikupljen otpad (31 jedinica u 2022.).

@@ -1,0 +1,14 @@
+Counter({'matched': 14162, 'unmatched': 33}) ambiguous 1936 max ELOO id matched 20699
+  ministry ONL -> ELOO now ONL 8900
+  ministry OUKL -> ELOO now OUKL 2996
+  ministry PG -> ELOO now PG 1550
+  ministry PG -> ELOO now unpublished(WD status 2) 243
+  ministry ONL -> ELOO now OUKL 219
+  ministry PG -> ELOO now ONL 165
+  ministry PG -> ELOO now OUKL 46
+  ministry ONL -> ELOO now unpublished(WD status 2) 38
+  ministry OUKL -> ELOO now unpublished(WD status 2) 4
+  ministry ONL -> ELOO now PG 1
+ELOO public total 20262 by layer Counter({'ONL': 13755, 'OUKL': 3793, 'PG': 2714})
+ELOO public not matched to ministry WFS 6385 ; with id > 20699 : 6343
+ELOO WD total 21440 WasteDataStatus Counter({1: 20262, 2: 1178})

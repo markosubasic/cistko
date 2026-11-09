@@ -1,0 +1,194 @@
+Javni poziv za sudjelovanje u
+Datathonu Portala otvorenih podataka
+I. PREDMET JAVNOG POZIVA I OPĆE ODREDBE
+Ministarstvo pravosuđa, uprave i digitalne transformacije (dalje: MPUDT), objavljuje Javni poziv za sudjelovanje
+u natjecanju Datathon Portala otvorenih podataka (dalje: Datathon), koje se provodi u okviru ulaganja C2.3. R2-
+I2 „Uspostava centralnog data lake repozitorija i sustava poslovne analitike“ Nacionalnog plana oporavka i
+otpornosti 2021.–2026.
+Cilj Datathona je stvoriti gotovo IT rješenje ili razviti IT ideju odnosno razrađeni koncept za rješenja koja
+primjenom i povezivanjem otvorenih podataka stvaraju novu uporabnu vrijednost za građane, javni sektor i
+gospodarstvo.
+Posebno se potiče razvoj novih ili unapređenje postojećih digitalnih usluga za građane, uključujući rješenja koja
+omogućuju lakši pristup javnim informacijama i uslugama, povećavaju transparentnost, podupiru donošenje
+informiranih odluka te doprinose kvaliteti života.
+Rješenja mogu biti namijenjena i javnom sektoru ili gospodarstvu ako omogućuju učinkovitije pružanje javnih
+usluga, kvalitetnije upravljanje podacima, smanjenje troškova, povećanje produktivnosti ili druge mjerljive koristi
+za krajnje korisnike.
+Predložena rješenja razvijena u sklopu Datathona moraju promicati korištenje otvorenih podataka iz javnog
+sektora, posebno onih koji se objavljuju na Portalu otvorenih podataka (data.gov.hr), te predstaviti potencijalni
+doprinos na jedno od sljedeća tri tematska područja:
+• društvo i javne usluge,
+• okoliš i održivi prostor ili
+• gospodarstvo i učinkovito upravljanje.
+Predložena rješenja trebaju se razviti koristeći otvorene podatke i software otvorenog koda te naprednih
+tehnologije poput umjetne inteligencije, interneta stvari (Internet of Things), proširene stvarnosti (augmented
+reality), velikih podataka (big data), lanca blokova (blockchain) ili slično.
+Sudjelovanjem u Datathonu timovi će:
+• koristiti napredne tehnologije uz podršku svojih mentora,
+• razviti rješenje koje dostavljaju elektroničkom poštom u skladu s ovim Pozivom,
+• imati mogućnost osvojiti vrijedne nagrade.
+Datathon se provodi na daljinu (online): rad na rješenjima, dostava istih i komunikacija sa stručnom podrškom
+odvijaju se elektroničkim putem. Ocjenjivanje se temelji isključivo na dostavljenom rješenju, bez javne
+prezentacije pred Povjerenstvom. Timovi koji pravodobno dostave potpuno rješenje moraju dostaviti i video
+prezentaciju rješenja (u primjeni). Prezentacija obuhvaća opis problema, ciljnih korisnika, korištenih izvora
+podataka, funkcionalnosti rješenja, tehničke arhitekture, korisničke vrijednosti i mogućnosti daljnjeg razvoja.
+Prezentacija se boduje kao jedan od kriterija ocjenjivanja, dok se glavnina bodova dodjeljuje za kvalitetu i
+izvedivost samog rješenja.
+II. TEME DATATHONA
+Natjecanje se sastoji od tri izazova. Svaki izazov organiziran je kao zasebno natjecanje jednake važnosti. Timovi
+mogu sudjelovati u bilo kojem ili svim sljedećim izazovima, uz uvjet posebne prijave i zasebnog rješenja za svako
+tematsko područje u kojem sudjeluju.
+A.) IZAZOV: DRUŠTVO I JAVNE USLUGE
+Razvoj rješenja primjenom otvorenih podataka, usmjerenih na potrebe građana, kvalitetu života, dostupnost javnih
+informacija i usluga te rješavanje društvenih izazova, koji rješavaju određene društvene izazove:
+• bolji pristup informacijama o kulturnim, obrazovnim, zdravstvenim, sportskim i drugim javnim
+sadržajima
+• informiranje građana o četvrti stanovanja, dostupnoj infrastrukturi, uslugama i obilježjima prostora
+• povećanje dostupnosti i kvalitete javnih usluga, posebno u kriznim situacijama
+• veću transparentnost rada javnog sektora i predstavljanje javnih podataka građanima
+• poticanje građanskog sudjelovanja i uključivanje stručnjaka u rješavanje javnih problema
+• razvoj personaliziranih, lokacijski utemeljenih ili proaktivnih informacijskih usluga za građane
+• povećanje pristupačnosti usluga osobama s invaliditetom, starijim osobama i drugim skupinama s
+posebnim potrebama.
+B.) IZAZOV: OKOLIŠ I ODRŽIVI PROSTOR
+Razvoj rješenja primjenom otvorenih podataka koja građanima, javnim tijelima i drugim korisnicima
+omogućavaju nove spoznaje o okolišu i prostoru, podupiru održivo upravljanje resursima te povećavaju građansku
+uključenost i osviještenost o različitim okolišnim i prostornim izazovima, rješavanjem pitanja o:
+• kvaliteti vode i/ili zraka
+• gospodarenju otpadom
+• okolišno prihvatljivim transportnim ponudama
+• procjeni izloženosti poplavama, požarima i drugim klimatskim rizicima
+• zaštiti prirode, mora, obale i zaštićenih područja
+• razini buke u gradovima i sl.
+C.) IZAZOV: GOSPODARSTVO I UČINKOVITO UPRAVLJANJE
+• razvoj digitalnih proizvoda, usluga, analitičkih alata i poslovnih modela primjenom otvorenih podataka
+radi povećanja produktivnosti, smanjenja troškova, učinkovitijeg upravljanja i stvaranja nove vrijednosti
+za građane, gospodarstvo i javni sektor: pojednostavljenje administrativnih i poslovnih postupaka
+• povezivanje lokalnih, prostornih, gospodarskih i administrativnih podataka
+• poboljšanje postojećih dobara i usluga
+• snižavanje operativnih troškova i/ili administrativnog opterećenja
+• povećanje produktivnosti u gospodarstvu ili javnom sektoru
+• smanjenje vremena i troška pronalaženja i obrade informacija.
+III. NAGRADE
+Nagrade se financiraju u okviru ulaganja C2.3. R2-I2 „Uspostava centralnog data lake repozitorija i sustava
+poslovne analitike“ Nacionalnog plana oporavka i otpornosti 2021.–2026.
+Ukupni fond za dodjelu nagrada iznosi 12.000,00 EUR (4.000,00 EUR za svaki izazov/temu) i podijelit će se
+sljedećim redoslijedom za svaki izazov/temu:
+Mjesto Nagrada
+1. 2.000,00 EUR
+2. 1.300,00 EUR
+3. 700,00 EUR
+Timovi koji u pojedinom izazovu osvoje prva tri mjesta predstavit će svoja rješenja na konferenciji Ministarstva
+23. studenoga 2026. u Zagrebu. Točna lokacija bit će naknadno objavljena. Troškove dolaska u Zagreb timovi
+snose sami. Konferencija se fotografira i audio-video snima, u skladu s Pravilima za Datathon Portala otvorenih
+podataka.
+IV. VREMENSKA CRTA NATJECANJA
+Naziv događaja Opis događaja Rokovi
+Prijave za sudjelovanje Od dana objave Poziva do isteka roka za prijavu
+Do 23.10.2026. u
+24:00 sata
+Razvoj rješenja Timovi razvijaju rješenja
+Do 09.11.2026. u
+24:00 sata
+Dostava rješenja
+Dostava konačnih rješenja isključivo
+elektroničkom poštom na open.data@mpudt.hr
+Do 09.11.2026. u
+24:00 sata
+Objava rezultata
+Objava rang-liste i pobjednika na mrežnim
+stranicama Portala otvorenih podataka i/ili
+MPUDT-a
+Do 17.11.2026.
+Predstavljanje nagrađenih rješenja
+Timovi koji su u pojedinom izazovu osvojili prva
+tri mjesta predstavljaju rješenja na konferenciji
+Ministarstva u Zagrebu (lokacija se naknadno
+objavljuje)
+23.11.2026.
+V. PRIJAVITELJI
+Prijaviti se mogu isključivo studentski timovi.
+Tim se može sastojati od dvoje ili više studenata (do 4) i jednog mentora.
+Svaki član tima ispunjava prijavni obrazac i navodi ime tima i kontakt podatke mentora.
+Mentor mora biti nastavnik s institucije iz koje se student prijavljuje.
+Timovi mogu sudjelovati u bilo kojem ili svim navedenim izazovima, uz posebnu prijavu i zasebno rješenje za
+svako tematsko područje u kojem sudjeluju.
+Predajom prijave Prijavitelj izričito izjavljuje da je pročitao i u potpunosti razumio te u cijelosti prihvaća sva
+pravila i odredbe ovog Poziva.
+VI. ROK, NAČIN I SADRŽAJ PRIJAVE
+Prijava mora sadržavati: Pravodobno, potpuno i istinito ispunjen online obrazac za prijavu, dostupan na poveznici
+Prijavni obrazac za za sudjelovanje u Datathonu Portala otvorenih podataka – Ispunite obrazac.
+Rok za podnošenje prijava traje od objave Javnog poziva do 23.10.2026. u 24:00 sata.
+Članovi organizacijskog tima te druge osobe uključene u provedbu Datathona sve će informacije i podatke čuvati
+u tajnosti i neće se njima koristiti u osobne svrhe ili ih prenositi trećim osobama.
+Kontakt e-mail za prijave i dostavu rješenja: open.data@mpudt.hr .
+VII. NAČIN OCJENJIVANJA
+Dostavljena rješenja ocjenjuje Povjerenstvo za ocjenu rješenja, imenovano od strane ministarstva. Ocjenjivanje
+se provodi isključivo na temelju dostavljene dokumentacije (kod, tehnička i projektna dokumentacija, demo
+materijali, video prezentaciju u trajanju 3 minute).
+Timovi za svoja rješenja mogu prikupiti maksimalno 60 bodova, prema sljedećim kriterijima:
+Kriterij Objašnjenje Bodovi
+UPOTREBA
+OTVORENIH
+PODATAKA
+Koriste li se otvoreni podaci izravno putem dostupnih API servisa tijela
+javnog sektora ili europskih/nacionalnih/lokalnih portala otvorenih
+podataka, ili su korišteni otvoreni podaci preuzeti i pripremljeni za potrebe
+izrade rješenja?
+1–5
+POVEZIVANJE
+JAVNO DOSTUPNIH
+PODATAKA
+U kojoj mjeri rješenje koristi relevantne otvorene podatke s Portala
+otvorenih podataka i drugih javno dostupnih izvora? Jesu li podaci iz
+različitih izvora smisleno povezani? Stvara li njihovo povezivanje novu
+informacijsku ili uporabnu vrijednost?
+1-5
+RELEVANTNOST
+RJEŠENJA
+Je li predloženo rješenje svrsishodno za zadanu temu/izazov? 1–5
+UTJECAJ I KORIST
+ZA ZAJEDNICU
+Ima li rješenje utjecaj, odnosno donosi li korist zajednici potencijalnih
+korisnika?
+1–5
+INOVATIVNOST I
+PRIMJENA
+TEHNOLOGIJA
+Koristi li rješenje napredne tehnologije (umjetna inteligencija, IoT,
+blockchain i sl.) na inovativan način?
+1–5
+IZVEDIVOST
+RJEŠENJA
+Je li tim predstavio radni prototip, maketu, kod ili drugo rješenje koje bi se
+moglo nastaviti razvijati? Je li rješenje dovršeno i spremno za upotrebu?
+1–10
+TEHNIČKA
+ARHITEKTURA I
+INTEGRACIJSKI
+POTENCIJAL
+Je li tehnička arhitektura rješenja jasno opisana? Koristi li rješenje
+interoperabilne standarde? Može li se, uz razumne tehničke prilagodbe,
+povezati s drugim, već dostupnim javnim informacijskim sustavima? Jesu li
+navedeni potrebni tehnički, organizacijski i pravni preduvjeti?
+1-5
+DOJAM RJEŠENJA
+Je li tim razmišljao o korisničkom sučelju (UI) i iskustvu (UX)? Je li
+rješenje jednostavno za korištenje?
+1–10
+PREZENTACIJA
+RJEŠENJA
+Svaki tim treba dostaviti video prezentaciju u trajanju 3 minute. Je li tim
+jasno, strukturirano i uvjerljivo predstavio problem koji rješava, ciljane
+korisnike, korištene skupove podataka, glavne funkcionalnosti, tehnički
+pristup i očekivanu korist rješenja? Je li demonstracija omogućila
+razumijevanje načina rada i primjenjivosti rješenja?
+1-10
+Ukupno 60
+VIII. ZAVRŠNE ODREDBE
+MPUDT zadržava pravo izmjena i dopuna natječajne dokumentacije i ovog Javnog poziva, o čemu će svi sudionici
+biti pravodobno obaviješteni putem mrežnih stranica Portala otvorenih podataka https://data.gov.hr/ i MPUDT-a
+https://mpudt.gov.hr/ .
+Sve detalje o pravilima sudjelovanja i provedbi Datathona moguće je pronaći u Pravilima za Datathon Portala
+otvorenih podataka.
+
